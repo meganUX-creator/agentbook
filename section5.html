@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>如何查看收益 - 代理后台操作手册</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-logo">
+      <button class="mobile-toggle" id="mobileToggle">☰</button>
+      <div class="logo-icon">A</div>
+      <div>
+        <div class="logo-text">代理后台</div>
+        <div class="logo-sub">操作手册 · PC端</div>
+      </div>
+    </div>
+    <div class="lang-dropdown">
+      <button class="lang-dropdown-btn" id="langDropdownBtn">
+        <span class="lang-current" id="langCurrent">简体中文</span>
+        <span class="lang-arrow">▼</span>
+      </button>
+      <div class="lang-dropdown-menu" id="langDropdownMenu">
+        <button class="lang-dropdown-item active" data-lang="sc">简体中文</button>
+        <button class="lang-dropdown-item" data-lang="en">English</button>
+        <button class="lang-dropdown-item" data-lang="vn">Tiếng Việt</button>
+        <button class="lang-dropdown-item" data-lang="ph">Filipino</button>
+      </div>ghfh
+    </div>
+  </header>
+
+  <!-- LAYOUT -->
+  <div class="layout">
+
+    <!-- SIDEBAR -->
+    <nav class="sidebar">
+      <div class="sidebar-section-title" data-lang="sc">目录</div>
+      <div class="sidebar-section-title" data-lang="en" style="display:none">Contents</div>
+      <div class="sidebar-section-title" data-lang="vn" style="display:none">Mục lục</div>
+      <div class="sidebar-section-title" data-lang="ph" style="display:none">Talaan</div>
+      <a href="index.html" class="nav-item"><span class="nav-num">🏠</span><span class="nav-label">首页</span></a>
+      <a href="section1.html" class="nav-item"><span class="nav-num">01</span><span class="nav-label">使用前须知</span></a>
+      <a href="section2.html" class="nav-item"><span class="nav-num">02</span><span class="nav-label">基本功能</span></a>
+      <a href="section3.html" class="nav-item"><span class="nav-num">03</span><span
+          class="nav-label">如何新增代理/会员</span></a>
+      <a href="section4.html" class="nav-item"><span class="nav-num">04</span><span
+          class="nav-label">如何为下级上/下分</span></a>
+      <a href="section5.html" class="nav-item active"><span class="nav-num">05</span><span
+          class="nav-label">如何查看收益</span></a>
+      <a href="section6.html" class="nav-item"><span class="nav-num">06</span><span class="nav-label">统计报表介绍</span></a>
+      <a href="section7.html" class="nav-item"><span class="nav-num">07</span><span class="nav-label">占成比介绍</span></a>
+      <a href="section8.html" class="nav-item"><span class="nav-num">08</span><span class="nav-label">有效投注比介绍</span></a>
+      <a href="section9.html" class="nav-item"><span class="nav-num">09</span><span class="nav-label">其他功能</span></a>
+      <a href="section10.html" class="nav-item"><span class="nav-num">10</span><span class="nav-label">时间定义</span></a>
+    </nav>
+
+    <!-- MAIN -->
+    <main class="main">
+
+      <!-- ══════════════════════════════════════════════════════
+     SECTION 05 — 如何查看收益
+══════════════════════════════════════════════════════ -->
+      <section class="section active" id="sec4">
+
+        <!-- SC -->
+        <div data-lang="sc">
+          <div class="section-header">
+            <div class="section-badge">05</div>
+            <h1 class="section-title">如何查看收益</h1>
+            <p class="section-subtitle">了解如何在代理后台查看您的占成收益与下级投注数据</p>
+          </div>
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon blue">📊</div>方法一：首页仪表板概览
+            </div>
+            <p class="para">您可以在首页仪表板快速查阅当下的经营数据，图示说明如下：</p>
+            <ol class="numbered-list">
+              <li><strong>侧边栏「首页」(标示 1)</strong>：点击即可进入概览页面。</li>
+              <li><strong>查看详细信息 (标示 2)</strong>：点击可展开个人帐号详细资讯，包含：占成比、有效投注比、开户时间等。</li>
+              <li><strong>选择查询时间 (标示 3)</strong>：利用日期选择器（今日、昨日、本周等）快速筛选数据统计范围。</li>
+              <li><strong>数据仪表板 (标示 4)</strong>：概览当下各层级的代理/会员总数、投注总额、总输赢、应得佣金等关键数据。</li>
+            </ol>
+          </div>
+          <img src="img/index_detaildata.png" class="content-img" style="max-width: 800px;" alt="首页仪表板" />
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon yellow">💡</div>收益数据说明
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>字段</th>
+                    <th>说明</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>有效投注额</td>
+                    <td>下级所有有效投注的总金额（扣除对冲等无效注）</td>
+                  </tr>
+                  <tr>
+                    <td>输赢金额</td>
+                    <td>下级在该周期内的总输赢金额</td>
+                  </tr>
+                  <tr>
+                    <td>占成收益</td>
+                    <td>按您的占成比例计算所得的收益金额</td>
+                  </tr>
+                  <tr>
+                    <td>结算状态</td>
+                    <td>显示该周期是否已完成结算</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="notice success">
+            <div class="notice-icon">✅</div>
+            <div class="notice-content">收益每日自动结算一次，结算时间通常为凌晨 00:00–02:00。结算完成后数据不可更改。</div>
+          </div>
+        </div>
+
+        <!-- EN -->
+        <div data-lang="en" style="display:none">
+          <div class="section-header">
+            <div class="section-badge">05</div>
+            <h1 class="section-title">View Earnings</h1>
+            <p class="section-subtitle">Learn how to view your commission earnings and downline betting data in the
+              Agent Backend.</p>
+          </div>
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon blue">📊</div>Method 1: Home Dashboard Overview
+            </div>
+            <p class="para">You can quickly view the current operational data on the home dashboard. The illustration is
+              explained as follows:</p>
+            <ol class="step-list">
+              <li><strong>Sidebar "Home" (Marked 1)</strong>: Click to enter the dashboard.</li>
+              <li><strong>View Detailed Information (Marked 2)</strong>: Click to expand account details, such as:
+                Occupancy
+                Ratio, Valid Bet Ratio, Account Creation Time, etc.</li>
+              <li><strong>Select Query Time (Marked 3)</strong>: Use the date picker (Today, Yesterday, This Week, etc.)
+                to
+                quickly filter the range.</li>
+              <li><strong>Data Dashboard (Marked 4)</strong>: An overview of key data for agents/members, total
+                turnover,
+                total win/loss, commissions, etc.</li>
+            </ol>
+          </div>
+
+          <img src="img/index_detaildata.png" class="content-img" style="max-width: 800px;" alt="Home Dashboard" />
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon yellow">💡</div>Earnings Data Explanation
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Field</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Valid Bet Amount</td>
+                    <td>Total valid bets from downlines (excluding hedged or invalid bets)</td>
+                  </tr>
+                  <tr>
+                    <td>Win/Loss Amount</td>
+                    <td>Total win/loss amount for downlines during this period</td>
+                  </tr>
+                  <tr>
+                    <td>Commission Earnings</td>
+                    <td>Earnings calculated based on your commission ratio</td>
+                  </tr>
+                  <tr>
+                    <td>Settlement Status</td>
+                    <td>Shows whether settlement has been completed for this period</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="notice success">
+            <div class="notice-icon">✅</div>
+            <div class="notice-content">Earnings are automatically settled once daily, usually between 00:00–02:00. Data
+              cannot be changed after settlement.</div>
+          </div>
+        </div>
+
+        <!-- VN -->
+        <div data-lang="vn" style="display:none">
+          <div class="section-header">
+            <div class="section-badge">05</div>
+            <h1 class="section-title">Xem thu nhập</h1>
+            <p class="section-subtitle">Tìm hiểu cách xem thu nhập hoa hồng và dữ liệu cược của cấp dưới trong hệ thống
+              đại lý.</p>
+          </div>
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon blue">📊</div>Cách 1: Tổng quan trang chủ
+            </div>
+            <p class="para">Bạn có thể nhanh chóng xem dữ liệu vận hành hiện tại trên bảng điều khiển trang chủ. Giải
+              thích
+              hình ảnh như sau:</p>
+            <ol class="step-list">
+              <li><strong>Thanh bên "Trang chủ" (Đánh dấu 1)</strong>: Nhấp để vào bảng điều khiển.</li>
+              <li><strong>Xem thông tin chi tiết (Đánh dấu 2)</strong>: Nhấp để mở rộng chi tiết tài khoản, như: Tỷ lệ
+                chiếm
+                thành, Tỷ lệ cược hợp lệ, Thời gian tạo tài khoản, v.v.</li>
+              <li><strong>Chọn thời gian (Đánh dấu 3)</strong>: Sử dụng trình chọn ngày (Hôm nay, Hôm qua, Tuần này,
+                v.v.) để
+                lọc nhanh phạm vi dữ liệu.</li>
+              <li><strong>Bảng điều khiển dữ liệu (Đánh dấu 4)</strong>: Tổng quan về các dữ liệu chính cho đại lý/thành
+                viên,
+                tổng doanh thu, tổng thắng/thua, hoa hồng, v.v.</li>
+            </ol>
+          </div>
+
+          <img src="img/index_detaildata.png" class="content-img" style="max-width: 800px;" alt="Tổng quan trang chủ" />
+
+          <div class="notice success">
+            <div class="notice-icon">✅</div>
+            <div class="notice-content">Thu nhập được quyết toán tự động mỗi ngày, thường vào 00:00–02:00. Dữ liệu không
+              thể thay đổi sau khi quyết toán.</div>
+          </div>
+        </div>
+
+        <!-- PH -->
+        <div data-lang="ph" style="display:none">
+          <div class="section-header">
+            <div class="section-badge">05</div>
+            <h1 class="section-title">Tingnan ang Kita</h1>
+            <p class="section-subtitle">Alamin kung paano tingnan ang iyong commission earnings at downline betting data
+              sa Agent Backend.</p>
+          </div>
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon blue">📊</div>Method 1: Home Dashboard Overview
+            </div>
+            <p class="para">Mabilis mong makikita ang kasalukuyang operational data sa Home Dashboard. Ang paliwanag sa
+              larawan ay sumusunod:</p>
+            <ol class="step-list">
+              <li><strong>Sidebar "Home" (Marka 1)</strong>: I-click para pumasok sa dashboard.</li>
+              <li><strong>View Detailed Information (Marka 2)</strong>: I-click para i-expand ang mga detalye ng account
+                tulad
+                ng: Occupancy Ratio, Valid Bet Ratio, Oras ng Paglikha ng Account, atbp.</li>
+              <li><strong>Pumili ng Oras ng Query (Marka 3)</strong>: Gamitin ang date picker (Ngayon, Kahapon, Ngayong
+                Linggo, atbp.) para mabilis na i-filter ang range.</li>
+              <li><strong>Data Dashboard (Marka 4)</strong>: Pangkalahatang ideya ng mga pangunahing data para sa mga
+                agent/miyembro, kabuuang turnover, kabuuang panalo/talo, mga komisyon, atbp.</li>
+            </ol>
+          </div>
+
+          <img src="img/index_detaildata.png" class="content-img" style="max-width: 800px;"
+            alt="Home Dashboard Overview" />
+
+          <div class="notice success">
+            <div class="notice-icon">✅</div>
+            <div class="notice-content">Ang mga kita ay awtomatikong nai-settle isang beses bawat araw, karaniwang sa
+              pagitan ng 00:00–02:00. Ang data ay hindi mababago pagkatapos ng settlement.</div>
+          </div>
+        </div>
+
+        <div class="content-footer">
+          <div class="footer-nav"><a href="section4.html" class="btn btn-outline btn-prev">‹ <span>上一节</span></a></div>
+          <div class="footer-nav"><a href="section6.html" class="btn btn-primary btn-next"><span>下一节</span> ›</a></div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

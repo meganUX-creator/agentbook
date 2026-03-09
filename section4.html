@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>如何为下级上/下分 - 代理后台操作手册</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-logo">
+      <button class="mobile-toggle" id="mobileToggle">☰</button>
+      <div class="logo-icon">A</div>
+      <div>
+        <div class="logo-text">代理后台</div>
+        <div class="logo-sub">操作手册 · PC端</div>
+      </div>
+    </div>
+    <div class="lang-dropdown">
+      <button class="lang-dropdown-btn" id="langDropdownBtn">
+        <span class="lang-current" id="langCurrent">简体中文</span>
+        <span class="lang-arrow">▼</span>
+      </button>
+      <div class="lang-dropdown-menu" id="langDropdownMenu">
+        <button class="lang-dropdown-item active" data-lang="sc">简体中文</button>
+        <button class="lang-dropdown-item" data-lang="en">English</button>
+        <button class="lang-dropdown-item" data-lang="vn">Tiếng Việt</button>
+        <button class="lang-dropdown-item" data-lang="ph">Filipino</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- LAYOUT -->
+  <div class="layout">
+
+    <!-- SIDEBAR -->
+    <nav class="sidebar">
+      <div class="sidebar-section-title" data-lang="sc">目录</div>
+      <div class="sidebar-section-title" data-lang="en" style="display:none">Contents</div>
+      <div class="sidebar-section-title" data-lang="vn" style="display:none">Mục lục</div>
+      <div class="sidebar-section-title" data-lang="ph" style="display:none">Talaan</div>
+      <a href="index.html" class="nav-item"><span class="nav-num">🏠</span><span class="nav-label">首页</span></a>
+      <a href="section1.html" class="nav-item"><span class="nav-num">01</span><span class="nav-label">使用前须知</span></a>
+      <a href="section2.html" class="nav-item"><span class="nav-num">02</span><span class="nav-label">基本功能</span></a>
+      <a href="section3.html" class="nav-item"><span class="nav-num">03</span><span
+          class="nav-label">如何新增代理/会员</span></a>
+      <a href="section4.html" class="nav-item active"><span class="nav-num">04</span><span
+          class="nav-label">如何为下级上/下分</span></a>
+      <a href="section5.html" class="nav-item"><span class="nav-num">05</span><span class="nav-label">如何查看收益</span></a>
+      <a href="section6.html" class="nav-item"><span class="nav-num">06</span><span class="nav-label">统计报表介绍</span></a>
+      <a href="section7.html" class="nav-item"><span class="nav-num">07</span><span class="nav-label">占成比介绍</span></a>
+      <a href="section8.html" class="nav-item"><span class="nav-num">08</span><span class="nav-label">有效投注比介绍</span></a>
+      <a href="section9.html" class="nav-item"><span class="nav-num">09</span><span class="nav-label">其他功能</span></a>
+      <a href="section10.html" class="nav-item"><span class="nav-num">10</span><span class="nav-label">时间定义</span></a>
+    </nav>
+
+    <!-- MAIN -->
+    <main class="main">
+
+      <!-- ══════════════════════════════════════════════════════
+     SECTION 04 — 上/下分
+══════════════════════════════════════════════════════ -->
+      <section class="section active" id="sec3">
+
+        <!-- SC -->
+        <div data-lang="sc">
+          <div class="section-header">
+            <div class="section-badge">04</div>
+            <h1 class="section-title">如何为下级上 / 下分</h1>
+            <p class="section-subtitle">为直属代理或会员进行分数转入（上分）与转出（下分）操作</p>
+          </div>
+          <img src="img/transfer.png" alt="Transfer" class="content-img" />
+          <div class="notice info">
+            <div class="notice-icon">ℹ️</div>
+            <div class="notice-content">
+              <strong>上分</strong>：将自身余额转移给下级（增加下级余额）。<br /><strong>下分</strong>：将下级余额收回至自身账户（减少下级余额）。
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon blue">🖱️</div>方法 1
+            </div>
+            <p class="para"><strong>左边导航 &gt; 转账</strong></p>
+            <p class="para">点击左边导航的【转账】，然后选择您的直属下级代理或会员，即可为其进行上/下分。</p>
+          </div>
+
+          <div class="notice info">
+            <div class="notice-icon">💡</div>
+            <div class="notice-content">
+              <strong>注意：</strong>
+              <ol class="numbered-list">
+                <li>若您的层级为您的代理组织的最后一层，则您只能为您的直属会员上/下分。</li>
+                <li>若要为您自己上/下分，请联系您的上级。</li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon green">⬆️</div>方法 2：列表操作
+            </div>
+            <ol class="steps-list">
+              <li class="step-item">
+                <div class="step-num">1</div>
+                <div class="step-content">
+                  <div class="step-title">找到目标账号</div>
+                  <div class="step-desc">在「代理管理」或「会员管理」中搜索目标账号。</div>
+                </div>
+              </li>
+              <li class="step-item">
+                <div class="step-num">2</div>
+                <div class="step-content">
+                  <div class="step-title">点击上/下分</div>
+                  <div class="step-desc">点击操作列中的「上分」或「下分」按钮。</div>
+                </div>
+              </li>
+              <li class="step-item">
+                <div class="step-num">3</div>
+                <div class="step-content">
+                  <div class="step-title">填写金额并确认</div>
+                  <div class="step-desc">输入转账金额，核对自身或对方余额后点击确认。</div>
+                </div>
+              </li>
+            </ol>
+          </div>
+          <div class="notice warning">
+            <div class="notice-icon">⚠️</div>
+            <div class="notice-content">上/下分操作不可撤销，请核对金额后再确认。所有记录可在「上下分记录」中查询。</div>
+          </div>
+        </div>
+
+        <!-- EN -->
+        <div data-lang="en" style="display:none">
+          <div class="section-header">
+            <div class="section-badge">04</div>
+            <h1 class="section-title">Deposit / Withdrawal for Downlines</h1>
+            <p class="section-subtitle">Transfer points to (deposit) or from (withdrawal) a direct agent or member's
+              account.</p>
+          </div>
+          <img src="img/transfer.png" alt="Transfer" class="content-img" />
+          <div class="notice info">
+            <div class="notice-icon">ℹ️</div>
+            <div class="notice-content"><strong>Deposit (上分)</strong>: Transfer your balance to a downline (increases
+              their balance).<br /><strong>Withdrawal (下分)</strong>: Recover a downline's balance into your account
+              (decreases their balance).</div>
+          </div>
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon blue">🖱️</div>Method 1
+            </div>
+            <p class="para"><strong>Left Navigation &gt; Transfer</strong></p>
+            <p class="para">Click "Transfer" in the left navigation, then select your direct subordinate agent or member
+              to perform deposit/withdrawal.</p>
+          </div>
+
+          <div class="notice info">
+            <div class="notice-icon">💡</div>
+            <div class="notice-content">
+              <strong>Notice:</strong>
+              <ol class="numbered-list">
+                <li>If you are at the last level of your agent organization, you can only perform deposit/withdrawal for
+                  your direct members.</li>
+                <li>To perform deposit/withdrawal for yourself, please contact your superior.</li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon green">⬆️</div>Method 2: List Operation
+            </div>
+            <ol class="steps-list">
+              <li class="step-item">
+                <div class="step-num">1</div>
+                <div class="step-content">
+                  <div class="step-title">Find the Target Account</div>
+                  <div class="step-desc">Search for the target account in "Agent Management" or "Member Management".
+                  </div>
+                </div>
+              </li>
+              <li class="step-item">
+                <div class="step-num">2</div>
+                <div class="step-content">
+                  <div class="step-title">Click Deposit/Withdrawal</div>
+                  <div class="step-desc">Click the "Deposit" or "Withdrawal" button in the action column.</div>
+                </div>
+              </li>
+              <li class="step-item">
+                <div class="step-num">3</div>
+                <div class="step-content">
+                  <div class="step-title">Enter Amount & Confirm</div>
+                  <div class="step-desc">Enter the amount, verify balances, and click "Confirm" to complete.</div>
+                </div>
+              </li>
+            </ol>
+          </div>
+          <div class="notice warning">
+            <div class="notice-icon">⚠️</div>
+            <div class="notice-content">Deposit/withdrawal operations cannot be reversed. Verify the amount before
+              confirming. All records can be queried in "Transaction Records".</div>
+          </div>
+        </div>
+
+        <!-- VN -->
+        <div data-lang="vn" style="display:none">
+          <div class="section-header">
+            <div class="section-badge">04</div>
+            <h1 class="section-title">Nạp / Rút điểm cho cấp dưới</h1>
+            <p class="section-subtitle">Chuyển điểm vào (nạp) hoặc thu hồi (rút) từ tài khoản đại lý hoặc thành viên
+              trực tiếp.</p>
+          </div>
+          <img src="img/transfer.png" alt="Transfer" class="content-img" />
+          <div class="notice info">
+            <div class="notice-icon">ℹ️</div>
+            <div class="notice-content"><strong>Nạp điểm</strong>: Chuyển số dư của bạn cho cấp dưới (tăng số dư của
+              họ).<br /><strong>Rút điểm</strong>: Thu hồi số dư của cấp dưới vào tài khoản bạn (giảm số dư của họ).
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon blue">🖱️</div>Phương pháp 1
+            </div>
+            <p class="para"><strong>Điều hướng bên trái &gt; Chuyển khoản</strong></p>
+            <p class="para">Nhấp vào 【Chuyển khoản】 ở điều hướng bên trái, sau đó chọn đại lý hoặc thành viên trực tiếp
+              của bạn để thực hiện nạp/rút điểm.</p>
+          </div>
+
+          <div class="notice info">
+            <div class="notice-icon">💡</div>
+            <div class="notice-content">
+              <strong>Lưu ý:</strong>
+              <ol class="numbered-list">
+                <li>Nếu cấp bậc của bạn là cấp cuối cùng trong tổ chức đại lý, bạn chỉ có thể nạp/rút điểm cho thành
+                  viên trực tiếp của mình.</li>
+                <li>Để nạp/rút điểm cho chính mình, vui lòng liên hệ với cấp trên của bạn.</li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon green">⬆️</div>Phương pháp 2: Thao tác danh sách
+            </div>
+            <ol class="steps-list">
+              <li class="step-item">
+                <div class="step-num">1</div>
+                <div class="step-content">
+                  <div class="step-title">Tìm tài khoản mục tiêu</div>
+                  <div class="step-desc">Tìm tài khoản mục tiêu trong "Quản lý đại lý" hoặc "Quản lý thành viên".</div>
+                </div>
+              </li>
+              <li class="step-item">
+                <div class="step-num">2</div>
+                <div class="step-content">
+                  <div class="step-title">Nhấp Nạp/Rút điểm</div>
+                  <div class="step-desc">Nhấp vào nút "Nạp điểm" hoặc "Rút điểm" trong cột thao tác.</div>
+                </div>
+              </li>
+              <li class="step-item">
+                <div class="step-num">3</div>
+                <div class="step-content">
+                  <div class="step-title">Nhập số tiền và xác nhận</div>
+                  <div class="step-desc">Nhập số tiền, kiểm tra số dư và nhấp "Xác nhận" để hoàn tất。</div>
+                </div>
+              </li>
+            </ol>
+          </div>
+          <div class="notice warning">
+            <div class="notice-icon">⚠️</div>
+            <div class="notice-content">Thao tác nạp/rút điểm không thể hoàn tác. Kiểm tra số tiền trước khi xác nhận.
+              Tất cả lịch sử có thể xem trong "Lịch sử giao dịch".</div>
+          </div>
+        </div>
+
+        <!-- PH -->
+        <div data-lang="ph" style="display:none">
+          <div class="section-header">
+            <div class="section-badge">04</div>
+            <h1 class="section-title">Mag-deposit / Withdraw para sa Downline</h1>
+            <p class="section-subtitle">Maglipat ng puntos sa (deposit) o mula sa (withdrawal) account ng direktang
+              agent o miyembro.</p>
+          </div>
+          <img src="img/transfer.png" alt="Transfer" class="content-img" />
+          <div class="notice info">
+            <div class="notice-icon">ℹ️</div>
+            <div class="notice-content"><strong>Deposit</strong>: Ilipat ang iyong balanse sa isang downline
+              (nagdadagdag sa kanilang balanse).<br /><strong>Withdrawal</strong>: I-recover ang balanse ng downline sa
+              iyong account (nagbabawas sa kanilang balanse).</div>
+          </div>
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon blue">🖱️</div>Paraan 1
+            </div>
+            <p class="para"><strong>Kaliwang Navigation &gt; Transfer</strong></p>
+            <p class="para">I-click ang 【Transfer】 sa kaliwang navigation, pagkatapos ay piliin ang iyong direktang
+              subordinate agent o miyembro para magsagawa ng top-up/withdrawal.</p>
+          </div>
+
+          <div class="notice info">
+            <div class="notice-icon">💡</div>
+            <div class="notice-content">
+              <strong>Paalala:</strong>
+              <ol class="numbered-list">
+                <li>Kung ang iyong antas ay ang huling antas ng iyong organisasyon ng agent, maaari ka lamang magsagawa
+                  ng top-up/withdrawal para sa iyong mga direktang miyembro.</li>
+                <li>Para magsagawa ng top-up/withdrawal para sa iyong sarili, mangyaring makipag-ugnayan sa iyong
+                  superior.</li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon green">⬆️</div>Paraan 2: Operasyon sa Listahan
+            </div>
+            <ol class="steps-list">
+              <li class="step-item">
+                <div class="step-num">1</div>
+                <div class="step-content">
+                  <div class="step-title">Hanapin ang Target Account</div>
+                  <div class="step-desc">Hanapin ang target account sa "Agent Management" o "Member Management".</div>
+                </div>
+              </li>
+              <li class="step-item">
+                <div class="step-num">2</div>
+                <div class="step-content">
+                  <div class="step-title">I-click ang Deposit/Withdrawal</div>
+                  <div class="step-desc">I-click ang "Deposit" o "Withdrawal" button sa action column.</div>
+                </div>
+              </li>
+              <li class="step-item">
+                <div class="step-num">3</div>
+                <div class="step-content">
+                  <div class="step-title">Ilagay ang Halaga at Kumpirmahin</div>
+                  <div class="step-desc">Ilagay ang halaga, i-verify ang balanse, at i-click ang "Confirm" para
+                    makumpleto.</div>
+                </div>
+              </li>
+            </ol>
+          </div>
+          <div class="notice warning">
+            <div class="notice-icon">⚠️</div>
+            <div class="notice-content">Ang mga operasyon ng deposit/withdrawal ay hindi maaaring bawiin. I-verify ang
+              halaga bago kumpirmahin. Lahat ng rekord ay maaaring i-query sa "Transaction Records".</div>
+          </div>
+        </div>
+
+        <div class="content-footer">
+          <div class="footer-nav"><a href="section3.html" class="btn btn-outline btn-prev">‹ <span>上一节</span></a></div>
+          <div class="footer-nav"><a href="section5.html" class="btn btn-primary btn-next"><span>下一节</span> ›</a></div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

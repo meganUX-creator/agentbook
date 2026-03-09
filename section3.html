@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>如何新增代理/会员 - 代理后台操作手册</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-logo">
+      <button class="mobile-toggle" id="mobileToggle">☰</button>
+      <div class="logo-icon">A</div>
+      <div>
+        <div class="logo-text">代理后台</div>
+        <div class="logo-sub">操作手册 · PC端</div>
+      </div>
+    </div>
+    <div class="lang-dropdown">
+      <button class="lang-dropdown-btn" id="langDropdownBtn">
+        <span class="lang-current" id="langCurrent">简体中文</span>
+        <span class="lang-arrow">▼</span>
+      </button>
+      <div class="lang-dropdown-menu" id="langDropdownMenu">
+        <button class="lang-dropdown-item active" data-lang="sc">简体中文</button>
+        <button class="lang-dropdown-item" data-lang="en">English</button>
+        <button class="lang-dropdown-item" data-lang="vn">Tiếng Việt</button>
+        <button class="lang-dropdown-item" data-lang="ph">Filipino</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- LAYOUT -->
+  <div class="layout">
+
+    <!-- SIDEBAR -->
+    <nav class="sidebar">
+      <div class="sidebar-section-title" data-lang="sc">目录</div>
+      <div class="sidebar-section-title" data-lang="en" style="display:none">Contents</div>
+      <div class="sidebar-section-title" data-lang="vn" style="display:none">Mục lục</div>
+      <div class="sidebar-section-title" data-lang="ph" style="display:none">Talaan</div>
+      <a href="index.html" class="nav-item"><span class="nav-num">🏠</span><span class="nav-label">首页</span></a>
+      <a href="section1.html" class="nav-item"><span class="nav-num">01</span><span class="nav-label">使用前须知</span></a>
+      <a href="section2.html" class="nav-item"><span class="nav-num">02</span><span class="nav-label">基本功能</span></a>
+      <a href="section3.html" class="nav-item active"><span class="nav-num">03</span><span
+          class="nav-label">如何新增代理/会员</span></a>
+      <a href="section4.html" class="nav-item"><span class="nav-num">04</span><span
+          class="nav-label">如何为下级上/下分</span></a>
+      <a href="section5.html" class="nav-item"><span class="nav-num">05</span><span class="nav-label">如何查看收益</span></a>
+      <a href="section6.html" class="nav-item"><span class="nav-num">06</span><span class="nav-label">统计报表介绍</span></a>
+      <a href="section7.html" class="nav-item"><span class="nav-num">07</span><span class="nav-label">占成比介绍</span></a>
+      <a href="section8.html" class="nav-item"><span class="nav-num">08</span><span class="nav-label">有效投注比介绍</span></a>
+      <a href="section9.html" class="nav-item"><span class="nav-num">09</span><span class="nav-label">其他功能</span></a>
+      <a href="section10.html" class="nav-item"><span class="nav-num">10</span><span class="nav-label">时间定义</span></a>
+    </nav>
+
+    <!-- MAIN -->
+    <main class="main">
+
+      <!-- ══════════════════════════════════════════════════════
+     SECTION 03 — 如何新增代理/会员
+══════════════════════════════════════════════════════ -->
+      <section class="section active" id="sec2">
+
+        <!-- SC -->
+        <div data-lang="sc">
+          <div class="section-header">
+            <div class="section-badge">03</div>
+            <h1 class="section-title">如何新增代理 / 会员</h1>
+            <p class="section-subtitle">在代理后台创建下级代理或会员账号的完整操作步骤</p>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon blue">🖱️</div>方法 1
+            </div>
+            <p class="para"><strong>左边导航 &gt; 代理组织管理 &gt; 新增代理 / 会员</strong></p>
+            <p class="para">新增您的直属下级代理与会员。</p>
+          </div>
+
+          <img src="img/adduser.png" alt="Add User" class="content-img">
+
+          <div class="notice info">
+            <div class="notice-icon">💡</div>
+            <div class="notice-content">
+              <strong>注意提示：</strong>
+              <ol class="numbered-list">
+                <li><strong>点击「新增」按钮（如标示 1 处）</strong>：进入新增页面。</li>
+                <li>点击新增用户时，会根据您当前所查看的代理来为其新增用户。<br>
+                  以上图为例：在 leozdl1 这层点击新增用户，是为 leozdl1 新增其下级代理或会员；若是在 leodl1 这层点击新增用户，则是为 leodl1 新增其下级代理或会员。</li>
+                <li>若您所查看的代理账号为您的代理组织的最后一层，则您只能为其新增直属会员。</li>
+              </ol>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon blue">👤</div>新增代理
+            </div>
+            <ol class="steps-list">
+              <li class="step-item">
+                <div class="step-num">1</div>
+                <div class="step-content">
+                  <div class="step-title">进入代理管理</div>
+                  <div class="step-desc">在左侧导航栏点击「代理管理」→「新增代理」。</div>
+                </div>
+              </li>
+              <li class="step-item">
+                <div class="step-num">2</div>
+                <div class="step-content">
+                  <div class="step-title">填写基本信息</div>
+                  <div class="step-desc">输入账号（字母+数字，6–16 位）、密码、真实姓名、联系方式。</div>
+                </div>
+              </li>
+              <li class="step-item">
+                <div class="step-num">3</div>
+                <div class="step-content">
+                  <div class="step-title">设置占成比</div>
+                  <div class="step-desc">设置该代理的占成比，不可超过本代理自身占成比上限。</div>
+                </div>
+              </li>
+              <li class="step-item">
+                <div class="step-num">4</div>
+                <div class="step-content">
+                  <div class="step-title">确认提交</div>
+                  <div class="step-desc">核对所有信息后点击「确认创建」，系统将发送账号信息。</div>
+                </div>
+              </li>
+            </ol>
+          </div>
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon green">👥</div>新增会员
+            </div>
+            <ol class="steps-list">
+              <li class="step-item">
+                <div class="step-num">1</div>
+                <div class="step-content">
+                  <div class="step-title">进入会员管理</div>
+                  <div class="step-desc">在左侧导航栏点击「会员管理」→「新增会员」。</div>
+                </div>
+              </li>
+              <li class="step-item">
+                <div class="step-num">2</div>
+                <div class="step-content">
+                  <div class="step-title">填写会员信息</div>
+                  <div class="step-desc">输入会员账号、密码及联系方式。账号创建后不可修改。</div>
+                </div>
+              </li>
+              <li class="step-item">
+                <div class="step-num">3</div>
+                <div class="step-content">
+                  <div class="step-title">确认提交</div>
+                  <div class="step-desc">点击「确认创建」完成创建，会员可立即登录游戏平台。</div>
+                </div>
+              </li>
+            </ol>
+          </div>
+          <div class="notice warning">
+            <div class="notice-icon">⚠️</div>
+            <div class="notice-content"><strong>注意：</strong>账号一经创建无法删除，仅可冻结停用。请谨慎填写账号信息。</div>
+          </div>
+        </div>
+
+        <!-- EN -->
+        <div data-lang="en" style="display:none">
+          <div class="section-header">
+            <div class="section-badge">03</div>
+            <h1 class="section-title">Add Agent / Member</h1>
+            <p class="section-subtitle">Complete steps to create a sub-agent or member account in the Agent Backend.</p>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon blue">🖱️</div>Method 1
+            </div>
+            <p class="para"><strong>Left Navigation &gt; Agent Organization Management &gt; Add Agent / Member</strong>
+            </p>
+            <p class="para">Add your direct sub-agents and members.</p>
+          </div>
+
+          <img src="img/adduser.png" alt="Add User" class="content-img">
+
+          <div class="notice info">
+            <div class="notice-icon">💡</div>
+            <div class="notice-content">
+              <strong>Important Tips:</strong>
+              <ol class="numbered-list">
+                <li><strong>Click the "Add" button (as marked in circle 1)</strong>: Enter the addition page.</li>
+                <li>When clicking "Add User", the system adds the user based on the agent you are currently viewing.<br>
+                  For example: Clicking "Add User" at the "leozdl1" level will add a sub-agent or member for leozdl1. If
+                  you
+                  click it at the "leodl1" level, it will add a sub-account for leodl1.</li>
+                <li>If the agent account you are viewing is the last level of your organization, you can only add direct
+                  members to it.</li>
+              </ol>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon blue">👤</div>Add an Agent
+            </div>
+            <ol class="steps-list">
+              <li class="step-item">
+                <div class="step-num">1</div>
+                <div class="step-content">
+                  <div class="step-title">Go to Agent Management</div>
+                  <div class="step-desc">Click "Agent Management" → "Add Agent" in the left navigation bar.</div>
+                </div>
+              </li>
+              <li class="step-item">
+                <div class="step-num">2</div>
+                <div class="step-content">
+                  <div class="step-title">Fill in Basic Information</div>
+                  <div class="step-desc">Enter username (letters + numbers, 6–16 chars), password, full name, and
+                    contact info.</div>
+                </div>
+              </li>
+              <li class="step-item">
+                <div class="step-num">3</div>
+                <div class="step-content">
+                  <div class="step-title">Set Commission Ratio</div>
+                  <div class="step-desc">Set the commission ratio for this agent. Cannot exceed your own commission
+                    ratio limit.</div>
+                </div>
+              </li>
+              <li class="step-item">
+                <div class="step-num">4</div>
+                <div class="step-content">
+                  <div class="step-title">Confirm & Submit</div>
+                  <div class="step-desc">Review all information and click "Confirm Create". The system will send the
+                    account details.</div>
+                </div>
+              </li>
+            </ol>
+          </div>
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon green">👥</div>Add a Member
+            </div>
+            <ol class="steps-list">
+              <li class="step-item">
+                <div class="step-num">1</div>
+                <div class="step-content">
+                  <div class="step-title">Go to Member Management</div>
+                  <div class="step-desc">Click "Member Management" → "Add Member" in the left navigation bar.</div>
+                </div>
+              </li>
+              <li class="step-item">
+                <div class="step-num">2</div>
+                <div class="step-content">
+                  <div class="step-title">Fill in Member Information</div>
+                  <div class="step-desc">Enter the member's username, password, and contact info. Username cannot be
+                    changed after creation.</div>
+                </div>
+              </li>
+              <li class="step-item">
+                <div class="step-num">3</div>
+                <div class="step-content">
+                  <div class="step-title">Confirm & Submit</div>
+                  <div class="step-desc">Click "Confirm Create" to complete. The member can log into the gaming platform
+                    immediately.</div>
+                </div>
+              </li>
+            </ol>
+          </div>
+          <div class="notice warning">
+            <div class="notice-icon">⚠️</div>
+            <div class="notice-content"><strong>Note:</strong> Accounts cannot be deleted once created; they can only be
+              frozen/disabled. Please fill in account information carefully.</div>
+          </div>
+        </div>
+
+        <!-- VN -->
+        <div data-lang="vn" style="display:none">
+          <div class="section-header">
+            <div class="section-badge">03</div>
+            <h1 class="section-title">Thêm đại lý / thành viên</h1>
+            <p class="section-subtitle">Các bước đầy đủ để tạo tài khoản đại lý con hoặc thành viên trong hệ thống.</p>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon blue">🖱️</div>Phương pháp 1
+            </div>
+            <p class="para"><strong>Điều hướng bên trái &gt; Quản lý tổ chức đại lý &gt; Thêm đại lý / thành
+                viên</strong></p>
+            <p class="para">Thêm đại lý cấp dưới và thành viên trực tiếp của bạn.</p>
+          </div>
+
+          <img src="img/adduser.png" alt="Add User" class="content-img">
+
+          <div class="notice info">
+            <div class="notice-icon">💡</div>
+            <div class="notice-content">
+              <strong>Lưu ý quan trọng:</strong>
+              <ol class="numbered-list">
+                <li><strong>Nhấp vào nút "Thêm mới" (như đánh dấu số 1)</strong>: Truy cập vào trang thêm mới.</li>
+                <li>Khi nhấp vào "Thêm người dùng", hệ thống sẽ thêm người dùng dựa trên đại lý bạn đang xem.<br>
+                  Ví dụ: Nhấp vào "Thêm người dùng" ở cấp độ "leozdl1" sẽ thêm đại lý con hoặc thành viên cho leozdl1.
+                  Nếu bạn
+                  nhấp vào ở cấp độ "leodl1", hệ thống sẽ thêm tài khoản cho leodl1.</li>
+                <li>Nếu tài khoản đại lý bạn đang xem là cấp cuối cùng trong tổ chức của bạn, bạn chỉ có thể thêm thành
+                  viên
+                  trực tiếp cho nó.</li>
+              </ol>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon blue">👤</div>Thêm đại lý
+            </div>
+            <ol class="steps-list">
+              <li class="step-item">
+                <div class="step-num">1</div>
+                <div class="step-content">
+                  <div class="step-title">Vào Quản lý đại lý</div>
+                  <div class="step-desc">Nhấp "Quản lý đại lý" → "Thêm đại lý" trong thanh điều hướng bên trái.</div>
+                </div>
+              </li>
+              <li class="step-item">
+                <div class="step-num">2</div>
+                <div class="step-content">
+                  <div class="step-title">Điền thông tin cơ bản</div>
+                  <div class="step-desc">Nhập tên đăng nhập (chữ + số, 6–16 ký tự), mật khẩu, họ tên, thông tin liên hệ.
+                  </div>
+                </div>
+              </li>
+              <li class="step-item">
+                <div class="step-num">3</div>
+                <div class="step-content">
+                  <div class="step-title">Đặt tỷ lệ hoa hồng</div>
+                  <div class="step-desc">Đặt tỷ lệ hoa hồng cho đại lý này, không được vượt quá giới hạn của bạn.</div>
+                </div>
+              </li>
+              <li class="step-item">
+                <div class="step-num">4</div>
+                <div class="step-content">
+                  <div class="step-title">Xác nhận và gửi</div>
+                  <div class="step-desc">Kiểm tra thông tin và nhấp "Xác nhận tạo". Hệ thống sẽ gửi thông tin tài khoản.
+                  </div>
+                </div>
+              </li>
+            </ol>
+          </div>
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon green">👥</div>Thêm thành viên
+            </div>
+            <ol class="steps-list">
+              <li class="step-item">
+                <div class="step-num">1</div>
+                <div class="step-content">
+                  <div class="step-title">Vào Quản lý thành viên</div>
+                  <div class="step-desc">Nhấp "Quản lý thành viên" → "Thêm thành viên" trong thanh điều hướng.</div>
+                </div>
+              </li>
+              <li class="step-item">
+                <div class="step-num">2</div>
+                <div class="step-content">
+                  <div class="step-title">Điền thông tin thành viên</div>
+                  <div class="step-desc">Nhập tên đăng nhập, mật khẩu và thông tin liên hệ. Tên đăng nhập không thể thay
+                    đổi sau khi tạo.</div>
+                </div>
+              </li>
+              <li class="step-item">
+                <div class="step-num">3</div>
+                <div class="step-content">
+                  <div class="step-title">Xác nhận và gửi</div>
+                  <div class="step-desc">Nhấp "Xác nhận tạo" để hoàn tất. Thành viên có thể đăng nhập ngay vào nền tảng
+                    trò chơi.</div>
+                </div>
+              </li>
+            </ol>
+          </div>
+          <div class="notice warning">
+            <div class="notice-icon">⚠️</div>
+            <div class="notice-content"><strong>Lưu ý:</strong> Tài khoản không thể xóa sau khi tạo; chỉ có thể đóng
+              băng. Hãy điền thông tin cẩn thận.</div>
+          </div>
+        </div>
+
+        <!-- PH -->
+        <div data-lang="ph" style="display:none">
+          <div class="section-header">
+            <div class="section-badge">03</div>
+            <h1 class="section-title">Magdagdag ng Agent / Miyembro</h1>
+            <p class="section-subtitle">Kumpletong mga hakbang para lumikha ng sub-agent o miyembro sa Agent Backend.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon blue">🖱️</div>Paraan 1
+            </div>
+            <p class="para"><strong>Kaliwang Navigation &gt; Pamamahala ng Organisasyon ng Agent &gt; Magdagdag ng Agent
+                /
+                Miyembro</strong></p>
+            <p class="para">Idagdag ang iyong mga direktang sub-agent at miyembro.</p>
+          </div>
+
+          <img src="img/adduser.png" alt="Add User" class="content-img">
+
+          <div class="notice info">
+            <div class="notice-icon">💡</div>
+            <div class="notice-content">
+              <strong>Mahalagang Paalala:</strong>
+              <ol class="numbered-list">
+                <li><strong>I-click ang "Add" na button (tulad ng nasa bilog 1)</strong>: Pumasok sa page ng
+                  pagdadagdag.</li>
+                <li>Kapag nag-click sa "Magdagdag ng User", magdaragdag ang system ng user base sa agent na kasalukuyan
+                  mong
+                  tinitingnan.<br>
+                  Halimbawa: Ang pag-click sa "Magdagdag ng User" sa antas ng "leozdl1" ay magdaragdag ng sub-agent o
+                  miyembro
+                  para sa leozdl1. Kung i-click mo ito sa antas ng "leodl1", magdaragdag ito ng sub-account para sa
+                  leodl1.
+                </li>
+                <li>Kung ang agent account na iyong tinitingnan ay ang huling antas ng iyong organisasyon, maaari ka
+                  lamang
+                  magdagdag ng mga direktang miyembro dito.</li>
+              </ol>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon blue">👤</div>Magdagdag ng Agent
+            </div>
+            <ol class="steps-list">
+              <li class="step-item">
+                <div class="step-num">1</div>
+                <div class="step-content">
+                  <div class="step-title">Pumunta sa Agent Management</div>
+                  <div class="step-desc">I-click ang "Agent Management" → "Add Agent" sa kaliwang navigation bar.</div>
+                </div>
+              </li>
+              <li class="step-item">
+                <div class="step-num">2</div>
+                <div class="step-content">
+                  <div class="step-title">Punan ang Pangunahing Impormasyon</div>
+                  <div class="step-desc">Ilagay ang username (titik + numero, 6–16 karakter), password, buong pangalan,
+                    at contact info.</div>
+                </div>
+              </li>
+              <li class="step-item">
+                <div class="step-num">3</div>
+                <div class="step-content">
+                  <div class="step-title">Itakda ang Commission Ratio</div>
+                  <div class="step-desc">Itakda ang commission ratio para sa agent na ito. Hindi maaaring lampasan ang
+                    iyong sariling limitasyon.</div>
+                </div>
+              </li>
+              <li class="step-item">
+                <div class="step-num">4</div>
+                <div class="step-content">
+                  <div class="step-title">Kumpirmahin at I-submit</div>
+                  <div class="step-desc">Suriin ang lahat ng impormasyon at i-click ang "Confirm Create".</div>
+                </div>
+              </li>
+            </ol>
+          </div>
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon green">👥</div>Magdagdag ng Miyembro
+            </div>
+            <ol class="steps-list">
+              <li class="step-item">
+                <div class="step-num">1</div>
+                <div class="step-content">
+                  <div class="step-title">Pumunta sa Member Management</div>
+                  <div class="step-desc">I-click ang "Member Management" → "Add Member" sa kaliwang navigation bar.
+                  </div>
+                </div>
+              </li>
+              <li class="step-item">
+                <div class="step-num">2</div>
+                <div class="step-content">
+                  <div class="step-title">Punan ang Impormasyon ng Miyembro</div>
+                  <div class="step-desc">Ilagay ang username, password, at contact info. Hindi mababago ang username
+                    pagkatapos lumikha.</div>
+                </div>
+              </li>
+              <li class="step-item">
+                <div class="step-num">3</div>
+                <div class="step-content">
+                  <div class="step-title">Kumpirmahin at I-submit</div>
+                  <div class="step-desc">I-click ang "Confirm Create" para makumpleto. Maaaring mag-login agad ang
+                    miyembro sa gaming platform.</div>
+                </div>
+              </li>
+            </ol>
+          </div>
+          <div class="notice warning">
+            <div class="notice-icon">⚠️</div>
+            <div class="notice-content"><strong>Paalala:</strong> Ang mga account ay hindi maaaring burahin pagkatapos
+              malikha; maaari lamang i-freeze. Pakipunan nang maingat ang impormasyon ng account.</div>
+          </div>
+        </div>
+
+        <div class="content-footer">
+          <div class="footer-nav"><a href="section2.html" class="btn btn-outline btn-prev">‹ <span>上一节</span></a></div>
+          <div class="footer-nav"><a href="section4.html" class="btn btn-primary btn-next"><span>下一节</span> ›</a></div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

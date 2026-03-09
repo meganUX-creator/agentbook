@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>使用前须知 - 代理后台操作手册</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-logo">
+      <button class="mobile-toggle" id="mobileToggle">☰</button>
+      <div class="logo-icon">A</div>
+      <div>
+        <div class="logo-text">代理后台</div>
+        <div class="logo-sub">操作手册 · PC端</div>
+      </div>
+    </div>
+    <div class="lang-dropdown">
+      <button class="lang-dropdown-btn" id="langDropdownBtn">
+        <span class="lang-current" id="langCurrent">简体中文</span>
+        <span class="lang-arrow">▼</span>
+      </button>
+      <div class="lang-dropdown-menu" id="langDropdownMenu">
+        <button class="lang-dropdown-item active" data-lang="sc">简体中文</button>
+        <button class="lang-dropdown-item" data-lang="en">English</button>
+        <button class="lang-dropdown-item" data-lang="vn">Tiếng Việt</button>
+        <button class="lang-dropdown-item" data-lang="ph">Filipino</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- LAYOUT -->
+  <div class="layout">
+
+    <!-- SIDEBAR -->
+    <nav class="sidebar">
+      <div class="sidebar-section-title" data-lang="sc">目录</div>
+      <div class="sidebar-section-title" data-lang="en" style="display:none">Contents</div>
+      <div class="sidebar-section-title" data-lang="vn" style="display:none">Mục lục</div>
+      <div class="sidebar-section-title" data-lang="ph" style="display:none">Talaan</div>
+      <a href="index.html" class="nav-item"><span class="nav-num">🏠</span><span class="nav-label">首页</span></a>
+      <a href="section1.html" class="nav-item active"><span class="nav-num">01</span><span
+          class="nav-label">使用前须知</span></a>
+      <a href="section2.html" class="nav-item"><span class="nav-num">02</span><span class="nav-label">基本功能</span></a>
+      <a href="section3.html" class="nav-item"><span class="nav-num">03</span><span
+          class="nav-label">如何新增代理/会员</span></a>
+      <a href="section4.html" class="nav-item"><span class="nav-num">04</span><span
+          class="nav-label">如何为下级上/下分</span></a>
+      <a href="section5.html" class="nav-item"><span class="nav-num">05</span><span class="nav-label">如何查看收益</span></a>
+      <a href="section6.html" class="nav-item"><span class="nav-num">06</span><span class="nav-label">统计报表介绍</span></a>
+      <a href="section7.html" class="nav-item"><span class="nav-num">07</span><span class="nav-label">占成比介绍</span></a>
+      <a href="section8.html" class="nav-item"><span class="nav-num">08</span><span class="nav-label">有效投注比介绍</span></a>
+      <a href="section9.html" class="nav-item"><span class="nav-num">09</span><span class="nav-label">其他功能</span></a>
+      <a href="section10.html" class="nav-item"><span class="nav-num">10</span><span class="nav-label">时间定义</span></a>
+    </nav>
+
+    <!-- MAIN -->
+    <main class="main">
+
+      <!-- ══════════════════════════════════════════════════════
+     SECTION 01 — 使用前须知 / Before You Start
+══════════════════════════════════════════════════════ -->
+      <section class="section active" id="sec0">
+
+        <!-- SC -->
+        <div data-lang="sc">
+          <div class="section-header">
+            <div class="section-badge">01</div>
+            <h1 class="section-title">使用前须知</h1>
+            <p class="section-subtitle">在开始使用代理后台之前，请仔细阅读以下重要说明</p>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon blue">👥</div>一、关于你的代理权限
+            </div>
+            <p class="para">你可操作的功能，取决于你在代理组织中的「层级位置」，并非所有代理都能新增下级代理。若你已是组织中的最后一层代理，仅能新增直屬會員。</p>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon yellow">💰</div>二、关于金额操作
+            </div>
+            <p class="para">上下分（转帐）完成后，金額即時生效，上下分操作无法取消、回复或冲正。请务必在送出前确认：</p>
+            <ol class="numbered-list">
+              <li>操作对象帐号</li>
+              <li>上 / 下分方向</li>
+              <li>金额是否正确</li>
+            </ol>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon green">🔄</div>三、关于代理层级的资金流向
+            </div>
+            <p class="para">你只能直接替「直属下级」上下分，若操作对象为下下级或更底层帐号：金额将由该帐号的「上级代理钱包」转出或转入，不会经过你的钱包。</p>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon purple">⚖️</div>四、关于占成比与有效投注比
+            </div>
+            <p class="para">下级的占成比与有效投注比，皆是从你的比例中分出去，下级设定值不可高于你的设定值。调整比例后，不一定立即生效，实际生效时间依公司设定的结算周期为准，系统会显示生效时间提示。</p>
+          </div>
+          <div class="notice warning">
+            <div class="notice-icon">🔒</div>
+            <div class="notice-content"><strong>安全提示：</strong>操作完成后请及时退出登录，尤其是在公共设备上使用时。</div>
+          </div>
+        </div>
+
+        <!-- EN -->
+        <div data-lang="en" style="display:none">
+          <div class="section-header">
+            <div class="section-badge">01</div>
+            <h1 class="section-title">Before You Start</h1>
+            <p class="section-subtitle">Please read the following important notes carefully before using the Agent
+              Backend.</p>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon blue">👥</div>I. About Your Agent Permissions
+            </div>
+            <p class="para">Your available functions depend on your "hierarchical position" in the agent organization.
+              Not all agents can add sub-agents. If you are already the last level agent in the organization, you can
+              only add direct members.</p>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon yellow">💰</div>II. About Fund Operations
+            </div>
+            <p class="para">After deposit/withdrawal (transfer) is completed, funds take effect immediately. Fund
+              operations cannot be cancelled, reversed, or corrected. Please confirm before submission:</p>
+            <ol class="numbered-list">
+              <li>Target account</li>
+              <li>Deposit/withdrawal direction</li>
+              <li>Correct amount</li>
+            </ol>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon green">🔄</div>III. About Fund Flow in Agent Hierarchy
+            </div>
+            <p class="para">You can only directly deposit/withdraw for "direct downlines". If the target is a
+              sub-downline or lower-level account: funds will be transferred from the "upper agent's wallet" of that
+              account, not passing through your wallet.</p>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon purple">⚖️</div>IV. About Commission Ratio and Valid Bet Ratio
+            </div>
+            <p class="para">Your downlines' commission ratio and valid bet ratio are allocated from your ratios.
+              Downline settings cannot exceed your settings. After adjusting ratios, they may not take effect
+              immediately. Actual effective time depends on the company's settlement cycle.</p>
+          </div>
+          <div class="notice warning">
+            <div class="notice-icon">🔒</div>
+            <div class="notice-content"><strong>Security Notice:</strong> Please log out after completing operations,
+              especially when using public devices.</div>
+          </div>
+        </div>
+
+        <!-- VN -->
+        <div data-lang="vn" style="display:none">
+          <div class="section-header">
+            <div class="section-badge">01</div>
+            <h1 class="section-title">Trước khi sử dụng</h1>
+            <p class="section-subtitle">Vui lòng đọc kỹ các lưu ý quan trọng sau trước khi sử dụng hệ thống đại lý.</p>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon blue">👥</div>I. Về quyền hạn đại lý của bạn
+            </div>
+            <p class="para">Các chức năng bạn có thể sử dụng phụ thuộc vào "vị trí phân cấp" của bạn trong tổ chức đại
+              lý. Không phải tất cả đại lý đều có thể thêm đại lý cấp dưới. Nếu bạn là đại lý cấp cuối cùng trong tổ
+              chức, bạn chỉ có thể thêm thành viên trực tiếp.</p>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon yellow">💰</div>II. Về thao tác tiền tệ
+            </div>
+            <p class="para">Sau khi nạp/rút điểm (chuyển khoản) hoàn tất, tiền có hiệu lực ngay lập tức. Thao tác
+              nạp/rút điểm không thể hủy, hoàn lại hoặc sửa đổi. Vui lòng xác nhận trước khi gửi:</p>
+            <ol class="numbered-list">
+              <li>Tài khoản đối tượng</li>
+              <li>Hướng nạp/rút điểm</li>
+              <li>Số tiền có đúng không</li>
+            </ol>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon green">🔄</div>III. Về dòng tiền phân cấp đại lý
+            </div>
+            <p class="para">Bạn chỉ có thể trực tiếp nạp/rút điểm cho "cấp dưới trực tiếp". Nếu đối tượng là cấp dưới
+              của cấp dưới hoặc tài khoản cấp thấp hơn: tiền sẽ được chuyển từ "ví đại lý cấp trên" của tài khoản đó,
+              không đi qua ví của bạn.</p>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon purple">⚖️</div>IV. Về tỷ lệ hoa hồng và tỷ lệ cược hiệu quả
+            </div>
+            <p class="para">Tỷ lệ hoa hồng và tỷ lệ cược hiệu quả của cấp dưới được phân bổ từ tỷ lệ của bạn. Cài đặt
+              cấp dưới không thể vượt quá cài đặt của bạn. Sau khi điều chỉnh tỷ lệ, có thể không có hiệu lực ngay lập
+              tức. Thời gian hiệu lực thực tế phụ thuộc vào chu kỳ thanh toán của công ty.</p>
+          </div>
+          <div class="notice warning">
+            <div class="notice-icon">🔒</div>
+            <div class="notice-content"><strong>Lưu ý bảo mật:</strong> Vui lòng đăng xuất sau khi hoàn thành thao tác,
+              đặc biệt khi sử dụng thiết bị công cộng.</div>
+          </div>
+        </div>
+
+        <!-- PH -->
+        <div data-lang="ph" style="display:none">
+          <div class="section-header">
+            <div class="section-badge">01</div>
+            <h1 class="section-title">Bago Gamitin</h1>
+            <p class="section-subtitle">Pakibasa nang mabuti ang mga sumusunod na mahalagang tala bago gamitin ang Agent
+              Backend.</p>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon blue">👥</div>I. Tungkol sa Iyong Mga Pahintulot bilang Agent
+            </div>
+            <p class="para">Ang mga function na maaari mong gamitin ay nakasalalay sa iyong "posisyon sa hierarchy" sa
+              organisasyon ng agent. Hindi lahat ng agent ay maaaring magdagdag ng sub-agent. Kung ikaw ay ang huling
+              antas na agent sa organisasyon, maaari ka lamang magdagdag ng direktang miyembro.</p>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon yellow">💰</div>II. Tungkol sa mga Operasyon ng Pondo
+            </div>
+            <p class="para">Pagkatapos makumpleto ang deposit/withdrawal (transfer), ang pondo ay agaras na epektibo.
+              Ang mga operasyon ng deposit/withdrawal ay hindi maaaring kanselahin, ibalik, o itama. Mangyaring
+              kumpirmahin bago ipadala:</p>
+            <ol class="numbered-list">
+              <li>Target account</li>
+              <li>Direksyon ng deposit/withdrawal</li>
+              <li>Kung tama ang halaga</li>
+            </ol>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon green">🔄</div>III. Tungkol sa Flow ng Pondo sa Agent Hierarchy
+            </div>
+            <p class="para">Maaari ka lamang direktang mag-deposit/withdraw para sa "mga direktang downline". Kung ang
+              target ay sub-downline o mas mababang antas na account: ang pondo ay ililipat mula sa "wallet ng upper
+              agent" ng account na iyon, hindi papasa sa iyong wallet.</p>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon purple">⚖️</div>IV. Tungkol sa Commission Ratio at Valid Bet Ratio
+            </div>
+            <p class="para">Ang commission ratio at valid bet ratio ng iyong mga downline ay ipinamahagi mula sa iyong
+              mga ratio. Ang mga setting ng downline ay hindi maaaring lumampas sa iyong mga setting. Pagkatapos
+              mag-adjust ng mga ratio, maaaring hindi ito agaras na epektibo. Ang aktwal na epektibong oras ay
+              nakasalalay sa settlement cycle ng kumpanya.</p>
+          </div>
+          <div class="notice warning">
+            <div class="notice-icon">🔒</div>
+            <div class="notice-content"><strong>Babala sa Seguridad:</strong> Mag-log out pagkatapos ng mga operasyon,
+              lalo na kapag gumagamit ng pampublikong device.</div>
+          </div>
+        </div>
+
+        <div class="content-footer">
+          <div></div>
+          <div class="footer-nav"><a href="section2.html" class="btn btn-primary btn-next"><span>下一节</span> ›</a></div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

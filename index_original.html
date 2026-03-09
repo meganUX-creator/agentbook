@@ -1,0 +1,1311 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>代理后台操作手册</title>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="header-logo">
+    <button class="mobile-toggle" id="mobileToggle">☰</button>
+    <div class="logo-icon">A</div>
+    <div>
+      <div class="logo-text">代理后台</div>
+      <div class="logo-sub">操作手册 · PC端</div>
+    </div>
+  </div>
+  <div class="lang-dropdown">
+    <button class="lang-dropdown-btn" id="langDropdownBtn">
+      <span class="lang-current" id="langCurrent">简体中文</span>
+      <span class="lang-arrow">▼</span>
+    </button>
+    <div class="lang-dropdown-menu" id="langDropdownMenu">
+      <button class="lang-dropdown-item active" data-lang="sc">简体中文</button>
+      <button class="lang-dropdown-item" data-lang="en">English</button>
+      <button class="lang-dropdown-item" data-lang="vn">Tiếng Việt</button>
+      <button class="lang-dropdown-item" data-lang="ph">Filipino</button>
+    </div>
+  </div>
+</header>
+
+<!-- LAYOUT -->
+<div class="layout">
+
+<!-- SIDEBAR -->
+<nav class="sidebar">
+  <div class="sidebar-section-title" data-lang="sc">目录</div>
+  <div class="sidebar-section-title" data-lang="en" style="display:none">Contents</div>
+  <div class="sidebar-section-title" data-lang="vn" style="display:none">Mục lục</div>
+  <div class="sidebar-section-title" data-lang="ph" style="display:none">Talaan</div>
+  <a class="nav-item active" id="nav0"><span class="nav-num">01</span><span class="nav-label">使用前须知</span></a>
+  <a class="nav-item" id="nav1"><span class="nav-num">02</span><span class="nav-label">基本功能</span></a>
+  <a class="nav-item" id="nav2"><span class="nav-num">03</span><span class="nav-label">如何新增代理/会员</span></a>
+  <a class="nav-item" id="nav3"><span class="nav-num">04</span><span class="nav-label">如何为下级上/下分</span></a>
+  <a class="nav-item" id="nav4"><span class="nav-num">05</span><span class="nav-label">如何查看收益</span></a>
+  <a class="nav-item" id="nav5"><span class="nav-num">06</span><span class="nav-label">统计报表介绍</span></a>
+  <a class="nav-item" id="nav6"><span class="nav-num">07</span><span class="nav-label">占成比介绍</span></a>
+  <a class="nav-item" id="nav7"><span class="nav-num">08</span><span class="nav-label">有效投注比介绍</span></a>
+  <a class="nav-item" id="nav8"><span class="nav-num">09</span><span class="nav-label">其他功能</span></a>
+  <a class="nav-item" id="nav9"><span class="nav-num">10</span><span class="nav-label">时间定义</span></a>
+</nav>
+
+<!-- MAIN -->
+<main class="main">
+
+<!-- ══════════════════════════════════════════════════════
+     SECTION 01 — 使用前须知 / Before You Start
+═══════════════════════════════════════════════════════ -->
+<section class="section active" id="sec0">
+
+  <!-- SC -->
+  <div data-lang="sc">
+    <div class="section-header">
+      <div class="section-badge">01</div>
+      <h1 class="section-title">使用前须知</h1>
+      <p class="section-subtitle">在开始使用代理后台之前，请仔细阅读以下重要说明</p>
+    </div>
+    <div class="notice info"><div class="notice-icon">ℹ️</div><div class="notice-content"><strong>系统要求：</strong>建议使用 Chrome 90+ 或 Firefox 88+ 浏览器，分辨率 1280×720 及以上，保持网络稳定。</div></div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon blue">🔑</div>账号说明</div>
+      <ul class="content-list">
+        <li>代理账号由上级或平台方创建，首次登录请修改默认密码。</li>
+        <li>账号密码须包含大小写字母及数字，长度 8–20 位。</li>
+        <li>请勿将账号密码分享给他人，以保障资产安全。</li>
+        <li>连续登录失败 5 次账号将被锁定，需联系上级解锁。</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon yellow">⚠️</div>重要规则</div>
+      <ul class="content-list">
+        <li>代理只能管理其直属下级（代理/会员）。</li>
+        <li>上/下分操作须在自身余额充足的情况下进行。</li>
+        <li>所有操作均有日志记录，请合规操作。</li>
+        <li>禁止使用代理后台从事任何违法活动。</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon green">💰</div>分层结构说明</div>
+      <p class="para">平台采用多层代理结构：<strong>平台方 → 总代 → 分代 → 会员</strong>。每一级代理均可管理其直属下级，并享有相应的占成比分成。</p>
+    </div>
+    <div class="notice warning"><div class="notice-icon">🔒</div><div class="notice-content"><strong>安全提示：</strong>操作完成后请及时退出登录，尤其是在公共设备上使用时。</div></div>
+  </div>
+
+  <!-- EN -->
+  <div data-lang="en" style="display:none">
+    <div class="section-header">
+      <div class="section-badge">01</div>
+      <h1 class="section-title">Before You Start</h1>
+      <p class="section-subtitle">Please read the following important notes carefully before using the Agent Backend.</p>
+    </div>
+    <div class="notice info"><div class="notice-icon">ℹ️</div><div class="notice-content"><strong>System Requirements:</strong> Chrome 90+ or Firefox 88+ recommended. Resolution 1280×720 or higher. Stable internet connection required.</div></div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon blue">🔑</div>Account Information</div>
+      <ul class="content-list">
+        <li>Agent accounts are created by a superior agent or platform administrator. Change your default password upon first login.</li>
+        <li>Passwords must include uppercase, lowercase letters and numbers, 8–20 characters long.</li>
+        <li>Never share your account credentials with others to protect your assets.</li>
+        <li>After 5 consecutive failed login attempts, the account will be locked. Contact your superior to unlock.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon yellow">⚠️</div>Important Rules</div>
+      <ul class="content-list">
+        <li>Agents can only manage their direct downlines (agents/members).</li>
+        <li>Deposit/withdrawal operations require sufficient balance in your account.</li>
+        <li>All operations are logged. Please operate in compliance with regulations.</li>
+        <li>Using the agent backend for any illegal activities is strictly prohibited.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon green">💰</div>Hierarchy Structure</div>
+      <p class="para">The platform uses a multi-level agent structure: <strong>Platform → Master Agent → Sub-Agent → Member</strong>. Each level can manage their direct downlines and receives a corresponding commission share.</p>
+    </div>
+    <div class="notice warning"><div class="notice-icon">🔒</div><div class="notice-content"><strong>Security Notice:</strong> Please log out after completing operations, especially when using public devices.</div></div>
+  </div>
+
+  <!-- VN -->
+  <div data-lang="vn" style="display:none">
+    <div class="section-header">
+      <div class="section-badge">01</div>
+      <h1 class="section-title">Trước khi sử dụng</h1>
+      <p class="section-subtitle">Vui lòng đọc kỹ các lưu ý quan trọng sau trước khi sử dụng hệ thống đại lý.</p>
+    </div>
+    <div class="notice info"><div class="notice-icon">ℹ️</div><div class="notice-content"><strong>Yêu cầu hệ thống:</strong> Nên dùng Chrome 90+ hoặc Firefox 88+. Độ phân giải 1280×720 trở lên. Kết nối mạng ổn định.</div></div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon blue">🔑</div>Thông tin tài khoản</div>
+      <ul class="content-list">
+        <li>Tài khoản đại lý được tạo bởi cấp trên hoặc quản trị viên nền tảng. Đổi mật khẩu mặc định khi đăng nhập lần đầu.</li>
+        <li>Mật khẩu phải bao gồm chữ hoa, chữ thường và số, dài 8–20 ký tự.</li>
+        <li>Không chia sẻ thông tin tài khoản để bảo vệ tài sản.</li>
+        <li>Sau 5 lần đăng nhập thất bại liên tiếp, tài khoản sẽ bị khóa. Liên hệ cấp trên để mở khóa.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon yellow">⚠️</div>Quy tắc quan trọng</div>
+      <ul class="content-list">
+        <li>Đại lý chỉ có thể quản lý cấp dưới trực tiếp của mình.</li>
+        <li>Thao tác nạp/rút điểm yêu cầu số dư trong tài khoản đủ.</li>
+        <li>Tất cả thao tác đều được ghi lại nhật ký. Hãy thực hiện đúng quy định.</li>
+        <li>Nghiêm cấm sử dụng hệ thống đại lý cho bất kỳ hoạt động bất hợp pháp nào.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon green">💰</div>Cấu trúc phân cấp</div>
+      <p class="para">Nền tảng sử dụng cấu trúc đại lý đa cấp: <strong>Nền tảng → Tổng đại lý → Đại lý con → Thành viên</strong>. Mỗi cấp có thể quản lý cấp dưới trực tiếp và nhận hoa hồng tương ứng.</p>
+    </div>
+    <div class="notice warning"><div class="notice-icon">🔒</div><div class="notice-content"><strong>Lưu ý bảo mật:</strong> Vui lòng đăng xuất sau khi hoàn thành thao tác, đặc biệt khi sử dụng thiết bị công cộng.</div></div>
+  </div>
+
+  <!-- PH -->
+  <div data-lang="ph" style="display:none">
+    <div class="section-header">
+      <div class="section-badge">01</div>
+      <h1 class="section-title">Bago Gamitin</h1>
+      <p class="section-subtitle">Pakibasa nang mabuti ang mga sumusunod na mahalagang tala bago gamitin ang Agent Backend.</p>
+    </div>
+    <div class="notice info"><div class="notice-icon">ℹ️</div><div class="notice-content"><strong>Mga Kinakailangan:</strong> Inirerekomenda ang Chrome 90+ o Firefox 88+. Resolution na 1280×720 o mas mataas. Matatag na koneksyon sa internet.</div></div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon blue">🔑</div>Impormasyon ng Account</div>
+      <ul class="content-list">
+        <li>Ang agent account ay nilikha ng iyong superyor o ng platform administrator. Palitan ang default na password sa unang pag-login.</li>
+        <li>Ang password ay dapat may malaking titik, maliit na titik, at numero, 8–20 karakter ang haba.</li>
+        <li>Huwag ibahagi ang iyong credentials para maprotektahan ang iyong mga asset.</li>
+        <li>Pagkatapos ng 5 sunud-sunod na maling pag-login, ang account ay mala-lock. Makipag-ugnayan sa iyong superyor para i-unlock.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon yellow">⚠️</div>Mahahalagang Patakaran</div>
+      <ul class="content-list">
+        <li>Ang mga agent ay maaari lamang pamahalaan ang kanilang mga direktang downline.</li>
+        <li>Ang operasyon ng deposit/withdrawal ay nangangailangan ng sapat na balanse sa inyong account.</li>
+        <li>Lahat ng operasyon ay naka-log. Mangyaring sumunod sa mga regulasyon.</li>
+        <li>Mahigpit na ipinagbabawal ang paggamit ng agent backend para sa anumang ilegal na aktibidad.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon green">💰</div>Istraktura ng Hierarchy</div>
+      <p class="para">Gumagamit ang platform ng multi-level agent structure: <strong>Platform → Master Agent → Sub-Agent → Miyembro</strong>. Bawat antas ay maaaring pamahalaan ang kanilang mga direktang downline at tumatanggap ng katumbas na commission.</p>
+    </div>
+    <div class="notice warning"><div class="notice-icon">🔒</div><div class="notice-content"><strong>Babala sa Seguridad:</strong> Mag-log out pagkatapos ng mga operasyon, lalo na kapag gumagamit ng pampublikong device.</div></div>
+  </div>
+
+  <div class="content-footer"><div></div><div class="footer-nav"><button class="btn btn-primary btn-next"><!--N--><span>下一节</span> ›</button></div></div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════
+     SECTION 02 — 基本功能 / Basic Features
+═══════════════════════════════════════════════════════ -->
+<section class="section" id="sec1">
+
+  <!-- SC -->
+  <div data-lang="sc">
+    <div class="section-header">
+      <div class="section-badge">02</div>
+      <h1 class="section-title">基本功能</h1>
+      <p class="section-subtitle">代理后台首页功能概览与导航说明</p>
+    </div>
+    <div class="grid-2">
+      <div class="info-card"><div class="info-label">账户余额</div><div class="info-value">💰</div><div class="info-desc">实时显示当前可用余额</div></div>
+      <div class="info-card"><div class="info-label">下级人数</div><div class="info-value">👥</div><div class="info-desc">代理及会员总人数</div></div>
+      <div class="info-card"><div class="info-label">今日投注</div><div class="info-value">🎲</div><div class="info-desc">今日下级有效投注总额</div></div>
+      <div class="info-card"><div class="info-label">本月收益</div><div class="info-value">📈</div><div class="info-desc">本月累计占成收益</div></div>
+    </div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon blue">🧭</div>主要功能模块</div>
+      <div class="table-wrap"><table><thead><tr><th>功能</th><th>说明</th></tr></thead><tbody>
+        <tr><td>数据概览</td><td>展示账户余额、下级总数、今日投注、本月收益等核心数据</td></tr>
+        <tr><td>代理管理</td><td>查看、新增、编辑直属代理信息及权限</td></tr>
+        <tr><td>会员管理</td><td>查看、新增、管理直属会员账号</td></tr>
+        <tr><td>上下分记录</td><td>查看所有上/下分操作流水</td></tr>
+        <tr><td>报表中心</td><td>统计下级投注、收益、结算等数据</td></tr>
+        <tr><td>个人设置</td><td>修改密码、绑定联系方式等</td></tr>
+      </tbody></table></div>
+    </div>
+    <div class="notice info"><div class="notice-icon">💡</div><div class="notice-content">数据刷新频率约为 5 分钟一次，如需最新数据请手动刷新页面。</div></div>
+  </div>
+
+  <!-- EN -->
+  <div data-lang="en" style="display:none">
+    <div class="section-header">
+      <div class="section-badge">02</div>
+      <h1 class="section-title">Basic Features</h1>
+      <p class="section-subtitle">Overview of the Agent Backend homepage features and navigation.</p>
+    </div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon blue">🧭</div>Main Feature Modules</div>
+      <div class="table-wrap"><table><thead><tr><th>Feature</th><th>Description</th></tr></thead><tbody>
+        <tr><td>Dashboard</td><td>Shows account balance, total downlines, today's bets, and monthly earnings.</td></tr>
+        <tr><td>Agent Management</td><td>View, add, and edit direct agent information and permissions.</td></tr>
+        <tr><td>Member Management</td><td>View, add, and manage direct member accounts.</td></tr>
+        <tr><td>Transaction Records</td><td>View all deposit/withdrawal operation records.</td></tr>
+        <tr><td>Reports Center</td><td>Statistics on downline bets, earnings, and settlements.</td></tr>
+        <tr><td>Account Settings</td><td>Change password, bind contact information, etc.</td></tr>
+      </tbody></table></div>
+    </div>
+    <div class="notice info"><div class="notice-icon">💡</div><div class="notice-content">Data refreshes approximately every 5 minutes. Manually refresh the page for the latest data.</div></div>
+  </div>
+
+  <!-- VN -->
+  <div data-lang="vn" style="display:none">
+    <div class="section-header">
+      <div class="section-badge">02</div>
+      <h1 class="section-title">Chức năng cơ bản</h1>
+      <p class="section-subtitle">Tổng quan về các chức năng trang chủ hệ thống đại lý và điều hướng.</p>
+    </div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon blue">🧭</div>Các mô-đun chức năng chính</div>
+      <div class="table-wrap"><table><thead><tr><th>Chức năng</th><th>Mô tả</th></tr></thead><tbody>
+        <tr><td>Tổng quan</td><td>Hiển thị số dư tài khoản, tổng cấp dưới, cược hôm nay và thu nhập tháng.</td></tr>
+        <tr><td>Quản lý đại lý</td><td>Xem, thêm và chỉnh sửa thông tin đại lý trực tiếp.</td></tr>
+        <tr><td>Quản lý thành viên</td><td>Xem, thêm và quản lý tài khoản thành viên trực tiếp.</td></tr>
+        <tr><td>Lịch sử giao dịch</td><td>Xem tất cả lịch sử nạp/rút điểm.</td></tr>
+        <tr><td>Trung tâm báo cáo</td><td>Thống kê cược, thu nhập và quyết toán của cấp dưới.</td></tr>
+        <tr><td>Cài đặt tài khoản</td><td>Đổi mật khẩu, liên kết thông tin liên hệ, v.v.</td></tr>
+      </tbody></table></div>
+    </div>
+    <div class="notice info"><div class="notice-icon">💡</div><div class="notice-content">Dữ liệu làm mới khoảng 5 phút một lần. Tải lại trang thủ công để có dữ liệu mới nhất.</div></div>
+  </div>
+
+  <!-- PH -->
+  <div data-lang="ph" style="display:none">
+    <div class="section-header">
+      <div class="section-badge">02</div>
+      <h1 class="section-title">Mga Pangunahing Feature</h1>
+      <p class="section-subtitle">Pangkalahatang-ideya ng mga feature ng Agent Backend homepage at navigation.</p>
+    </div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon blue">🧭</div>Mga Pangunahing Module</div>
+      <div class="table-wrap"><table><thead><tr><th>Feature</th><th>Paglalarawan</th></tr></thead><tbody>
+        <tr><td>Dashboard</td><td>Ipinapakita ang balanse ng account, kabuuang downline, mga taya ngayon, at kita ngayong buwan.</td></tr>
+        <tr><td>Pamamahala ng Agent</td><td>Tingnan, idagdag, at i-edit ang impormasyon ng direktang agent.</td></tr>
+        <tr><td>Pamamahala ng Miyembro</td><td>Tingnan, idagdag, at pamahalaan ang mga direktang miyembro.</td></tr>
+        <tr><td>Mga Rekord ng Transaksyon</td><td>Tingnan ang lahat ng rekord ng deposit/withdrawal na operasyon.</td></tr>
+        <tr><td>Sentro ng Ulat</td><td>Istatistika sa mga taya, kita, at settlement ng downline.</td></tr>
+        <tr><td>Mga Setting ng Account</td><td>Palitan ang password, i-bind ang contact information, atbp.</td></tr>
+      </tbody></table></div>
+    </div>
+    <div class="notice info"><div class="notice-icon">💡</div><div class="notice-content">Ang data ay nag-re-refresh ng humigit-kumulang 5 minuto. Manual na i-refresh ang pahina para sa pinakabagong data.</div></div>
+  </div>
+
+  <div class="content-footer"><div class="footer-nav"><button class="btn btn-outline btn-prev">‹ <span>上一节</span></button></div><div class="footer-nav"><button class="btn btn-primary btn-next"><span>下一节</span> ›</button></div></div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════
+     SECTION 03 — 如何新增代理/会员
+═══════════════════════════════════════════════════════ -->
+<section class="section" id="sec2">
+
+  <!-- SC -->
+  <div data-lang="sc">
+    <div class="section-header">
+      <div class="section-badge">03</div>
+      <h1 class="section-title">如何新增代理 / 会员</h1>
+      <p class="section-subtitle">在代理后台创建下级代理或会员账号的完整操作步骤</p>
+    </div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon blue">👤</div>新增代理</div>
+      <ol class="steps-list">
+        <li class="step-item"><div class="step-num">1</div><div class="step-content"><div class="step-title">进入代理管理</div><div class="step-desc">在左侧导航栏点击「代理管理」→「新增代理」。</div></div></li>
+        <li class="step-item"><div class="step-num">2</div><div class="step-content"><div class="step-title">填写基本信息</div><div class="step-desc">输入账号（字母+数字，6–16 位）、密码、真实姓名、联系方式。</div></div></li>
+        <li class="step-item"><div class="step-num">3</div><div class="step-content"><div class="step-title">设置占成比</div><div class="step-desc">设置该代理的占成比，不可超过本代理自身占成比上限。</div></div></li>
+        <li class="step-item"><div class="step-num">4</div><div class="step-content"><div class="step-title">确认提交</div><div class="step-desc">核对所有信息后点击「确认创建」，系统将发送账号信息。</div></div></li>
+      </ol>
+    </div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon green">👥</div>新增会员</div>
+      <ol class="steps-list">
+        <li class="step-item"><div class="step-num">1</div><div class="step-content"><div class="step-title">进入会员管理</div><div class="step-desc">在左侧导航栏点击「会员管理」→「新增会员」。</div></div></li>
+        <li class="step-item"><div class="step-num">2</div><div class="step-content"><div class="step-title">填写会员信息</div><div class="step-desc">输入会员账号、密码及联系方式。账号创建后不可修改。</div></div></li>
+        <li class="step-item"><div class="step-num">3</div><div class="step-content"><div class="step-title">确认提交</div><div class="step-desc">点击「确认创建」完成创建，会员可立即登录游戏平台。</div></div></li>
+      </ol>
+    </div>
+    <div class="notice warning"><div class="notice-icon">⚠️</div><div class="notice-content"><strong>注意：</strong>账号一经创建无法删除，仅可冻结停用。请谨慎填写账号信息。</div></div>
+  </div>
+
+  <!-- EN -->
+  <div data-lang="en" style="display:none">
+    <div class="section-header">
+      <div class="section-badge">03</div>
+      <h1 class="section-title">Add Agent / Member</h1>
+      <p class="section-subtitle">Complete steps to create a sub-agent or member account in the Agent Backend.</p>
+    </div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon blue">👤</div>Add an Agent</div>
+      <ol class="steps-list">
+        <li class="step-item"><div class="step-num">1</div><div class="step-content"><div class="step-title">Go to Agent Management</div><div class="step-desc">Click "Agent Management" → "Add Agent" in the left navigation bar.</div></div></li>
+        <li class="step-item"><div class="step-num">2</div><div class="step-content"><div class="step-title">Fill in Basic Information</div><div class="step-desc">Enter username (letters + numbers, 6–16 chars), password, full name, and contact info.</div></div></li>
+        <li class="step-item"><div class="step-num">3</div><div class="step-content"><div class="step-title">Set Commission Ratio</div><div class="step-desc">Set the commission ratio for this agent. Cannot exceed your own commission ratio limit.</div></div></li>
+        <li class="step-item"><div class="step-num">4</div><div class="step-content"><div class="step-title">Confirm & Submit</div><div class="step-desc">Review all information and click "Confirm Create". The system will send the account details.</div></div></li>
+      </ol>
+    </div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon green">👥</div>Add a Member</div>
+      <ol class="steps-list">
+        <li class="step-item"><div class="step-num">1</div><div class="step-content"><div class="step-title">Go to Member Management</div><div class="step-desc">Click "Member Management" → "Add Member" in the left navigation bar.</div></div></li>
+        <li class="step-item"><div class="step-num">2</div><div class="step-content"><div class="step-title">Fill in Member Information</div><div class="step-desc">Enter the member's username, password, and contact info. Username cannot be changed after creation.</div></div></li>
+        <li class="step-item"><div class="step-num">3</div><div class="step-content"><div class="step-title">Confirm & Submit</div><div class="step-desc">Click "Confirm Create" to complete. The member can log into the gaming platform immediately.</div></div></li>
+      </ol>
+    </div>
+    <div class="notice warning"><div class="notice-icon">⚠️</div><div class="notice-content"><strong>Note:</strong> Accounts cannot be deleted once created; they can only be frozen/disabled. Please fill in account information carefully.</div></div>
+  </div>
+
+  <!-- VN -->
+  <div data-lang="vn" style="display:none">
+    <div class="section-header">
+      <div class="section-badge">03</div>
+      <h1 class="section-title">Thêm đại lý / thành viên</h1>
+      <p class="section-subtitle">Các bước đầy đủ để tạo tài khoản đại lý con hoặc thành viên trong hệ thống.</p>
+    </div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon blue">👤</div>Thêm đại lý</div>
+      <ol class="steps-list">
+        <li class="step-item"><div class="step-num">1</div><div class="step-content"><div class="step-title">Vào Quản lý đại lý</div><div class="step-desc">Nhấp "Quản lý đại lý" → "Thêm đại lý" trong thanh điều hướng bên trái.</div></div></li>
+        <li class="step-item"><div class="step-num">2</div><div class="step-content"><div class="step-title">Điền thông tin cơ bản</div><div class="step-desc">Nhập tên đăng nhập (chữ + số, 6–16 ký tự), mật khẩu, họ tên, thông tin liên hệ.</div></div></li>
+        <li class="step-item"><div class="step-num">3</div><div class="step-content"><div class="step-title">Đặt tỷ lệ hoa hồng</div><div class="step-desc">Đặt tỷ lệ hoa hồng cho đại lý này, không được vượt quá giới hạn của bạn.</div></div></li>
+        <li class="step-item"><div class="step-num">4</div><div class="step-content"><div class="step-title">Xác nhận và gửi</div><div class="step-desc">Kiểm tra thông tin và nhấp "Xác nhận tạo". Hệ thống sẽ gửi thông tin tài khoản.</div></div></li>
+      </ol>
+    </div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon green">👥</div>Thêm thành viên</div>
+      <ol class="steps-list">
+        <li class="step-item"><div class="step-num">1</div><div class="step-content"><div class="step-title">Vào Quản lý thành viên</div><div class="step-desc">Nhấp "Quản lý thành viên" → "Thêm thành viên" trong thanh điều hướng.</div></div></li>
+        <li class="step-item"><div class="step-num">2</div><div class="step-content"><div class="step-title">Điền thông tin thành viên</div><div class="step-desc">Nhập tên đăng nhập, mật khẩu và thông tin liên hệ. Tên đăng nhập không thể thay đổi sau khi tạo.</div></div></li>
+        <li class="step-item"><div class="step-num">3</div><div class="step-content"><div class="step-title">Xác nhận và gửi</div><div class="step-desc">Nhấp "Xác nhận tạo" để hoàn tất. Thành viên có thể đăng nhập ngay vào nền tảng trò chơi.</div></div></li>
+      </ol>
+    </div>
+    <div class="notice warning"><div class="notice-icon">⚠️</div><div class="notice-content"><strong>Lưu ý:</strong> Tài khoản không thể xóa sau khi tạo; chỉ có thể đóng băng. Hãy điền thông tin cẩn thận.</div></div>
+  </div>
+
+  <!-- PH -->
+  <div data-lang="ph" style="display:none">
+    <div class="section-header">
+      <div class="section-badge">03</div>
+      <h1 class="section-title">Magdagdag ng Agent / Miyembro</h1>
+      <p class="section-subtitle">Kumpletong mga hakbang para lumikha ng sub-agent o miyembro sa Agent Backend.</p>
+    </div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon blue">👤</div>Magdagdag ng Agent</div>
+      <ol class="steps-list">
+        <li class="step-item"><div class="step-num">1</div><div class="step-content"><div class="step-title">Pumunta sa Agent Management</div><div class="step-desc">I-click ang "Agent Management" → "Add Agent" sa kaliwang navigation bar.</div></div></li>
+        <li class="step-item"><div class="step-num">2</div><div class="step-content"><div class="step-title">Punan ang Pangunahing Impormasyon</div><div class="step-desc">Ilagay ang username (titik + numero, 6–16 karakter), password, buong pangalan, at contact info.</div></div></li>
+        <li class="step-item"><div class="step-num">3</div><div class="step-content"><div class="step-title">Itakda ang Commission Ratio</div><div class="step-desc">Itakda ang commission ratio para sa agent na ito. Hindi maaaring lampasan ang iyong sariling limitasyon.</div></div></li>
+        <li class="step-item"><div class="step-num">4</div><div class="step-content"><div class="step-title">Kumpirmahin at I-submit</div><div class="step-desc">Suriin ang lahat ng impormasyon at i-click ang "Confirm Create".</div></div></li>
+      </ol>
+    </div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon green">👥</div>Magdagdag ng Miyembro</div>
+      <ol class="steps-list">
+        <li class="step-item"><div class="step-num">1</div><div class="step-content"><div class="step-title">Pumunta sa Member Management</div><div class="step-desc">I-click ang "Member Management" → "Add Member" sa kaliwang navigation bar.</div></div></li>
+        <li class="step-item"><div class="step-num">2</div><div class="step-content"><div class="step-title">Punan ang Impormasyon ng Miyembro</div><div class="step-desc">Ilagay ang username, password, at contact info. Hindi mababago ang username pagkatapos lumikha.</div></div></li>
+        <li class="step-item"><div class="step-num">3</div><div class="step-content"><div class="step-title">Kumpirmahin at I-submit</div><div class="step-desc">I-click ang "Confirm Create" para makumpleto. Maaaring mag-login agad ang miyembro sa gaming platform.</div></div></li>
+      </ol>
+    </div>
+    <div class="notice warning"><div class="notice-icon">⚠️</div><div class="notice-content"><strong>Paalala:</strong> Ang mga account ay hindi maaaring burahin pagkatapos malikha; maaari lamang i-freeze. Pakipunan nang maingat ang impormasyon ng account.</div></div>
+  </div>
+
+  <div class="content-footer"><div class="footer-nav"><button class="btn btn-outline btn-prev">‹ <span>上一节</span></button></div><div class="footer-nav"><button class="btn btn-primary btn-next"><span>下一节</span> ›</button></div></div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════
+     SECTION 04 — 上/下分
+═══════════════════════════════════════════════════════ -->
+<section class="section" id="sec3">
+
+  <!-- SC -->
+  <div data-lang="sc">
+    <div class="section-header">
+      <div class="section-badge">04</div>
+      <h1 class="section-title">如何为下级上 / 下分</h1>
+      <p class="section-subtitle">为直属代理或会员进行分数转入（上分）与转出（下分）操作</p>
+    </div>
+    <div class="notice info"><div class="notice-icon">ℹ️</div><div class="notice-content"><strong>上分</strong>：将自身余额转移给下级（增加下级余额）。<br/><strong>下分</strong>：将下级余额收回至自身账户（减少下级余额）。</div></div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon green">⬆️</div>上分操作步骤</div>
+      <ol class="steps-list">
+        <li class="step-item"><div class="step-num">1</div><div class="step-content"><div class="step-title">找到目标账号</div><div class="step-desc">在「代理管理」或「会员管理」中搜索目标账号。</div></div></li>
+        <li class="step-item"><div class="step-num">2</div><div class="step-content"><div class="step-title">点击上分</div><div class="step-desc">点击操作列中的「上分」按钮，弹出上分对话框。</div></div></li>
+        <li class="step-item"><div class="step-num">3</div><div class="step-content"><div class="step-title">填写金额</div><div class="step-desc">输入转入金额，确认自身余额充足（系统实时显示可用余额）。</div></div></li>
+        <li class="step-item"><div class="step-num">4</div><div class="step-content"><div class="step-title">确认操作</div><div class="step-desc">点击「确认」，系统将实时完成转账，双方余额同步更新。</div></div></li>
+      </ol>
+    </div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon red">⬇️</div>下分操作步骤</div>
+      <ol class="steps-list">
+        <li class="step-item"><div class="step-num">1</div><div class="step-content"><div class="step-title">找到目标账号</div><div class="step-desc">在管理列表中找到需要下分的代理或会员账号。</div></div></li>
+        <li class="step-item"><div class="step-num">2</div><div class="step-content"><div class="step-title">点击下分</div><div class="step-desc">点击操作列中的「下分」按钮，弹出下分对话框。</div></div></li>
+        <li class="step-item"><div class="step-num">3</div><div class="step-content"><div class="step-title">填写金额</div><div class="step-desc">输入收回金额，不可超过对方当前余额（系统实时显示）。</div></div></li>
+        <li class="step-item"><div class="step-num">4</div><div class="step-content"><div class="step-title">确认操作</div><div class="step-desc">点击「确认」，系统将实时完成扣款，双方余额同步更新。</div></div></li>
+      </ol>
+    </div>
+    <div class="notice warning"><div class="notice-icon">⚠️</div><div class="notice-content">上/下分操作不可撤销，请核对金额后再确认。所有记录可在「上下分记录」中查询。</div></div>
+  </div>
+
+  <!-- EN -->
+  <div data-lang="en" style="display:none">
+    <div class="section-header">
+      <div class="section-badge">04</div>
+      <h1 class="section-title">Deposit / Withdrawal for Downlines</h1>
+      <p class="section-subtitle">Transfer points to (deposit) or from (withdrawal) a direct agent or member's account.</p>
+    </div>
+    <div class="notice info"><div class="notice-icon">ℹ️</div><div class="notice-content"><strong>Deposit (上分)</strong>: Transfer your balance to a downline (increases their balance).<br/><strong>Withdrawal (下分)</strong>: Recover a downline's balance into your account (decreases their balance).</div></div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon green">⬆️</div>Deposit Steps</div>
+      <ol class="steps-list">
+        <li class="step-item"><div class="step-num">1</div><div class="step-content"><div class="step-title">Find the Target Account</div><div class="step-desc">Search for the target account in "Agent Management" or "Member Management".</div></div></li>
+        <li class="step-item"><div class="step-num">2</div><div class="step-content"><div class="step-title">Click Deposit</div><div class="step-desc">Click the "Deposit" button in the action column to open the deposit dialog.</div></div></li>
+        <li class="step-item"><div class="step-num">3</div><div class="step-content"><div class="step-title">Enter Amount</div><div class="step-desc">Enter the transfer amount. Ensure your balance is sufficient (shown in real-time).</div></div></li>
+        <li class="step-item"><div class="step-num">4</div><div class="step-content"><div class="step-title">Confirm</div><div class="step-desc">Click "Confirm". The transfer completes instantly and both balances update in real-time.</div></div></li>
+      </ol>
+    </div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon red">⬇️</div>Withdrawal Steps</div>
+      <ol class="steps-list">
+        <li class="step-item"><div class="step-num">1</div><div class="step-content"><div class="step-title">Find the Target Account</div><div class="step-desc">Locate the target agent or member in the management list.</div></div></li>
+        <li class="step-item"><div class="step-num">2</div><div class="step-content"><div class="step-title">Click Withdrawal</div><div class="step-desc">Click the "Withdrawal" button to open the withdrawal dialog.</div></div></li>
+        <li class="step-item"><div class="step-num">3</div><div class="step-content"><div class="step-title">Enter Amount</div><div class="step-desc">Enter the amount to recover. Cannot exceed the other party's current balance (shown in real-time).</div></div></li>
+        <li class="step-item"><div class="step-num">4</div><div class="step-content"><div class="step-title">Confirm</div><div class="step-desc">Click "Confirm". The deduction completes instantly and both balances update in real-time.</div></div></li>
+      </ol>
+    </div>
+    <div class="notice warning"><div class="notice-icon">⚠️</div><div class="notice-content">Deposit/withdrawal operations cannot be reversed. Verify the amount before confirming. All records can be queried in "Transaction Records".</div></div>
+  </div>
+
+  <!-- VN -->
+  <div data-lang="vn" style="display:none">
+    <div class="section-header">
+      <div class="section-badge">04</div>
+      <h1 class="section-title">Nạp / Rút điểm cho cấp dưới</h1>
+      <p class="section-subtitle">Chuyển điểm vào (nạp) hoặc thu hồi (rút) từ tài khoản đại lý hoặc thành viên trực tiếp.</p>
+    </div>
+    <div class="notice info"><div class="notice-icon">ℹ️</div><div class="notice-content"><strong>Nạp điểm</strong>: Chuyển số dư của bạn cho cấp dưới (tăng số dư của họ).<br/><strong>Rút điểm</strong>: Thu hồi số dư của cấp dưới vào tài khoản bạn (giảm số dư của họ).</div></div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon green">⬆️</div>Các bước nạp điểm</div>
+      <ol class="steps-list">
+        <li class="step-item"><div class="step-num">1</div><div class="step-content"><div class="step-title">Tìm tài khoản mục tiêu</div><div class="step-desc">Tìm tài khoản mục tiêu trong "Quản lý đại lý" hoặc "Quản lý thành viên".</div></div></li>
+        <li class="step-item"><div class="step-num">2</div><div class="step-content"><div class="step-title">Nhấp Nạp điểm</div><div class="step-desc">Nhấp nút "Nạp điểm" trong cột thao tác để mở hộp thoại nạp điểm.</div></div></li>
+        <li class="step-item"><div class="step-num">3</div><div class="step-content"><div class="step-title">Nhập số tiền</div><div class="step-desc">Nhập số tiền chuyển. Đảm bảo số dư của bạn đủ (hiển thị theo thời gian thực).</div></div></li>
+        <li class="step-item"><div class="step-num">4</div><div class="step-content"><div class="step-title">Xác nhận</div><div class="step-desc">Nhấp "Xác nhận". Việc chuyển tiền hoàn thành ngay lập tức và cả hai số dư cập nhật.</div></div></li>
+      </ol>
+    </div>
+    <div class="notice warning"><div class="notice-icon">⚠️</div><div class="notice-content">Thao tác nạp/rút điểm không thể hoàn tác. Kiểm tra số tiền trước khi xác nhận. Tất cả lịch sử có thể xem trong "Lịch sử giao dịch".</div></div>
+  </div>
+
+  <!-- PH -->
+  <div data-lang="ph" style="display:none">
+    <div class="section-header">
+      <div class="section-badge">04</div>
+      <h1 class="section-title">Mag-deposit / Withdraw para sa Downline</h1>
+      <p class="section-subtitle">Maglipat ng puntos sa (deposit) o mula sa (withdrawal) account ng direktang agent o miyembro.</p>
+    </div>
+    <div class="notice info"><div class="notice-icon">ℹ️</div><div class="notice-content"><strong>Deposit</strong>: Ilipat ang iyong balanse sa isang downline (nagdadagdag sa kanilang balanse).<br/><strong>Withdrawal</strong>: I-recover ang balanse ng downline sa iyong account (nagbabawas sa kanilang balanse).</div></div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon green">⬆️</div>Mga Hakbang sa Deposit</div>
+      <ol class="steps-list">
+        <li class="step-item"><div class="step-num">1</div><div class="step-content"><div class="step-title">Hanapin ang Target Account</div><div class="step-desc">Hanapin ang target account sa "Agent Management" o "Member Management".</div></div></li>
+        <li class="step-item"><div class="step-num">2</div><div class="step-content"><div class="step-title">I-click ang Deposit</div><div class="step-desc">I-click ang "Deposit" button sa action column para buksan ang deposit dialog.</div></div></li>
+        <li class="step-item"><div class="step-num">3</div><div class="step-content"><div class="step-title">Ilagay ang Halaga</div><div class="step-desc">Ilagay ang halaga ng transfer. Siguraduhing sapat ang iyong balanse (ipinapakita nang real-time).</div></div></li>
+        <li class="step-item"><div class="step-num">4</div><div class="step-content"><div class="step-title">Kumpirmahin</div><div class="step-desc">I-click ang "Confirm". Ang transfer ay kumukumpleto agad at ang parehong balanse ay nag-a-update.</div></div></li>
+      </ol>
+    </div>
+    <div class="notice warning"><div class="notice-icon">⚠️</div><div class="notice-content">Ang mga operasyon ng deposit/withdrawal ay hindi maaaring bawiin. I-verify ang halaga bago kumpirmahin. Lahat ng rekord ay maaaring i-query sa "Transaction Records".</div></div>
+  </div>
+
+  <div class="content-footer"><div class="footer-nav"><button class="btn btn-outline btn-prev">‹ <span>上一节</span></button></div><div class="footer-nav"><button class="btn btn-primary btn-next"><span>下一节</span> ›</button></div></div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════
+     SECTION 05 — 如何查看收益
+═══════════════════════════════════════════════════════ -->
+<section class="section" id="sec4">
+
+  <!-- SC -->
+  <div data-lang="sc">
+    <div class="section-header">
+      <div class="section-badge">05</div>
+      <h1 class="section-title">如何查看收益</h1>
+      <p class="section-subtitle">了解如何在代理后台查看您的占成收益与下级投注数据</p>
+    </div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon blue">📊</div>收益查看入口</div>
+      <ol class="steps-list">
+        <li class="step-item"><div class="step-num">1</div><div class="step-content"><div class="step-title">进入报表中心</div><div class="step-desc">点击左侧导航「报表中心」→「收益报表」。</div></div></li>
+        <li class="step-item"><div class="step-num">2</div><div class="step-content"><div class="step-title">选择时间范围</div><div class="step-desc">通过日期选择器设定查询区间（日/周/月/自定义）。</div></div></li>
+        <li class="step-item"><div class="step-num">3</div><div class="step-content"><div class="step-title">选择层级</div><div class="step-desc">可选择查看直属代理、直属会员或全部下级的数据。</div></div></li>
+        <li class="step-item"><div class="step-num">4</div><div class="step-content"><div class="step-title">查看明细</div><div class="step-desc">点击任意一行显示该账号的详细投注与收益记录。</div></div></li>
+      </ol>
+    </div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon yellow">💡</div>收益数据说明</div>
+      <div class="table-wrap"><table><thead><tr><th>字段</th><th>说明</th></tr></thead><tbody>
+        <tr><td>有效投注额</td><td>下级所有有效投注的总金额（扣除对冲等无效注）</td></tr>
+        <tr><td>输赢金额</td><td>下级在该周期内的总输赢金额</td></tr>
+        <tr><td>占成收益</td><td>按您的占成比例计算所得的收益金额</td></tr>
+        <tr><td>结算状态</td><td>显示该周期是否已完成结算</td></tr>
+      </tbody></table></div>
+    </div>
+    <div class="notice success"><div class="notice-icon">✅</div><div class="notice-content">收益每日自动结算一次，结算时间通常为凌晨 00:00–02:00。结算完成后数据不可更改。</div></div>
+  </div>
+
+  <!-- EN -->
+  <div data-lang="en" style="display:none">
+    <div class="section-header">
+      <div class="section-badge">05</div>
+      <h1 class="section-title">View Earnings</h1>
+      <p class="section-subtitle">Learn how to view your commission earnings and downline betting data in the Agent Backend.</p>
+    </div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon blue">📊</div>Earnings Overview Entry</div>
+      <ol class="steps-list">
+        <li class="step-item"><div class="step-num">1</div><div class="step-content"><div class="step-title">Go to Reports Center</div><div class="step-desc">Click "Reports Center" → "Earnings Report" in the left navigation.</div></div></li>
+        <li class="step-item"><div class="step-num">2</div><div class="step-content"><div class="step-title">Select Date Range</div><div class="step-desc">Use the date picker to set your query range (daily/weekly/monthly/custom).</div></div></li>
+        <li class="step-item"><div class="step-num">3</div><div class="step-content"><div class="step-title">Choose Level</div><div class="step-desc">Choose to view data for direct agents, direct members, or all downlines.</div></div></li>
+        <li class="step-item"><div class="step-num">4</div><div class="step-content"><div class="step-title">View Details</div><div class="step-desc">Click any row to display detailed betting and earnings records for that account.</div></div></li>
+      </ol>
+    </div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon yellow">💡</div>Earnings Data Explanation</div>
+      <div class="table-wrap"><table><thead><tr><th>Field</th><th>Description</th></tr></thead><tbody>
+        <tr><td>Valid Bet Amount</td><td>Total valid bets from downlines (excluding hedged or invalid bets)</td></tr>
+        <tr><td>Win/Loss Amount</td><td>Total win/loss amount for downlines during this period</td></tr>
+        <tr><td>Commission Earnings</td><td>Earnings calculated based on your commission ratio</td></tr>
+        <tr><td>Settlement Status</td><td>Shows whether settlement has been completed for this period</td></tr>
+      </tbody></table></div>
+    </div>
+    <div class="notice success"><div class="notice-icon">✅</div><div class="notice-content">Earnings are automatically settled once daily, usually between 00:00–02:00. Data cannot be changed after settlement.</div></div>
+  </div>
+
+  <!-- VN -->
+  <div data-lang="vn" style="display:none">
+    <div class="section-header">
+      <div class="section-badge">05</div>
+      <h1 class="section-title">Xem thu nhập</h1>
+      <p class="section-subtitle">Tìm hiểu cách xem thu nhập hoa hồng và dữ liệu cược của cấp dưới trong hệ thống đại lý.</p>
+    </div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon blue">📊</div>Cách xem thu nhập</div>
+      <ol class="steps-list">
+        <li class="step-item"><div class="step-num">1</div><div class="step-content"><div class="step-title">Vào Trung tâm báo cáo</div><div class="step-desc">Nhấp "Trung tâm báo cáo" → "Báo cáo thu nhập" trong thanh điều hướng.</div></div></li>
+        <li class="step-item"><div class="step-num">2</div><div class="step-content"><div class="step-title">Chọn phạm vi ngày</div><div class="step-desc">Dùng bộ chọn ngày để đặt phạm vi truy vấn (ngày/tuần/tháng/tùy chỉnh).</div></div></li>
+        <li class="step-item"><div class="step-num">3</div><div class="step-content"><div class="step-title">Chọn cấp độ</div><div class="step-desc">Chọn xem dữ liệu của đại lý trực tiếp, thành viên trực tiếp hoặc tất cả cấp dưới.</div></div></li>
+        <li class="step-item"><div class="step-num">4</div><div class="step-content"><div class="step-title">Xem chi tiết</div><div class="step-desc">Nhấp vào bất kỳ hàng nào để xem chi tiết lịch sử cược và thu nhập của tài khoản đó.</div></div></li>
+      </ol>
+    </div>
+    <div class="notice success"><div class="notice-icon">✅</div><div class="notice-content">Thu nhập được quyết toán tự động mỗi ngày, thường vào 00:00–02:00. Dữ liệu không thể thay đổi sau khi quyết toán.</div></div>
+  </div>
+
+  <!-- PH -->
+  <div data-lang="ph" style="display:none">
+    <div class="section-header">
+      <div class="section-badge">05</div>
+      <h1 class="section-title">Tingnan ang Kita</h1>
+      <p class="section-subtitle">Alamin kung paano tingnan ang iyong commission earnings at downline betting data sa Agent Backend.</p>
+    </div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon blue">📊</div>Paano Tingnan ang Kita</div>
+      <ol class="steps-list">
+        <li class="step-item"><div class="step-num">1</div><div class="step-content"><div class="step-title">Pumunta sa Reports Center</div><div class="step-desc">I-click ang "Reports Center" → "Earnings Report" sa kaliwang navigation.</div></div></li>
+        <li class="step-item"><div class="step-num">2</div><div class="step-content"><div class="step-title">Piliin ang Saklaw ng Petsa</div><div class="step-desc">Gamitin ang date picker para itakda ang iyong query range (araw-araw/lingguhang/buwanan/custom).</div></div></li>
+        <li class="step-item"><div class="step-num">3</div><div class="step-content"><div class="step-title">Piliin ang Antas</div><div class="step-desc">Piliin kung tingnan ang data para sa mga direktang agent, direktang miyembro, o lahat ng downline.</div></div></li>
+        <li class="step-item"><div class="step-num">4</div><div class="step-content"><div class="step-title">Tingnan ang Mga Detalye</div><div class="step-desc">I-click ang anumang row para ipakita ang detalyadong taya at rekord ng kita para sa account na iyon.</div></div></li>
+      </ol>
+    </div>
+    <div class="notice success"><div class="notice-icon">✅</div><div class="notice-content">Ang mga kita ay awtomatikong nai-settle isang beses bawat araw, karaniwang sa pagitan ng 00:00–02:00. Ang data ay hindi mababago pagkatapos ng settlement.</div></div>
+  </div>
+
+  <div class="content-footer"><div class="footer-nav"><button class="btn btn-outline btn-prev">‹ <span>上一节</span></button></div><div class="footer-nav"><button class="btn btn-primary btn-next"><span>下一节</span> ›</button></div></div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════
+     SECTION 06 — 统计报表介绍
+═══════════════════════════════════════════════════════ -->
+<section class="section" id="sec5">
+
+  <!-- SC -->
+  <div data-lang="sc">
+    <div class="section-header">
+      <div class="section-badge">06</div>
+      <h1 class="section-title">统计报表介绍</h1>
+      <p class="section-subtitle">代理后台提供多种报表，帮助您全面了解下级的投注与收益情况</p>
+    </div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon blue">📋</div>报表类型说明</div>
+      <div class="table-wrap"><table><thead><tr><th>报表名称</th><th>内容说明</th><th>周期</th></tr></thead><tbody>
+        <tr><td>投注报表</td><td>统计下级各游戏类型的投注总额、有效投注额</td><td>日/月</td></tr>
+        <tr><td>收益报表</td><td>按占成比计算的代理收益，含各游戏分类明细</td><td>日/月</td></tr>
+        <tr><td>上下分报表</td><td>所有上分/下分操作的时间、金额、操作人记录</td><td>自定义</td></tr>
+        <tr><td>会员活跃报表</td><td>下级会员的登录次数、投注次数、活跃天数</td><td>月</td></tr>
+        <tr><td>游戏类型报表</td><td>按游戏分类（真人、体育、彩票等）统计各维度数据</td><td>日/月</td></tr>
+      </tbody></table></div>
+    </div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon green">📥</div>报表导出</div>
+      <ul class="content-list">
+        <li>所有报表支持导出为 Excel（.xlsx）或 CSV 格式。</li>
+        <li>在报表页面右上角点击「导出」按钮，选择格式后下载。</li>
+        <li>单次导出数据量最大支持 30 天范围内的记录。</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- EN -->
+  <div data-lang="en" style="display:none">
+    <div class="section-header">
+      <div class="section-badge">06</div>
+      <h1 class="section-title">Statistical Reports</h1>
+      <p class="section-subtitle">The Agent Backend provides various reports to help you fully understand downline betting and earnings.</p>
+    </div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon blue">📋</div>Report Types</div>
+      <div class="table-wrap"><table><thead><tr><th>Report Name</th><th>Description</th><th>Period</th></tr></thead><tbody>
+        <tr><td>Betting Report</td><td>Downline total bets and valid bet amounts per game type</td><td>Daily/Monthly</td></tr>
+        <tr><td>Earnings Report</td><td>Agent earnings calculated by commission ratio, with game-type breakdown</td><td>Daily/Monthly</td></tr>
+        <tr><td>Transaction Report</td><td>Time, amount, and operator records for all deposit/withdrawal operations</td><td>Custom</td></tr>
+        <tr><td>Member Activity Report</td><td>Downline member login count, bet count, and active days</td><td>Monthly</td></tr>
+        <tr><td>Game Type Report</td><td>Statistics by game category (Live, Sports, Lottery, etc.)</td><td>Daily/Monthly</td></tr>
+      </tbody></table></div>
+    </div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon green">📥</div>Report Export</div>
+      <ul class="content-list">
+        <li>All reports support export to Excel (.xlsx) or CSV format.</li>
+        <li>Click the "Export" button in the upper right corner of the report page and select the format.</li>
+        <li>Single export supports up to 30 days of records.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- VN -->
+  <div data-lang="vn" style="display:none">
+    <div class="section-header">
+      <div class="section-badge">06</div>
+      <h1 class="section-title">Báo cáo thống kê</h1>
+      <p class="section-subtitle">Hệ thống đại lý cung cấp nhiều loại báo cáo giúp bạn hiểu toàn diện về cược và thu nhập của cấp dưới.</p>
+    </div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon blue">📋</div>Các loại báo cáo</div>
+      <div class="table-wrap"><table><thead><tr><th>Tên báo cáo</th><th>Mô tả</th><th>Chu kỳ</th></tr></thead><tbody>
+        <tr><td>Báo cáo cược</td><td>Tổng cược và số cược hợp lệ của cấp dưới theo loại trò chơi</td><td>Ngày/Tháng</td></tr>
+        <tr><td>Báo cáo thu nhập</td><td>Thu nhập đại lý tính theo tỷ lệ hoa hồng, phân loại theo trò chơi</td><td>Ngày/Tháng</td></tr>
+        <tr><td>Báo cáo giao dịch</td><td>Thời gian, số tiền, người thực hiện của tất cả thao tác nạp/rút</td><td>Tùy chỉnh</td></tr>
+        <tr><td>Báo cáo hoạt động thành viên</td><td>Số lần đăng nhập, số lần cược, số ngày hoạt động của thành viên cấp dưới</td><td>Tháng</td></tr>
+        <tr><td>Báo cáo loại trò chơi</td><td>Thống kê theo danh mục trò chơi (Trực tiếp, Thể thao, Xổ số, v.v.)</td><td>Ngày/Tháng</td></tr>
+      </tbody></table></div>
+    </div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon green">📥</div>Xuất báo cáo</div>
+      <ul class="content-list">
+        <li>Tất cả báo cáo hỗ trợ xuất sang định dạng Excel (.xlsx) hoặc CSV.</li>
+        <li>Nhấp nút "Xuất" ở góc trên bên phải trang báo cáo và chọn định dạng.</li>
+        <li>Một lần xuất hỗ trợ tối đa 30 ngày dữ liệu.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- PH -->
+  <div data-lang="ph" style="display:none">
+    <div class="section-header">
+      <div class="section-badge">06</div>
+      <h1 class="section-title">Ulat ng Istatistika</h1>
+      <p class="section-subtitle">Nagbibigay ang Agent Backend ng iba't ibang ulat para matulungan kang maunawaan ang taya at kita ng downline.</p>
+    </div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon blue">📋</div>Mga Uri ng Ulat</div>
+      <div class="table-wrap"><table><thead><tr><th>Pangalan ng Ulat</th><th>Paglalarawan</th><th>Panahon</th></tr></thead><tbody>
+        <tr><td>Ulat ng Taya</td><td>Kabuuang taya at valid bet amount ng downline per uri ng laro</td><td>Araw/Buwan</td></tr>
+        <tr><td>Ulat ng Kita</td><td>Kita ng agent na kinakalkula ayon sa commission ratio, may breakdown per laro</td><td>Araw/Buwan</td></tr>
+        <tr><td>Ulat ng Transaksyon</td><td>Oras, halaga, at operator na rekord para sa lahat ng operasyon ng deposit/withdrawal</td><td>Custom</td></tr>
+        <tr><td>Ulat ng Aktibidad ng Miyembro</td><td>Bilang ng pag-login, bilang ng taya, at aktibong araw ng downline na miyembro</td><td>Buwan</td></tr>
+        <tr><td>Ulat ng Uri ng Laro</td><td>Istatistika sa pamamagitan ng kategorya ng laro (Live, Sports, Lottery, atbp.)</td><td>Araw/Buwan</td></tr>
+      </tbody></table></div>
+    </div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon green">📥</div>Pag-export ng Ulat</div>
+      <ul class="content-list">
+        <li>Lahat ng ulat ay sumusuporta sa pag-export sa Excel (.xlsx) o CSV na format.</li>
+        <li>I-click ang "Export" button sa kanang sulok sa itaas ng pahina ng ulat at piliin ang format.</li>
+        <li>Ang isang pag-export ay sumusuporta ng hanggang 30 araw na mga rekord.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="content-footer"><div class="footer-nav"><button class="btn btn-outline btn-prev">‹ <span>上一节</span></button></div><div class="footer-nav"><button class="btn btn-primary btn-next"><span>下一节</span> ›</button></div></div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════
+     SECTION 07 — 占成比介绍
+═══════════════════════════════════════════════════════ -->
+<section class="section" id="sec6">
+
+  <!-- SC -->
+  <div data-lang="sc">
+    <div class="section-header">
+      <div class="section-badge">07</div>
+      <h1 class="section-title">占成比介绍</h1>
+      <p class="section-subtitle">了解占成比的定义、计算方式及层级分成规则</p>
+    </div>
+    <div class="highlight-block">
+      <p class="para"><strong>占成比</strong>是指代理从下级会员产生的输赢金额中所获得的分成比例。例如，占成比为 30% 时，若下级会员输了 1000 元，代理可获得 300 元收益。</p>
+    </div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon blue">📐</div>计算公式</div>
+      <div class="formula-box">
+        <div class="formula-text">代理收益 = 下级输赢金额 × 代理占成比</div>
+        <div class="formula-note">注：下级输赢金额为负值时（下级赢钱），代理将产生负收益（需补贴）。</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon yellow">📊</div>占成比规则</div>
+      <div class="table-wrap"><table><thead><tr><th>规则</th><th>说明</th></tr></thead><tbody>
+        <tr><td>上限限制</td><td>下级代理的占成比不可超过上级代理分配给该代理的上限值</td></tr>
+        <tr><td>层级传递</td><td>平台方设置总占成比，逐级分配给各级代理</td></tr>
+        <tr><td>游戏分类</td><td>不同游戏类型（真人、体育、彩票）可设置不同占成比</td></tr>
+        <tr><td>修改限制</td><td>占成比仅可向下调整，不可超过初始设定的上限</td></tr>
+      </tbody></table></div>
+    </div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon green">🔢</div>示例</div>
+      <div class="table-wrap"><table><thead><tr><th>层级</th><th>占成比</th><th>收益来源</th></tr></thead><tbody>
+        <tr><td>平台方</td><td>100%</td><td>全部输赢</td></tr>
+        <tr><td>总代</td><td>40%</td><td>平台分配 40%</td></tr>
+        <tr><td>分代</td><td>25%</td><td>总代分配 25%（总代剩余 15%）</td></tr>
+        <tr><td>会员</td><td>—</td><td>分代获得 25% 分成</td></tr>
+      </tbody></table></div>
+    </div>
+  </div>
+
+  <!-- EN -->
+  <div data-lang="en" style="display:none">
+    <div class="section-header">
+      <div class="section-badge">07</div>
+      <h1 class="section-title">Commission Ratio</h1>
+      <p class="section-subtitle">Understand the definition, calculation, and hierarchical sharing rules of commission ratios.</p>
+    </div>
+    <div class="highlight-block">
+      <p class="para">The <strong>Commission Ratio</strong> is the percentage of win/loss amount that an agent receives from their downline members. For example, with a 30% commission ratio, if a member loses 1,000, the agent earns 300.</p>
+    </div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon blue">📐</div>Calculation Formula</div>
+      <div class="formula-box">
+        <div class="formula-text">Agent Earnings = Downline Win/Loss Amount × Agent Commission Ratio</div>
+        <div class="formula-note">Note: When the downline win/loss is negative (downline wins), the agent incurs a negative earning (must subsidize).</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon yellow">📊</div>Commission Ratio Rules</div>
+      <div class="table-wrap"><table><thead><tr><th>Rule</th><th>Description</th></tr></thead><tbody>
+        <tr><td>Upper Limit</td><td>A sub-agent's commission ratio cannot exceed the limit assigned by the parent agent</td></tr>
+        <tr><td>Tier Propagation</td><td>The platform sets the total commission ratio and distributes it down each level</td></tr>
+        <tr><td>Game Categories</td><td>Different commission ratios can be set for different game types (Live, Sports, Lottery)</td></tr>
+        <tr><td>Modification Limit</td><td>Commission ratio can only be adjusted downward; cannot exceed the initial upper limit</td></tr>
+      </tbody></table></div>
+    </div>
+  </div>
+
+  <!-- VN -->
+  <div data-lang="vn" style="display:none">
+    <div class="section-header">
+      <div class="section-badge">07</div>
+      <h1 class="section-title">Tỷ lệ hoa hồng</h1>
+      <p class="section-subtitle">Hiểu định nghĩa, cách tính và quy tắc phân chia theo cấp bậc của tỷ lệ hoa hồng.</p>
+    </div>
+    <div class="highlight-block">
+      <p class="para"><strong>Tỷ lệ hoa hồng</strong> là tỷ lệ phần trăm mà đại lý nhận được từ số tiền thắng/thua của thành viên cấp dưới. Ví dụ: tỷ lệ hoa hồng 30%, nếu thành viên thua 1.000, đại lý nhận được 300.</p>
+    </div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon blue">📐</div>Công thức tính</div>
+      <div class="formula-box">
+        <div class="formula-text">Thu nhập đại lý = Số tiền thắng/thua cấp dưới × Tỷ lệ hoa hồng đại lý</div>
+        <div class="formula-note">Lưu ý: Khi số tiền thắng/thua âm (cấp dưới thắng), đại lý sẽ có thu nhập âm (phải bù lỗ).</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon yellow">📊</div>Quy tắc tỷ lệ hoa hồng</div>
+      <div class="table-wrap"><table><thead><tr><th>Quy tắc</th><th>Mô tả</th></tr></thead><tbody>
+        <tr><td>Giới hạn trên</td><td>Tỷ lệ hoa hồng của đại lý con không được vượt quá giới hạn do đại lý cha phân bổ</td></tr>
+        <tr><td>Phân cấp</td><td>Nền tảng đặt tổng tỷ lệ hoa hồng và phân bổ xuống từng cấp</td></tr>
+        <tr><td>Danh mục trò chơi</td><td>Có thể đặt tỷ lệ hoa hồng khác nhau cho các loại trò chơi khác nhau</td></tr>
+        <tr><td>Giới hạn thay đổi</td><td>Tỷ lệ hoa hồng chỉ có thể điều chỉnh xuống, không được vượt giới hạn ban đầu</td></tr>
+      </tbody></table></div>
+    </div>
+  </div>
+
+  <!-- PH -->
+  <div data-lang="ph" style="display:none">
+    <div class="section-header">
+      <div class="section-badge">07</div>
+      <h1 class="section-title">Commission Ratio</h1>
+      <p class="section-subtitle">Unawain ang kahulugan, pagkalkula, at mga panuntunan sa hierarchical sharing ng commission ratios.</p>
+    </div>
+    <div class="highlight-block">
+      <p class="para">Ang <strong>Commission Ratio</strong> ay ang porsyento ng win/loss amount na natatanggap ng isang agent mula sa kanilang mga downline na miyembro. Halimbawa, sa 30% commission ratio, kung matatalo ang miyembro ng 1,000, ang agent ay kumikita ng 300.</p>
+    </div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon blue">📐</div>Formula ng Kalkulasyon</div>
+      <div class="formula-box">
+        <div class="formula-text">Kita ng Agent = Downline Win/Loss Amount × Agent Commission Ratio</div>
+        <div class="formula-note">Paalala: Kapag negatibo ang downline win/loss (nanalo ang downline), ang agent ay magkakaroon ng negatibong kita.</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon yellow">📊</div>Mga Panuntunan ng Commission Ratio</div>
+      <div class="table-wrap"><table><thead><tr><th>Panuntunan</th><th>Paglalarawan</th></tr></thead><tbody>
+        <tr><td>Upper Limit</td><td>Ang commission ratio ng sub-agent ay hindi maaaring lampasan ang limitasyong itinalaga ng parent agent</td></tr>
+        <tr><td>Tier Propagation</td><td>Itinatakda ng platform ang kabuuang commission ratio at ipinamamahagi ito sa bawat antas</td></tr>
+        <tr><td>Mga Kategorya ng Laro</td><td>Maaaring magtakda ng iba't ibang commission ratio para sa iba't ibang uri ng laro</td></tr>
+        <tr><td>Limitasyon sa Pagbabago</td><td>Ang commission ratio ay maaari lamang i-adjust pababa; hindi maaaring lampasan ang paunang itinakdang upper limit</td></tr>
+      </tbody></table></div>
+    </div>
+  </div>
+
+  <div class="content-footer"><div class="footer-nav"><button class="btn btn-outline btn-prev">‹ <span>上一节</span></button></div><div class="footer-nav"><button class="btn btn-primary btn-next"><span>下一节</span> ›</button></div></div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════
+     SECTION 08 — 有效投注比介绍
+═══════════════════════════════════════════════════════ -->
+<section class="section" id="sec7">
+
+  <!-- SC -->
+  <div data-lang="sc">
+    <div class="section-header">
+      <div class="section-badge">08</div>
+      <h1 class="section-title">有效投注比介绍</h1>
+      <p class="section-subtitle">了解有效投注比的定义、适用场景及计算规则</p>
+    </div>
+    <div class="highlight-block">
+      <p class="para"><strong>有效投注比</strong>用于衡量会员在一定周期内的有效投注金额与总存款金额之间的比例，通常用于判断会员是否满足提款条件或享受特定优惠。</p>
+    </div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon blue">📐</div>计算公式</div>
+      <div class="formula-box">
+        <div class="formula-text">有效投注比 = 有效投注总额 ÷ 存款总额 × 100%</div>
+        <div class="formula-note">有效投注：扣除和局、对冲、低赔率等无效投注后的实际有效下注金额。</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon yellow">📌</div>适用场景</div>
+      <ul class="content-list">
+        <li>会员申请提款时，系统自动检测有效投注比是否达标。</li>
+        <li>参与优惠活动时，部分活动要求完成指定有效投注比。</li>
+        <li>代理可在会员报表中查看每位会员的有效投注比。</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon red">🚫</div>无效投注情形</div>
+      <ul class="content-list">
+        <li>对冲投注（同一场比赛/游戏押注双方）</li>
+        <li>赔率低于平台设定最低阈值的投注</li>
+        <li>已退款/撤单的投注</li>
+        <li>和局（退款）结果的投注</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- EN -->
+  <div data-lang="en" style="display:none">
+    <div class="section-header">
+      <div class="section-badge">08</div>
+      <h1 class="section-title">Valid Bet Ratio</h1>
+      <p class="section-subtitle">Understand the definition, applicable scenarios, and calculation rules of the valid bet ratio.</p>
+    </div>
+    <div class="highlight-block">
+      <p class="para">The <strong>Valid Bet Ratio</strong> measures the proportion of a member's valid bet amount to their total deposit amount within a given period. It is commonly used to determine whether a member meets withdrawal conditions or qualifies for specific promotions.</p>
+    </div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon blue">📐</div>Calculation Formula</div>
+      <div class="formula-box">
+        <div class="formula-text">Valid Bet Ratio = Total Valid Bets ÷ Total Deposits × 100%</div>
+        <div class="formula-note">Valid Bets: Actual effective bet amounts after excluding hedged, draw, or low-odds bets.</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon yellow">📌</div>Applicable Scenarios</div>
+      <ul class="content-list">
+        <li>When a member applies for a withdrawal, the system checks if the valid bet ratio meets the threshold.</li>
+        <li>When participating in promotions, some activities require a specified valid bet ratio to be completed.</li>
+        <li>Agents can view each member's valid bet ratio in the member report.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon red">🚫</div>Invalid Bet Scenarios</div>
+      <ul class="content-list">
+        <li>Hedged bets (betting on both sides of the same event/game)</li>
+        <li>Bets with odds below the platform's minimum threshold</li>
+        <li>Refunded or cancelled bets</li>
+        <li>Draw (refunded) outcome bets</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- VN -->
+  <div data-lang="vn" style="display:none">
+    <div class="section-header">
+      <div class="section-badge">08</div>
+      <h1 class="section-title">Tỷ lệ cược hợp lệ</h1>
+      <p class="section-subtitle">Hiểu định nghĩa, tình huống áp dụng và quy tắc tính tỷ lệ cược hợp lệ.</p>
+    </div>
+    <div class="highlight-block">
+      <p class="para"><strong>Tỷ lệ cược hợp lệ</strong> đo lường tỷ lệ giữa số tiền cược hợp lệ và tổng số tiền nạp của thành viên trong một khoảng thời gian nhất định. Thường dùng để xác định xem thành viên có đủ điều kiện rút tiền hay hưởng ưu đãi không.</p>
+    </div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon blue">📐</div>Công thức tính</div>
+      <div class="formula-box">
+        <div class="formula-text">Tỷ lệ cược hợp lệ = Tổng cược hợp lệ ÷ Tổng tiền nạp × 100%</div>
+        <div class="formula-note">Cược hợp lệ: Số tiền cược thực tế sau khi trừ các cược đối xung, hòa hoặc tỷ lệ thấp.</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon red">🚫</div>Các trường hợp cược không hợp lệ</div>
+      <ul class="content-list">
+        <li>Cược đối xung (đặt cược cả hai bên của cùng một sự kiện)</li>
+        <li>Cược với tỷ lệ cược thấp hơn ngưỡng tối thiểu của nền tảng</li>
+        <li>Cược đã được hoàn tiền hoặc hủy</li>
+        <li>Cược với kết quả hòa (hoàn tiền)</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- PH -->
+  <div data-lang="ph" style="display:none">
+    <div class="section-header">
+      <div class="section-badge">08</div>
+      <h1 class="section-title">Valid Bet Ratio</h1>
+      <p class="section-subtitle">Unawain ang kahulugan, mga applicable na sitwasyon, at mga panuntunan ng pagkalkula ng valid bet ratio.</p>
+    </div>
+    <div class="highlight-block">
+      <p class="para">Sinusukat ng <strong>Valid Bet Ratio</strong> ang proporsyon ng valid bet amount ng miyembro sa kabuuang halaga ng kanilang deposit sa loob ng isang panahon. Karaniwang ginagamit upang matukoy kung natutugunan ng miyembro ang mga kondisyon ng withdrawal o kwalipikado sa mga promotion.</p>
+    </div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon blue">📐</div>Formula ng Kalkulasyon</div>
+      <div class="formula-box">
+        <div class="formula-text">Valid Bet Ratio = Kabuuang Valid Bet ÷ Kabuuang Deposit × 100%</div>
+        <div class="formula-note">Valid Bets: Aktwal na epektibong halaga ng taya pagkatapos ibukod ang mga hedged, draw, o mababang odds na taya.</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon red">🚫</div>Mga Sitwasyon ng Invalid na Taya</div>
+      <ul class="content-list">
+        <li>Mga hedged na taya (pagtaya sa magkabilang panig ng parehong kaganapan)</li>
+        <li>Mga taya na may odds na mas mababa sa minimum threshold ng platform</li>
+        <li>Mga taya na na-refund o na-cancel</li>
+        <li>Mga taya na may draw (refunded) na resulta</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="content-footer"><div class="footer-nav"><button class="btn btn-outline btn-prev">‹ <span>上一节</span></button></div><div class="footer-nav"><button class="btn btn-primary btn-next"><span>下一节</span> ›</button></div></div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════
+     SECTION 09 — 其他功能
+═══════════════════════════════════════════════════════ -->
+<section class="section" id="sec8">
+
+  <!-- SC -->
+  <div data-lang="sc">
+    <div class="section-header">
+      <div class="section-badge">09</div>
+      <h1 class="section-title">其他功能</h1>
+      <p class="section-subtitle">代理后台的辅助功能介绍</p>
+    </div>
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-title"><div class="card-icon blue">🔔</div>消息通知</div>
+        <ul class="content-list">
+          <li>系统公告：平台重要通知与维护公告。</li>
+          <li>上下分提醒：操作成功后实时推送通知。</li>
+          <li>账号异常提醒：检测到异常登录时发出警报。</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-title"><div class="card-icon green">🔗</div>推广链接</div>
+        <ul class="content-list">
+          <li>每个代理拥有专属推广链接与邀请码。</li>
+          <li>新用户通过推广链接注册可自动归属该代理。</li>
+          <li>可在「个人中心」查看和复制推广链接。</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-title"><div class="card-icon yellow">🔒</div>账号安全</div>
+        <ul class="content-list">
+          <li>支持修改登录密码（需验证旧密码）。</li>
+          <li>支持绑定手机号或邮箱用于找回密码。</li>
+          <li>可查看近期登录记录（IP、时间）。</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-title"><div class="card-icon purple">💬</div>客服支持</div>
+        <ul class="content-list">
+          <li>点击右下角「在线客服」按钮联系支持团队。</li>
+          <li>提供 24 小时在线客服支持。</li>
+          <li>也可通过 Telegram / WhatsApp 联系专属客服。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon blue">⚙️</div>系统设置</div>
+      <div class="table-wrap"><table><thead><tr><th>设置项</th><th>说明</th></tr></thead><tbody>
+        <tr><td>语言切换</td><td>支持切换为简中、英文、越南文、菲律宾文</td></tr>
+        <tr><td>时区设置</td><td>可设置个人显示时区（默认 UTC+8）</td></tr>
+        <tr><td>货币显示</td><td>支持多种货币格式显示（依平台配置）</td></tr>
+      </tbody></table></div>
+    </div>
+  </div>
+
+  <!-- EN -->
+  <div data-lang="en" style="display:none">
+    <div class="section-header">
+      <div class="section-badge">09</div>
+      <h1 class="section-title">Other Features</h1>
+      <p class="section-subtitle">Introduction to auxiliary features in the Agent Backend.</p>
+    </div>
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-title"><div class="card-icon blue">🔔</div>Notifications</div>
+        <ul class="content-list">
+          <li>System Announcements: Platform notices and maintenance alerts.</li>
+          <li>Transaction Alerts: Real-time push notifications for deposit/withdrawal operations.</li>
+          <li>Account Anomaly Alerts: Warning when abnormal login is detected.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-title"><div class="card-icon green">🔗</div>Referral Links</div>
+        <ul class="content-list">
+          <li>Each agent has a unique referral link and invite code.</li>
+          <li>New users registered via referral link are automatically assigned to that agent.</li>
+          <li>View and copy the referral link in "Personal Center".</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-title"><div class="card-icon yellow">🔒</div>Account Security</div>
+        <ul class="content-list">
+          <li>Supports password changes (old password verification required).</li>
+          <li>Bind mobile number or email for password recovery.</li>
+          <li>View recent login records (IP, time).</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-title"><div class="card-icon purple">💬</div>Customer Support</div>
+        <ul class="content-list">
+          <li>Click the "Live Chat" button at the bottom right to contact support.</li>
+          <li>24-hour online customer support available.</li>
+          <li>Also reachable via Telegram / WhatsApp.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- VN -->
+  <div data-lang="vn" style="display:none">
+    <div class="section-header">
+      <div class="section-badge">09</div>
+      <h1 class="section-title">Chức năng khác</h1>
+      <p class="section-subtitle">Giới thiệu các chức năng bổ sung trong hệ thống đại lý.</p>
+    </div>
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-title"><div class="card-icon blue">🔔</div>Thông báo</div>
+        <ul class="content-list">
+          <li>Thông báo hệ thống: Thông báo quan trọng và bảo trì của nền tảng.</li>
+          <li>Cảnh báo giao dịch: Thông báo đẩy theo thời gian thực cho các thao tác nạp/rút.</li>
+          <li>Cảnh báo bất thường: Cảnh báo khi phát hiện đăng nhập bất thường.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-title"><div class="card-icon green">🔗</div>Liên kết giới thiệu</div>
+        <ul class="content-list">
+          <li>Mỗi đại lý có liên kết giới thiệu và mã mời riêng.</li>
+          <li>Người dùng mới đăng ký qua liên kết giới thiệu sẽ tự động thuộc đại lý đó.</li>
+          <li>Xem và sao chép liên kết giới thiệu trong "Trung tâm cá nhân".</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-title"><div class="card-icon yellow">🔒</div>Bảo mật tài khoản</div>
+        <ul class="content-list">
+          <li>Hỗ trợ thay đổi mật khẩu đăng nhập (yêu cầu xác minh mật khẩu cũ).</li>
+          <li>Liên kết số điện thoại hoặc email để khôi phục mật khẩu.</li>
+          <li>Xem lịch sử đăng nhập gần đây (IP, thời gian).</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-title"><div class="card-icon purple">💬</div>Hỗ trợ khách hàng</div>
+        <ul class="content-list">
+          <li>Nhấp nút "Live Chat" ở góc dưới bên phải để liên hệ hỗ trợ.</li>
+          <li>Hỗ trợ khách hàng 24 giờ.</li>
+          <li>Cũng có thể liên hệ qua Telegram / WhatsApp.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- PH -->
+  <div data-lang="ph" style="display:none">
+    <div class="section-header">
+      <div class="section-badge">09</div>
+      <h1 class="section-title">Iba pang Feature</h1>
+      <p class="section-subtitle">Panimula sa mga auxiliary feature ng Agent Backend.</p>
+    </div>
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-title"><div class="card-icon blue">🔔</div>Mga Notipikasyon</div>
+        <ul class="content-list">
+          <li>Mga Anunsyo ng Sistema: Mga mahahalagang abiso at maintenance alerts ng platform.</li>
+          <li>Mga Alerto sa Transaksyon: Real-time push notifications para sa mga operasyon ng deposit/withdrawal.</li>
+          <li>Mga Alerto sa Anomalya ng Account: Babala kapag may abnormal na pag-login na natukoy.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-title"><div class="card-icon green">🔗</div>Mga Referral Link</div>
+        <ul class="content-list">
+          <li>Ang bawat agent ay may natatanging referral link at invite code.</li>
+          <li>Ang mga bagong user na nagrehistro sa pamamagitan ng referral link ay awtomatikong nai-assign sa agent na iyon.</li>
+          <li>Tingnan at kopyahin ang referral link sa "Personal Center".</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-title"><div class="card-icon yellow">🔒</div>Seguridad ng Account</div>
+        <ul class="content-list">
+          <li>Sinusuportahan ang pagbabago ng password (kailangan ng verification ng lumang password).</li>
+          <li>I-bind ang mobile number o email para sa password recovery.</li>
+          <li>Tingnan ang mga kamakailang rekord ng pag-login (IP, oras).</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-title"><div class="card-icon purple">💬</div>Suporta ng Customer</div>
+        <ul class="content-list">
+          <li>I-click ang "Live Chat" button sa kanang sulok sa ibaba para makipag-ugnayan sa support.</li>
+          <li>Available ang 24-oras na online customer support.</li>
+          <li>Maaari ring makuha sa pamamagitan ng Telegram / WhatsApp.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-footer"><div class="footer-nav"><button class="btn btn-outline btn-prev">‹ <span>上一节</span></button></div><div class="footer-nav"><button class="btn btn-primary btn-next"><span>下一节</span> ›</button></div></div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════
+     SECTION 10 — 时间定义
+═══════════════════════════════════════════════════════ -->
+<section class="section" id="sec9">
+
+  <!-- SC -->
+  <div data-lang="sc">
+    <div class="section-header">
+      <div class="section-badge">10</div>
+      <h1 class="section-title">时间定义</h1>
+      <p class="section-subtitle">代理后台中各类时间周期的定义与说明</p>
+    </div>
+    <div class="notice info"><div class="notice-icon">🕐</div><div class="notice-content">所有时间均以平台服务器时间（UTC+8）为准，请注意与本地时间的差异。</div></div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon blue">📅</div>时间周期定义</div>
+      <ul class="def-list">
+        <li class="def-item"><div class="def-term">自然日</div><div class="def-desc">当天 00:00:00 至 23:59:59（服务器时间），用于日报表统计。</div></li>
+        <li class="def-item"><div class="def-term">结算日</div><div class="def-desc">平台每日结算时间，通常为次日凌晨 00:00–02:00 完成前一天数据结算。</div></li>
+        <li class="def-item"><div class="def-term">自然周</div><div class="def-desc">周一 00:00:00 至周日 23:59:59，用于周报表统计。</div></li>
+        <li class="def-item"><div class="def-term">自然月</div><div class="def-desc">每月 1 日 00:00:00 至月末最后一天 23:59:59，用于月报表及月度结算。</div></li>
+        <li class="def-item"><div class="def-term">投注时间</div><div class="def-desc">会员下注成功的时间点，以服务器接收下注指令的时间为准。</div></li>
+        <li class="def-item"><div class="def-term">结果时间</div><div class="def-desc">比赛/游戏结果确认并完成派彩的时间，可能与投注时间不在同一自然日。</div></li>
+        <li class="def-item"><div class="def-term">上下分时间</div><div class="def-desc">代理执行上分或下分操作后系统记录的操作完成时间戳。</div></li>
+        <li class="def-item"><div class="def-term">活跃时间</div><div class="def-desc">会员在统计周期内有实际投注行为的累计天数，用于活跃会员判定。</div></li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon yellow">⚠️</div>常见时间问题说明</div>
+      <div class="table-wrap"><table><thead><tr><th>问题</th><th>说明</th></tr></thead><tbody>
+        <tr><td>数据显示延迟</td><td>报表数据约延迟 5–10 分钟更新，当日最终数据在结算完成后锁定</td></tr>
+        <tr><td>跨日投注</td><td>跨越自然日的体育赛事投注，以结果确认时间归入对应自然日</td></tr>
+        <tr><td>时区差异</td><td>如您位于其他时区，显示时间与本地时间可能存在差异</td></tr>
+      </tbody></table></div>
+    </div>
+  </div>
+
+  <!-- EN -->
+  <div data-lang="en" style="display:none">
+    <div class="section-header">
+      <div class="section-badge">10</div>
+      <h1 class="section-title">Time Definitions</h1>
+      <p class="section-subtitle">Definitions and explanations of time periods used in the Agent Backend.</p>
+    </div>
+    <div class="notice info"><div class="notice-icon">🕐</div><div class="notice-content">All times are based on the platform server time (UTC+8). Please note differences with your local time.</div></div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon blue">📅</div>Time Period Definitions</div>
+      <ul class="def-list">
+        <li class="def-item"><div class="def-term">Calendar Day</div><div class="def-desc">00:00:00 to 23:59:59 of the same day (server time). Used for daily report statistics.</div></li>
+        <li class="def-item"><div class="def-term">Settlement Day</div><div class="def-desc">Platform daily settlement, usually completed between 00:00–02:00 the next day for the previous day's data.</div></li>
+        <li class="def-item"><div class="def-term">Calendar Week</div><div class="def-desc">Monday 00:00:00 to Sunday 23:59:59. Used for weekly report statistics.</div></li>
+        <li class="def-item"><div class="def-term">Calendar Month</div><div class="def-desc">1st day 00:00:00 to last day 23:59:59 of each month. Used for monthly reports and monthly settlement.</div></li>
+        <li class="def-item"><div class="def-term">Bet Time</div><div class="def-desc">The time when the member's bet is successfully placed, based on when the server receives the bet instruction.</div></li>
+        <li class="def-item"><div class="def-term">Result Time</div><div class="def-desc">The time when the match/game result is confirmed and payout is completed. May differ from the bet time.</div></li>
+        <li class="def-item"><div class="def-term">Transaction Time</div><div class="def-desc">The timestamp recorded by the system when a deposit/withdrawal operation is completed.</div></li>
+        <li class="def-item"><div class="def-term">Active Days</div><div class="def-desc">Cumulative days where a member placed actual bets during a statistical period. Used to determine active members.</div></li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon yellow">⚠️</div>Common Time-Related Questions</div>
+      <div class="table-wrap"><table><thead><tr><th>Issue</th><th>Explanation</th></tr></thead><tbody>
+        <tr><td>Data Display Delay</td><td>Report data updates with approximately a 5–10 minute delay. Final same-day data is locked after settlement.</td></tr>
+        <tr><td>Cross-Day Bets</td><td>Sports event bets spanning multiple days are attributed to the calendar day when the result is confirmed.</td></tr>
+        <tr><td>Timezone Differences</td><td>If you are in a different timezone, the displayed time may differ from your local time.</td></tr>
+      </tbody></table></div>
+    </div>
+  </div>
+
+  <!-- VN -->
+  <div data-lang="vn" style="display:none">
+    <div class="section-header">
+      <div class="section-badge">10</div>
+      <h1 class="section-title">Định nghĩa thời gian</h1>
+      <p class="section-subtitle">Định nghĩa và giải thích các khoảng thời gian được sử dụng trong hệ thống đại lý.</p>
+    </div>
+    <div class="notice info"><div class="notice-icon">🕐</div><div class="notice-content">Tất cả thời gian dựa trên giờ máy chủ nền tảng (UTC+8). Lưu ý sự khác biệt với giờ địa phương của bạn.</div></div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon blue">📅</div>Định nghĩa khoảng thời gian</div>
+      <ul class="def-list">
+        <li class="def-item"><div class="def-term">Ngày dương lịch</div><div class="def-desc">Từ 00:00:00 đến 23:59:59 cùng ngày (giờ máy chủ). Dùng cho thống kê báo cáo hàng ngày.</div></li>
+        <li class="def-item"><div class="def-term">Ngày quyết toán</div><div class="def-desc">Quyết toán hàng ngày của nền tảng, thường hoàn thành lúc 00:00–02:00 ngày hôm sau cho dữ liệu ngày hôm trước.</div></li>
+        <li class="def-item"><div class="def-term">Tuần dương lịch</div><div class="def-desc">Thứ Hai 00:00:00 đến Chủ Nhật 23:59:59. Dùng cho thống kê báo cáo hàng tuần.</div></li>
+        <li class="def-item"><div class="def-term">Tháng dương lịch</div><div class="def-desc">Từ ngày 1 00:00:00 đến ngày cuối cùng 23:59:59 của mỗi tháng. Dùng cho báo cáo tháng và quyết toán tháng.</div></li>
+        <li class="def-item"><div class="def-term">Thời gian đặt cược</div><div class="def-desc">Thời điểm cược của thành viên được đặt thành công, dựa trên khi máy chủ nhận lệnh đặt cược.</div></li>
+        <li class="def-item"><div class="def-term">Thời gian kết quả</div><div class="def-desc">Thời gian kết quả trận đấu/trò chơi được xác nhận và trả thưởng hoàn tất. Có thể khác với thời gian đặt cược.</div></li>
+        <li class="def-item"><div class="def-term">Thời gian giao dịch</div><div class="def-desc">Dấu thời gian hệ thống ghi lại khi thao tác nạp/rút điểm hoàn tất.</div></li>
+        <li class="def-item"><div class="def-term">Ngày hoạt động</div><div class="def-desc">Số ngày tích lũy mà thành viên đặt cược thực tế trong kỳ thống kê. Dùng để xác định thành viên hoạt động.</div></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- PH -->
+  <div data-lang="ph" style="display:none">
+    <div class="section-header">
+      <div class="section-badge">10</div>
+      <h1 class="section-title">Kahulugan ng Oras</h1>
+      <p class="section-subtitle">Mga kahulugan at paliwanag ng mga panahon ng oras na ginagamit sa Agent Backend.</p>
+    </div>
+    <div class="notice info"><div class="notice-icon">🕐</div><div class="notice-content">Lahat ng oras ay batay sa server time ng platform (UTC+8). Pakitandaan ang mga pagkakaiba sa iyong lokal na oras.</div></div>
+    <div class="card">
+      <div class="card-title"><div class="card-icon blue">📅</div>Mga Kahulugan ng Panahon ng Oras</div>
+      <ul class="def-list">
+        <li class="def-item"><div class="def-term">Calendar Day</div><div class="def-desc">00:00:00 hanggang 23:59:59 ng parehong araw (server time). Ginagamit para sa pang-araw-araw na istatistika ng ulat.</div></li>
+        <li class="def-item"><div class="def-term">Settlement Day</div><div class="def-desc">Pang-araw-araw na settlement ng platform, karaniwang nakumpleto sa pagitan ng 00:00–02:00 ng susunod na araw para sa data ng nakaraang araw.</div></li>
+        <li class="def-item"><div class="def-term">Calendar Week</div><div class="def-desc">Lunes 00:00:00 hanggang Linggo 23:59:59. Ginagamit para sa lingguhang istatistika ng ulat.</div></li>
+        <li class="def-item"><div class="def-term">Calendar Month</div><div class="def-desc">Ika-1 araw 00:00:00 hanggang huling araw 23:59:59 ng bawat buwan. Ginagamit para sa buwanang ulat at buwanang settlement.</div></li>
+        <li class="def-item"><div class="def-term">Bet Time</div><div class="def-desc">Ang oras ng matagumpay na paglalagay ng taya ng miyembro, batay sa kung kailan natanggap ng server ang bet instruction.</div></li>
+        <li class="def-item"><div class="def-term">Result Time</div><div class="def-desc">Ang oras na nakumpirma ang resulta ng laro at nakumpleto ang payout. Maaaring naiiba sa bet time.</div></li>
+        <li class="def-item"><div class="def-term">Transaction Time</div><div class="def-desc">Ang timestamp na naitala ng sistema kapag nakumpleto ang isang operasyon ng deposit/withdrawal.</div></li>
+        <li class="def-item"><div class="def-term">Active Days</div><div class="def-desc">Pinagsama-samang mga araw na naglagay ng aktwal na taya ang miyembro sa isang statistical na panahon.</div></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="content-footer"><div class="footer-nav"><button class="btn btn-outline btn-prev">‹ <span>上一节</span></button></div><div></div></div>
+</section>
+
+</main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

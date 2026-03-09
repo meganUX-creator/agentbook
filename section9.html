@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>其他功能 - 代理后台操作手册</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-logo">
+      <button class="mobile-toggle" id="mobileToggle">☰</button>
+      <div class="logo-icon">A</div>
+      <div>
+        <div class="logo-text">代理后台</div>
+        <div class="logo-sub">操作手册 · PC端</div>
+      </div>
+    </div>
+    <div class="lang-dropdown">
+      <button class="lang-dropdown-btn" id="langDropdownBtn">
+        <span class="lang-current" id="langCurrent">简体中文</span>
+        <span class="lang-arrow">▼</span>
+      </button>
+      <div class="lang-dropdown-menu" id="langDropdownMenu">
+        <button class="lang-dropdown-item active" data-lang="sc">简体中文</button>
+        <button class="lang-dropdown-item" data-lang="en">English</button>
+        <button class="lang-dropdown-item" data-lang="vn">Tiếng Việt</button>
+        <button class="lang-dropdown-item" data-lang="ph">Filipino</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- LAYOUT -->
+  <div class="layout">
+
+    <!-- SIDEBAR -->
+    <nav class="sidebar">
+      <div class="sidebar-section-title" data-lang="sc">目录</div>
+      <div class="sidebar-section-title" data-lang="en" style="display:none">Contents</div>
+      <div class="sidebar-section-title" data-lang="vn" style="display:none">Mục lục</div>
+      <div class="sidebar-section-title" data-lang="ph" style="display:none">Talaan</div>
+      <a href="index.html" class="nav-item"><span class="nav-num">🏠</span><span class="nav-label">首页</span></a>
+      <a href="section1.html" class="nav-item"><span class="nav-num">01</span><span class="nav-label">使用前须知</span></a>
+      <a href="section2.html" class="nav-item"><span class="nav-num">02</span><span class="nav-label">基本功能</span></a>
+      <a href="section3.html" class="nav-item"><span class="nav-num">03</span><span
+          class="nav-label">如何新增代理/会员</span></a>
+      <a href="section4.html" class="nav-item"><span class="nav-num">04</span><span
+          class="nav-label">如何为下级上/下分</span></a>
+      <a href="section5.html" class="nav-item"><span class="nav-num">05</span><span class="nav-label">如何查看收益</span></a>
+      <a href="section6.html" class="nav-item"><span class="nav-num">06</span><span class="nav-label">统计报表介绍</span></a>
+      <a href="section7.html" class="nav-item"><span class="nav-num">07</span><span class="nav-label">占成比介绍</span></a>
+      <a href="section8.html" class="nav-item"><span class="nav-num">08</span><span class="nav-label">有效投注比介绍</span></a>
+      <a href="section9.html" class="nav-item active"><span class="nav-num">09</span><span
+          class="nav-label">其他功能</span></a>
+      <a href="section10.html" class="nav-item"><span class="nav-num">10</span><span class="nav-label">时间定义</span></a>
+    </nav>
+
+    <!-- MAIN -->
+    <main class="main">
+
+      <!-- ══════════════════════════════════════════════════════
+     SECTION 09 — 其他功能
+══════════════════════════════════════════════════════ -->
+      <section class="section active" id="sec8">
+
+        <!-- SC -->
+        <div data-lang="sc">
+          <div class="section-header">
+            <div class="section-badge">09</div>
+            <h1 class="section-title">其他功能</h1>
+            <p class="section-subtitle">代理后台的辅助功能介绍</p>
+          </div>
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon red">🔑</div>重设密码
+            </div>
+            <p class="para">若您的下级代理或会员忘记登入密码，您可为其重设。功能位于<strong>【代理组织管理】</strong>，点击操作按钮后选择「重设密码」。</p>
+            <div class="notice info">
+              <div class="notice-icon">💡</div>
+              <div class="notice-content">重设时可使用简单密码。由于安全机制，代理或会员使用新密码登入后，系统会<strong>强制要求</strong>其再次修改。</div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon blue">🔄</div>清除错误密码次数
+            </div>
+            <p class="para">若下级输入错误密码超过 5 次将被锁定。您可在大厅<strong>【代理组织管理】</strong>点击操作按钮，选择「清除密码错误次数」来即时解锁，或等候 24 小时自动解锁。
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon purple">🚫</div>停用账户
+            </div>
+            <p class="para">位于<strong>【代理组织管理】</strong> > 操作 > 编辑账户 > 状态。停用影响如下：</p>
+            <ul class="content-list">
+              <li><strong>停用代理：</strong>该代理及其以下所有用户皆不可再登入后台或游戏。</li>
+              <li><strong>停用会员：</strong>该会员不可再登入游戏。</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-title">
+            <div class="card-icon blue">⚙️</div>系统设置
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>设置项</th>
+                  <th>说明</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>语言切换</td>
+                  <td>支持切换为简中、英文、越南文、菲律宾文</td>
+                </tr>
+                <tr>
+                  <td>时区设置</td>
+                  <td>可设置个人显示时区（默认 UTC+8）</td>
+                </tr>
+                <tr>
+                  <td>货币显示</td>
+                  <td>支持多种货币格式显示（依平台配置）</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+  </div>
+
+  <!-- EN -->
+  <div data-lang="en" style="display:none">
+    <div class="section-header">
+      <div class="section-badge">09</div>
+      <h1 class="section-title">Other Features</h1>
+      <p class="section-subtitle">Introduction to auxiliary features in the Agent Backend.</p>
+    </div>
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-title">
+          <div class="card-icon red">🔑</div>Reset Password
+        </div>
+        <p class="para">If a sub-agent or member forgets their password, you can reset it under <strong>[Agent
+            Management]</strong>. Click the action button and select "Reset Password".</p>
+        <div class="notice info">
+          <div class="notice-icon">💡</div>
+          <div class="notice-content">You can use a simple password; the system will <strong>force the user to change
+              it</strong> again upon their first login.</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title">
+          <div class="card-icon blue">🔄</div>Clear Login Errors
+        </div>
+        <p class="para">Users are locked after 5 failed attempts. Go to <strong>[Agent Management]</strong>, click the
+          action button, and select "Clear Password Error Count" to unlock immediately, or wait 24 hours.</p>
+      </div>
+      <div class="card">
+        <div class="card-title">
+          <div class="card-icon purple">🚫</div>Disable Account
+        </div>
+        <p class="para">Found in <strong>[Agent Management]</strong> > Action > Edit Account > Status.</p>
+        <ul class="content-list">
+          <li><strong>Disable Agent:</strong> The agent and all users under them cannot log in to the backend or game.
+          </li>
+          <li><strong>Disable Member:</strong> The member cannot log in to the game.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- VN -->
+  <div data-lang="vn" style="display:none">
+    <div class="section-header">
+      <div class="section-badge">09</div>
+      <h1 class="section-title">Chức năng khác</h1>
+      <p class="section-subtitle">Giới thiệu các chức năng bổ sung trong hệ thống đại lý.</p>
+    </div>
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-title">
+          <div class="card-icon red">🔑</div>Đặt lại mật khẩu
+        </div>
+        <p class="para">Nếu cấp dưới quên mật khẩu, bạn có thể đặt lại tại <strong>[Quản lý tổ chức]</strong>. Nhấp vào
+          nút thao tác và chọn "Đặt lại mật khẩu".</p>
+        <div class="notice info">
+          <div class="notice-icon">💡</div>
+          <div class="notice-content">Bạn có thể dùng mật khẩu đơn giản; hệ thống sẽ <strong>bắt buộc người dùng đổi
+              lại</strong> mật khẩu ngay khi đăng nhập.</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title">
+          <div class="card-icon blue">🔄</div>Xóa số lần nhập sai
+        </div>
+        <p class="para">Tài khoản bị khóa sau 5 lần nhập sai. Vào <strong>[Quản lý tổ chức]</strong>, chọn "Xóa số lần
+          nhập sai mật khẩu" để mở khóa ngay, hoặc đợi 24 giờ.</p>
+      </div>
+      <div class="card">
+        <div class="card-title">
+          <div class="card-icon purple">🚫</div>Vô hiệu hóa tài khoản
+        </div>
+        <p class="para">Tại <strong>[Quản lý tổ chức]</strong> > Thao tác > Chỉnh sửa > Trạng thái.</p>
+        <ul class="content-list">
+          <li><strong>Tắt đại lý:</strong> Đại lý và toàn bộ cấp dưới không thể vào hậu đài hay trò chơi.</li>
+          <li><strong>Tắt thành viên:</strong> Thành viên không thể vào trò chơi.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- PH -->
+  <div data-lang="ph" style="display:none">
+    <div class="section-header">
+      <div class="section-badge">09</div>
+      <h1 class="section-title">Iba pang Feature</h1>
+      <p class="section-subtitle">Panimula sa mga auxiliary feature ng Agent Backend.</p>
+    </div>
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-title">
+          <div class="card-icon red">🔑</div>I-reset ang Password
+        </div>
+        <p class="para">Kung nakalimutan ang password, i-reset ito sa <strong>[Agent Management]</strong>. I-click ang
+          action button at piliin ang "Reset Password".</p>
+        <div class="notice info">
+          <div class="notice-icon">💡</div>
+          <div class="notice-content">Maaaring gumamit ng simpleng password; <strong>pipilitin ng system ang user na
+              palitan</strong> ito sa unang pag-login.</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title">
+          <div class="card-icon blue">🔄</div>Linisin ang Maling Password Count
+        </div>
+        <p class="para">Mala-lock ang account pagkatapos ng 5 pagkakamali. Sa <strong>[Agent Management]</strong>,
+          i-click ang "Clear Password Error Count" para ma-unlock agad.</p>
+      </div>
+      <div class="card">
+        <div class="card-title">
+          <div class="card-icon purple">🚫</div>I-disable ang Account
+        </div>
+        <p class="para">Sa <strong>[Agent Management]</strong> > Action > Edit Account > Status.</p>
+        <ul class="content-list">
+          <li><strong>I-disable ang Agent:</strong> Hindi makakapag-login ang agent at lahat ng user sa ilalim nito.
+          </li>
+          <li><strong>I-disable ang Miyembro:</strong> Hindi makakapag-login ang miyembro sa laro.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-footer">
+    <div class="footer-nav"><a href="section8.html" class="btn btn-outline btn-prev">‹ <span>上一节</span></a></div>
+    <div class="footer-nav"><a href="section10.html" class="btn btn-primary btn-next"><span>下一节</span> ›</a></div>
+  </div>
+  </section>
+
+  </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

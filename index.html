@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>代理后台操作手册</title>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="header-logo">
+    <button class="mobile-toggle" id="mobileToggle">☰</button>
+    <div class="logo-icon">A</div>
+    <div>
+      <div class="logo-text">代理后台</div>
+      <div class="logo-sub">操作手册 · PC端</div>
+    </div>
+  </div>
+  <div class="lang-dropdown">
+    <button class="lang-dropdown-btn" id="langDropdownBtn">
+      <span class="lang-current" id="langCurrent">简体中文</span>
+      <span class="lang-arrow">▼</span>
+    </button>
+    <div class="lang-dropdown-menu" id="langDropdownMenu">
+      <button class="lang-dropdown-item active" data-lang="sc">简体中文</button>
+      <button class="lang-dropdown-item" data-lang="en">English</button>
+      <button class="lang-dropdown-item" data-lang="vn">Tiếng Việt</button>
+      <button class="lang-dropdown-item" data-lang="ph">Filipino</button>
+    </div>
+  </div>
+</header>
+
+<!-- LAYOUT -->
+<div class="layout">
+
+<!-- SIDEBAR -->
+<nav class="sidebar">
+  <div class="sidebar-section-title" data-lang="sc">目录</div>
+  <div class="sidebar-section-title" data-lang="en" style="display:none">Contents</div>
+  <div class="sidebar-section-title" data-lang="vn" style="display:none">Mục lục</div>
+  <div class="sidebar-section-title" data-lang="ph" style="display:none">Talaan</div>
+  <a href="index.html" class="nav-item active"><span class="nav-num">🏠</span><span class="nav-label">首页</span></a>
+  <a href="section1.html" class="nav-item"><span class="nav-num">01</span><span class="nav-label">使用前须知</span></a>
+  <a href="section2.html" class="nav-item"><span class="nav-num">02</span><span class="nav-label">基本功能</span></a>
+  <a href="section3.html" class="nav-item"><span class="nav-num">03</span><span class="nav-label">如何新增代理/会员</span></a>
+  <a href="section4.html" class="nav-item"><span class="nav-num">04</span><span class="nav-label">如何为下级上/下分</span></a>
+  <a href="section5.html" class="nav-item"><span class="nav-num">05</span><span class="nav-label">如何查看收益</span></a>
+  <a href="section6.html" class="nav-item"><span class="nav-num">06</span><span class="nav-label">统计报表介绍</span></a>
+  <a href="section7.html" class="nav-item"><span class="nav-num">07</span><span class="nav-label">占成比介绍</span></a>
+  <a href="section8.html" class="nav-item"><span class="nav-num">08</span><span class="nav-label">有效投注比介绍</span></a>
+  <a href="section9.html" class="nav-item"><span class="nav-num">09</span><span class="nav-label">其他功能</span></a>
+  <a href="section10.html" class="nav-item"><span class="nav-num">10</span><span class="nav-label">时间定义</span></a>
+</nav>
+
+<!-- MAIN -->
+<main class="main">
+
+<!-- ══════════════════════════════════════════════════════
+     HOMEPAGE — 目录概览
+══════════════════════════════════════════════════════ -->
+<section class="section active">
+
+  <!-- SC -->
+  <div data-lang="sc">
+    <div class="section-header">
+      <div class="section-badge">📖</div>
+      <h1 class="section-title">代理后台操作手册</h1>
+      <p class="section-subtitle">欢迎使用代理后台操作手册，请选择要查看的章节</p>
+    </div>
+    
+    <div class="grid-2">
+      <a href="section1.html" class="card chapter-card">
+        <div class="card-title"><div class="card-icon blue">01</div>使用前须知</div>
+        <p class="para">系统要求、账号说明、重要规则、分层结构说明</p>
+      </a>
+      
+      <a href="section2.html" class="card chapter-card">
+        <div class="card-title"><div class="card-icon blue">02</div>基本功能</div>
+        <p class="para">代理后台首页功能概览与导航说明</p>
+      </a>
+      
+      <a href="section3.html" class="card chapter-card">
+        <div class="card-title"><div class="card-icon blue">03</div>如何新增代理/会员</div>
+        <p class="para">创建下级代理或会员账号的完整操作步骤</p>
+      </a>
+      
+      <a href="section4.html" class="card chapter-card">
+        <div class="card-title"><div class="card-icon blue">04</div>如何为下级上/下分</div>
+        <p class="para">为直属代理或会员进行分数转入与转出操作</p>
+      </a>
+      
+      <a href="section5.html" class="card chapter-card">
+        <div class="card-title"><div class="card-icon blue">05</div>如何查看收益</div>
+        <p class="para">查看占成收益与下级投注数据的方法</p>
+      </a>
+      
+      <a href="section6.html" class="card chapter-card">
+        <div class="card-title"><div class="card-icon blue">06</div>统计报表介绍</div>
+        <p class="para">代理后台提供的各类报表功能说明</p>
+      </a>
+      
+      <a href="section7.html" class="card chapter-card">
+        <div class="card-title"><div class="card-icon blue">07</div>占成比介绍</div>
+        <p class="para">占成比的定义、计算方式及层级分成规则</p>
+      </a>
+      
+      <a href="section8.html" class="card chapter-card">
+        <div class="card-title"><div class="card-icon blue">08</div>有效投注比介绍</div>
+        <p class="para">有效投注比的定义、适用场景及计算规则</p>
+      </a>
+      
+      <a href="section9.html" class="card chapter-card">
+        <div class="card-title"><div class="card-icon blue">09</div>其他功能</div>
+        <p class="para">消息通知、推广链接、账号安全等辅助功能</p>
+      </a>
+      
+      <a href="section10.html" class="card chapter-card">
+        <div class="card-title"><div class="card-icon blue">10</div>时间定义</div>
+        <p class="para">代理后台中各类时间周期的定义与说明</p>
+      </a>
+    </div>
+    
+    <div class="notice info">
+      <div class="notice-icon">💡</div>
+      <div class="notice-content">
+        <strong>使用提示：</strong>点击上方任意章节卡片即可查看详细内容。您也可以使用左侧导航栏快速跳转到指定章节。
+      </div>
+    </div>
+  </div>
+
+  <!-- EN -->
+  <div data-lang="en" style="display:none">
+    <div class="section-header">
+      <div class="section-badge">📖</div>
+      <h1 class="section-title">Agent Backend Operation Manual</h1>
+      <p class="section-subtitle">Welcome to the Agent Backend Operation Manual. Please select a chapter to view.</p>
+    </div>
+    
+    <div class="grid-2">
+      <a href="section1.html" class="card chapter-card">
+        <div class="card-title"><div class="card-icon blue">01</div>Before You Start</div>
+        <p class="para">System requirements, account information, important rules, hierarchy structure</p>
+      </a>
+      
+      <a href="section2.html" class="card chapter-card">
+        <div class="card-title"><div class="card-icon blue">02</div>Basic Features</div>
+        <p class="para">Overview of the Agent Backend homepage features and navigation</p>
+      </a>
+      
+      <a href="section3.html" class="card chapter-card">
+        <div class="card-title"><div class="card-icon blue">03</div>Add Agent / Member</div>
+        <p class="para">Complete steps to create a sub-agent or member account</p>
+      </a>
+      
+      <a href="section4.html" class="card chapter-card">
+        <div class="card-title"><div class="card-icon blue">04</div>Deposit / Withdrawal for Downlines</div>
+        <p class="para">Transfer points to or from a direct agent or member's account</p>
+      </a>
+      
+      <a href="section5.html" class="card chapter-card">
+        <div class="card-title"><div class="card-icon blue">05</div>View Earnings</div>
+        <p class="para">How to view commission earnings and downline betting data</p>
+      </a>
+      
+      <a href="section6.html" class="card chapter-card">
+        <div class="card-title"><div class="card-icon blue">06</div>Statistical Reports</div>
+        <p class="para">Various reports provided by the Agent Backend</p>
+      </a>
+      
+      <a href="section7.html" class="card chapter-card">
+        <div class="card-title"><div class="card-icon blue">07</div>Commission Ratio</div>
+        <p class="para">Definition, calculation, and hierarchical sharing rules</p>
+      </a>
+      
+      <a href="section8.html" class="card chapter-card">
+        <div class="card-title"><div class="card-icon blue">08</div>Valid Bet Ratio</div>
+        <p class="para">Definition, applicable scenarios, and calculation rules</p>
+      </a>
+      
+      <a href="section9.html" class="card chapter-card">
+        <div class="card-title"><div class="card-icon blue">09</div>Other Features</div>
+        <p class="para">Notifications, referral links, account security, and more</p>
+      </a>
+      
+      <a href="section10.html" class="card chapter-card">
+        <div class="card-title"><div class="card-icon blue">10</div>Time Definitions</div>
+        <p class="para">Definitions and explanations of time periods used</p>
+      </a>
+    </div>
+    
+    <div class="notice info">
+      <div class="notice-icon">💡</div>
+      <div class="notice-content">
+        <strong>Usage Tips:</strong>Click any chapter card above to view detailed content. You can also use the left navigation bar to quickly jump to specific chapters.
+      </div>
+    </div>
+  </div>
+
+  <!-- VN -->
+  <div data-lang="vn" style="display:none">
+    <div class="section-header">
+      <div class="section-badge">📖</div>
+      <h1 class="section-title">Hướng dẫn sử dụng hệ thống đại lý</h1>
+      <p class="section-subtitle">Chào mừng đến với hướng dẫn sử dụng hệ thống đại lý. Vui lòng chọn chương để xem.</p>
+    </div>
+    
+    <div class="grid-2">
+      <a href="section1.html" class="card chapter-card">
+        <div class="card-title"><div class="card-icon blue">01</div>Trước khi sử dụng</div>
+        <p class="para">Yêu cầu hệ thống, thông tin tài khoản, quy tắc quan trọng, cấu trúc phân cấp</p>
+      </a>
+      
+      <a href="section2.html" class="card chapter-card">
+        <div class="card-title"><div class="card-icon blue">02</div>Chức năng cơ bản</div>
+        <p class="para">Tổng quan về các chức năng trang chủ và điều hướng</p>
+      </a>
+      
+      <a href="section3.html" class="card chapter-card">
+        <div class="card-title"><div class="card-icon blue">03</div>Thêm đại lý / thành viên</div>
+        <p class="para">Các bước đầy đủ để tạo tài khoản đại lý con hoặc thành viên</p>
+      </a>
+      
+      <a href="section4.html" class="card chapter-card">
+        <div class="card-title"><div class="card-icon blue">04</div>Nạp / Rút điểm cho cấp dưới</div>
+        <p class="para">Chuyển điểm vào hoặc thu hồi từ tài khoản cấp dưới</p>
+      </a>
+      
+      <a href="section5.html" class="card chapter-card">
+        <div class="card-title"><div class="card-icon blue">05</div>Xem thu nhập</div>
+        <p class="para">Cách xem thu nhập hoa hồng và dữ liệu cược của cấp dưới</p>
+      </a>
+      
+      <a href="section6.html" class="card chapter-card">
+        <div class="card-title"><div class="card-icon blue">06</div>Báo cáo thống kê</div>
+        <p class="para">Các loại báo cáo được cung cấp bởi hệ thống đại lý</p>
+      </a>
+      
+      <a href="section7.html" class="card chapter-card">
+        <div class="card-title"><div class="card-icon blue">07</div>Tỷ lệ hoa hồng</div>
+        <p class="para">Định nghĩa, cách tính và quy tắc phân chia theo cấp bậc</p>
+      </a>
+      
+      <a href="section8.html" class="card chapter-card">
+        <div class="card-title"><div class="card-icon blue">08</div>Tỷ lệ cược hợp lệ</div>
+        <p class="para">Định nghĩa, tình huống áp dụng và quy tắc tính</p>
+      </a>
+      
+      <a href="section9.html" class="card chapter-card">
+        <div class="card-title"><div class="card-icon blue">09</div>Chức năng khác</div>
+        <p class="para">Thông báo, liên kết giới thiệu, bảo mật tài khoản, v.v.</p>
+      </a>
+      
+      <a href="section10.html" class="card chapter-card">
+        <div class="card-title"><div class="card-icon blue">10</div>Định nghĩa thời gian</div>
+        <p class="para">Định nghĩa và giải thích các khoảng thời gian sử dụng</p>
+      </a>
+    </div>
+    
+    <div class="notice info">
+      <div class="notice-icon">💡</div>
+      <div class="notice-content">
+        <strong>Mẹo sử dụng:</strong>Nhấp vào bất kỳ thẻ chương nào ở trên để xem nội dung chi tiết. Bạn cũng có thể sử dụng thanh điều hướng bên trái để nhanh chóng chuyển đến các chương cụ thể.
+      </div>
+    </div>
+  </div>
+
+  <!-- PH -->
+  <div data-lang="ph" style="display:none">
+    <div class="section-header">
+      <div class="section-badge">📖</div>
+      <h1 class="section-title">Gabay sa Paggamit ng Agent Backend</h1>
+      <p class="section-subtitle">Maligayang pagdating sa gabay sa paggamit ng Agent Backend. Mangyaring pumili ng isang chapter na tingnan.</p>
+    </div>
+    
+    <div class="grid-2">
+      <a href="section1.html" class="card chapter-card">
+        <div class="card-title"><div class="card-icon blue">01</div>Bago Gamitin</div>
+        <p class="para">Mga kinakailangan, impormasyon ng account, mahahalagang patakaran, istraktura ng hierarchy</p>
+      </a>
+      
+      <a href="section2.html" class="card chapter-card">
+        <div class="card-title"><div class="card-icon blue">02</div>Mga Pangunahing Feature</div>
+        <p class="para">Pangkalahatang-ideya ng mga feature ng homepage at navigation</p>
+      </a>
+      
+      <a href="section3.html" class="card chapter-card">
+        <div class="card-title"><div class="card-icon blue">03</div>Magdagdag ng Agent / Miyembro</div>
+        <p class="para">Kumpletong mga hakbang para lumikha ng sub-agent o miyembro</p>
+      </a>
+      
+      <a href="section4.html" class="card chapter-card">
+        <div class="card-title"><div class="card-icon blue">04</div>Mag-deposit / Withdraw sa Downline</div>
+        <p class="para">Maglipat ng puntos sa o mula sa account ng downline</p>
+      </a>
+      
+      <a href="section5.html" class="card chapter-card">
+        <div class="card-title"><div class="card-icon blue">05</div>Tingnan ang Kita</div>
+        <p class="para">Paano tingnan ang commission earnings at downline betting data</p>
+      </a>
+      
+      <a href="section6.html" class="card chapter-card">
+        <div class="card-title"><div class="card-icon blue">06</div>Ulat ng Istatistika</div>
+        <p class="para">Mga iba't ibang ulat na ibinibigay ng Agent Backend</p>
+      </a>
+      
+      <a href="section7.html" class="card chapter-card">
+        <div class="card-title"><div class="card-icon blue">07</div>Commission Ratio</div>
+        <p class="para">Kahulugan, pagkalkula, at mga panuntunan sa hierarchical sharing</p>
+      </a>
+      
+      <a href="section8.html" class="card chapter-card">
+        <div class="card-title"><div class="card-icon blue">08</div>Valid Bet Ratio</div>
+        <p class="para">Kahulugan, mga applicable na sitwasyon, at mga panuntunan</p>
+      </a>
+      
+      <a href="section9.html" class="card chapter-card">
+        <div class="card-title"><div class="card-icon blue">09</div>Iba pang Feature</div>
+        <p class="para">Mga notipikasyon, referral links, seguridad ng account, at iba pa</p>
+      </a>
+      
+      <a href="section10.html" class="card chapter-card">
+        <div class="card-title"><div class="card-icon blue">10</div>Kahulugan ng Oras</div>
+        <p class="para">Mga kahulugan at paliwanag ng mga panahon ng oras na ginagamit</p>
+      </a>
+    </div>
+    
+    <div class="notice info">
+      <div class="notice-icon">💡</div>
+      <div class="notice-content">
+        <strong>Mga Tip sa Paggamit:</strong>I-click ang anumang chapter card sa itaas para tingnan ang detalyadong content. Maaari mo ring gamitin ang left navigation bar para mabilis na lumundag sa mga partikular na chapter.
+      </div>
+    </div>
+  </div>
+
+</section>
+
+</main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

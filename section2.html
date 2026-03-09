@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>基本功能 - 代理后台操作手册</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-logo">
+      <button class="mobile-toggle" id="mobileToggle">☰</button>
+      <div class="logo-icon">A</div>
+      <div>
+        <div class="logo-text">代理后台</div>
+        <div class="logo-sub">操作手册 · PC端</div>
+      </div>
+    </div>
+    <div class="lang-dropdown">
+      <button class="lang-dropdown-btn" id="langDropdownBtn">
+        <span class="lang-current" id="langCurrent">简体中文</span>
+        <span class="lang-arrow">▼</span>
+      </button>
+      <div class="lang-dropdown-menu" id="langDropdownMenu">
+        <button class="lang-dropdown-item active" data-lang="sc">简体中文</button>
+        <button class="lang-dropdown-item" data-lang="en">English</button>
+        <button class="lang-dropdown-item" data-lang="vn">Tiếng Việt</button>
+        <button class="lang-dropdown-item" data-lang="ph">Filipino</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- LAYOUT -->
+  <div class="layout">
+
+    <!-- SIDEBAR -->
+    <nav class="sidebar">
+      <div class="sidebar-section-title" data-lang="sc">目录</div>
+      <div class="sidebar-section-title" data-lang="en" style="display:none">Contents</div>
+      <div class="sidebar-section-title" data-lang="vn" style="display:none">Mục lục</div>
+      <div class="sidebar-section-title" data-lang="ph" style="display:none">Talaan</div>
+      <a href="index.html" class="nav-item"><span class="nav-num">🏠</span><span class="nav-label">首页</span></a>
+      <a href="section1.html" class="nav-item"><span class="nav-num">01</span><span class="nav-label">使用前须知</span></a>
+      <a href="section2.html" class="nav-item active"><span class="nav-num">02</span><span
+          class="nav-label">基本功能</span></a>
+      <a href="section3.html" class="nav-item"><span class="nav-num">03</span><span
+          class="nav-label">如何新增代理/会员</span></a>
+      <a href="section4.html" class="nav-item"><span class="nav-num">04</span><span
+          class="nav-label">如何为下级上/下分</span></a>
+      <a href="section5.html" class="nav-item"><span class="nav-num">05</span><span class="nav-label">如何查看收益</span></a>
+      <a href="section6.html" class="nav-item"><span class="nav-num">06</span><span class="nav-label">统计报表介绍</span></a>
+      <a href="section7.html" class="nav-item"><span class="nav-num">07</span><span class="nav-label">占成比介绍</span></a>
+      <a href="section8.html" class="nav-item"><span class="nav-num">08</span><span class="nav-label">有效投注比介绍</span></a>
+      <a href="section9.html" class="nav-item"><span class="nav-num">09</span><span class="nav-label">其他功能</span></a>
+      <a href="section10.html" class="nav-item"><span class="nav-num">10</span><span class="nav-label">时间定义</span></a>
+    </nav>
+
+    <!-- MAIN -->
+    <main class="main">
+
+      <!-- ══════════════════════════════════════════════════════
+     SECTION 02 — 基本功能 / Basic Features
+══════════════════════════════════════════════════════ -->
+      <section class="section active" id="sec1">
+
+        <!-- SC -->
+        <div data-lang="sc">
+          <div class="section-header">
+            <div class="section-badge">02</div>
+            <h1 class="section-title">基本功能</h1>
+            <p class="section-subtitle">代理後台首頁佈局概覽與個人化權限設置說明</p>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon blue">🖼️</div>一、界面佈局核心
+            </div>
+            <p class="para">下圖展示了代理看板的核心佈局，分為導航控制、帳號資訊與權限監控、以及數據看板三大區域：</p>
+            <img src="img/Layout.png" alt="Layout" class="content-img" />
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th style="width: 200px;">區塊名稱</th>
+                    <th>核心功能與說明</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>功能主選單 (左側)</strong></td>
+                    <td>導航核心：包含首頁、代理組織管理、統計報表、投注記錄、資金細目與轉帳等入口。</td>
+                  </tr>
+                  <tr>
+                    <td><strong>帳號與參數區 (頂部)</strong></td>
+                    <td>管理中心：顯示當前登錄者資訊、錢包餘額，以及核心運營權限（含當前額度、佔反比、有效投注比）。</td>
+                  </tr>
+                  <tr>
+                    <td><strong>數據儀表板 (中心)</strong></td>
+                    <td>營運總覽：呈現代理體系整體績效，包含總投注、輸贏、佣金損益等。</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon red">⚙️</div>二、個人化設置中心
+            </div>
+            <div class="grid-2 align-start">
+              <div>
+                <p class="para">點擊帳號右側的圖標進入設置清單，您可進行以下管理操作：</p>
+                <ol class="numbered-list">
+                  <li><strong>登入密碼修改：</strong>更新登入憑證以保障安全性。</li>
+                  <li><strong>語言切換：</strong>變更後台顯示語言（支援中、英、越、菲）。</li>
+                  <li><strong>皮膚模式切換：</strong>切換日/夜間模式以適應不同操作環境。</li>
+                  <li><strong>清除快取並登出：</strong>重置本地數據並退出（重置後設定將還原為預設值）。</li>
+                </ol>
+              </div>
+              <div>
+                <img src="img/settings.png" alt="Account Settings" class="content-img" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- EN -->
+        <div data-lang="en" style="display:none">
+          <div class="section-header">
+            <div class="section-badge">02</div>
+            <h1 class="section-title">Basic Features</h1>
+            <p class="section-subtitle">Overview of the Agent Dashboard layout and personalized settings.</p>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon blue">🖼️</div>I. Layout Overview
+            </div>
+            <p class="para">The image below showcases the core layout of the dashboard, divided into three main zones:
+              Navigation, Account Info & Permissions, and Data Dashboard.</p>
+            <img src="img/Layout.png" alt="Layout" class="content-img" />
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th style="width: 250px;">Block Name</th>
+                    <th>Core Function & Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Main Menu (Left)</strong></td>
+                    <td>Navigation Hub: Entrance to Agent Management, reports, betting records, and funds management.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><strong>Account Info (Top)</strong></td>
+                    <td>Personal Center: Displays login info (ID, level), balance, and operational parameters (Credit,
+                      Ratios).</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Data Dashboard (Center)</strong></td>
+                    <td>Performance Overview: Summarizes performance metrics such as turnover, win/loss, and commission
+                      data.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon red">⚙️</div>II. Account Settings Center
+            </div>
+            <div class="grid-2 align-start">
+              <div>
+                <p class="para">Click the icon in the account section to manage your profile and interface settings:</p>
+                <ol class="numbered-list">
+                  <li><strong>Password Management:</strong> Update your login credentials to secure your account.</li>
+                  <li><strong>Language & Theme:</strong> Switch between supported languages and toggle between Day/Night
+                    modes.</li>
+                  <li><strong>Clear Cache & Logout:</strong> Securely logout and reset local cached data to default
+                    settings.</li>
+                </ol>
+              </div>
+              <div>
+                <img src="img/settings.png" alt="Account Settings" class="content-img" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- VN -->
+        <div data-lang="vn" style="display:none">
+          <div class="section-header">
+            <div class="section-badge">02</div>
+            <h1 class="section-title">Chức năng cơ bản</h1>
+            <p class="section-subtitle">Tổng quan về bố cục và cài đặt tài khoản trong bảng điều khiển đại lý.</p>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon blue">🖼️</div>I. Tổng quan về bố cục
+            </div>
+            <p class="para">Hình ảnh dưới đây hiển thị bố cục cốt lõi của hệ thống đại lý, được chia thành ba khu vực
+              chính: Điều hướng, Thông tin tài khoản & Quyền hạn, và Bảng dữ liệu.</p>
+            <img src="img/Layout.png" alt="Layout" class="content-img" />
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th style="width: 250px;">Tên khối</th>
+                    <th>Chức năng & Mô tả chính</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Menu chính (Bên trái)</strong></td>
+                    <td>Trung tâm điều hướng: Truy cập Quản lý đại lý, báo cáo, lịch sử cược và quản lý quỹ.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Thông tin tài khoản (Phía trên)</strong></td>
+                    <td>Quản lý tài khoản: Hiển thị ID người dùng, số dư và các quyền vận hành (Hạn mức, Tỷ lệ).</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Bảng điều khiển dữ liệu (Trung tâm)</strong></td>
+                    <td>Tổng quan hiệu suất: Tóm tắt hiệu quả hoạt động như doanh thu, thắng/thua và dữ liệu hoa hồng.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon red">⚙️</div>II. Trung tâm cài đặt cá nhân
+            </div>
+            <div class="grid-2 align-start">
+              <div>
+                <p class="para">Nhấp vào biểu tượng cài đặt trong khu vực tài khoản để quản lý hồ sơ của bạn:</p>
+                <ol class="numbered-list">
+                  <li><strong>Quản lý mật khẩu:</strong> Thường xuyên cập nhật mật khẩu để đảm bảo an toàn tài khoản.
+                  </li>
+                  <li><strong>Ngôn ngữ & Giao diện:</strong> Chuyển đổi ngôn ngữ được hỗ trợ và thay đổi chế độ
+                    Ngày/Đêm.</li>
+                  <li><strong>Xóa bộ nhớ đệm & Đăng xuất:</strong> Đăng xuất an toàn và xóa dữ liệu tạm thời để quay về
+                    mặc định.</li>
+                </ol>
+              </div>
+              <div>
+                <img src="img/settings.png" alt="Account Settings" class="content-img" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PH -->
+        <div data-lang="ph" style="display:none">
+          <div class="section-header">
+            <div class="section-badge">02</div>
+            <h1 class="section-title">Mga Pangunahing Feature</h1>
+            <p class="section-subtitle">Overview ng layout ng Dashboard at mga setting ng account sa backend.</p>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon blue">🖼️</div>I. Pangkalahatang-ideya ng Layout
+            </div>
+            <p class="para">Ipinapakita ng imahe sa ibaba ang pangunahing layout ng dashboard, na nahahati sa tatlong
+              zone: Navigation, Account Info & Permissions, at Dashboard ng Data.</p>
+            <img src="img/Layout.png" alt="Layout" class="content-img" />
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th style="width: 250px;">Pangalan ng Block</th>
+                    <th>Pangunahing Gamit at Paglalarawan</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Pangunahing Menu (Kaliwa)</strong></td>
+                    <td>Navigation Hub: Pasukan sa Pamamahala ng Agent, mga ulat, kasaysayan ng taya, at pondo.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Info ng Account (Itaas)</strong></td>
+                    <td>Personal Center: Ipinapakita ang ID, balanse, at mga parameter gaya ng Credit at Ratio.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Dashboard ng Data (Gitna)</strong></td>
+                    <td>Performance Overview: Buod ng mga sukat gaya ng turnover, panalo/talo, at komisyon.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon red">⚙️</div>II. Personal Setting Center
+            </div>
+            <div class="grid-2 align-start">
+              <div>
+                <p class="para">I-click ang icon sa section ng account para i-manage ang iyong profile at interface:</p>
+                <ol class="numbered-list">
+                  <li><strong>Update ng Password:</strong> Palitan ang iyong login password para sa higit pang
+                    seguridad.</li>
+                  <li><strong>Wika at Tema:</strong> Lumipat sa pagitan ng mga sinusuportahang wika at gamitin ang
+                    Day/Night mode.</li>
+                  <li><strong>I-clear ang Cache & Logout:</strong> Ligtas na mag-logout at i-reset ang local data para
+                    bumalik sa default.</li>
+                </ol>
+              </div>
+              <div>
+                <img src="img/settings.png" alt="Account Settings" class="content-img" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-footer">
+          <div class="footer-nav"><a href="section1.html" class="btn btn-outline btn-prev">‹ <span>上一节</span></a></div>
+          <div class="footer-nav"><a href="section3.html" class="btn btn-primary btn-next"><span>下一节</span> ›</a></div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

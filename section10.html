@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>时间定义 - 代理后台操作手册</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-logo">
+      <button class="mobile-toggle" id="mobileToggle">☰</button>
+      <div class="logo-icon">A</div>
+      <div>
+        <div class="logo-text">代理后台</div>
+        <div class="logo-sub">操作手册 · PC端</div>
+      </div>
+    </div>
+    <div class="lang-dropdown">
+      <button class="lang-dropdown-btn" id="langDropdownBtn">
+        <span class="lang-current" id="langCurrent">简体中文</span>
+        <span class="lang-arrow">▼</span>
+      </button>
+      <div class="lang-dropdown-menu" id="langDropdownMenu">
+        <button class="lang-dropdown-item active" data-lang="sc">简体中文</button>
+        <button class="lang-dropdown-item" data-lang="en">English</button>
+        <button class="lang-dropdown-item" data-lang="vn">Tiếng Việt</button>
+        <button class="lang-dropdown-item" data-lang="ph">Filipino</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- LAYOUT -->
+  <div class="layout">
+
+    <!-- SIDEBAR -->
+    <nav class="sidebar">
+      <div class="sidebar-section-title" data-lang="sc">目录</div>
+      <div class="sidebar-section-title" data-lang="en" style="display:none">Contents</div>
+      <div class="sidebar-section-title" data-lang="vn" style="display:none">Mục lục</div>
+      <div class="sidebar-section-title" data-lang="ph" style="display:none">Talaan</div>
+      <a href="index.html" class="nav-item"><span class="nav-num">🏠</span><span class="nav-label">首页</span></a>
+      <a href="section1.html" class="nav-item"><span class="nav-num">01</span><span class="nav-label">使用前须知</span></a>
+      <a href="section2.html" class="nav-item"><span class="nav-num">02</span><span class="nav-label">基本功能</span></a>
+      <a href="section3.html" class="nav-item"><span class="nav-num">03</span><span
+          class="nav-label">如何新增代理/会员</span></a>
+      <a href="section4.html" class="nav-item"><span class="nav-num">04</span><span
+          class="nav-label">如何为下级上/下分</span></a>
+      <a href="section5.html" class="nav-item"><span class="nav-num">05</span><span class="nav-label">如何查看收益</span></a>
+      <a href="section6.html" class="nav-item"><span class="nav-num">06</span><span class="nav-label">统计报表介绍</span></a>
+      <a href="section7.html" class="nav-item"><span class="nav-num">07</span><span class="nav-label">占成比介绍</span></a>
+      <a href="section8.html" class="nav-item"><span class="nav-num">08</span><span class="nav-label">有效投注比介绍</span></a>
+      <a href="section9.html" class="nav-item"><span class="nav-num">09</span><span class="nav-label">其他功能</span></a>
+      <a href="section10.html" class="nav-item active"><span class="nav-num">10</span><span
+          class="nav-label">时间定义</span></a>
+    </nav>
+
+    <!-- MAIN -->
+    <main class="main">
+
+      <!-- ══════════════════════════════════════════════════════
+     SECTION 10 — 时间定义
+══════════════════════════════════════════════════════ -->
+      <section class="section active" id="sec9">
+
+        <!-- SC -->
+        <div data-lang="sc">
+          <div class="section-header">
+            <div class="section-badge">10</div>
+            <h1 class="section-title">时间定义</h1>
+            <p class="section-subtitle">代理后台中快捷日期的定义与计算逻辑</p>
+          </div>
+          <div class="notice info">
+            <div class="notice-icon">🕐</div>
+            <div class="notice-content"><strong>系统时区：</strong>GMT+8。本系统的结算时间点固定为 <strong>07:00:00</strong>。</div>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon blue">📅</div>快捷日期区间定义
+            </div>
+            <ul class="def-list">
+              <li class="def-item">
+                <div class="def-term">1.「今日」</div>
+                <div class="def-desc">
+                  定义：今日 07:00:00 ~ 明日 06:59:59。<br>
+                  <span class="text-secondary small">例：若当前时间为 25 日 03:00，则「今日」显示为 24 日至 24 日；若为 25 日 09:00，则显示为 25 日至 25
+                    日。</span>
+                </div>
+              </li>
+              <li class="def-item">
+                <div class="def-term">2.「昨日」</div>
+                <div class="def-desc">
+                  定义：昨日 07:00:00 ~ 今日 06:59:59。<br>
+                  <span class="text-secondary small">例：若当前时间为 25 日 03:00，则「昨日」显示为 23 日至 23 日；若为 25 日 09:00，则显示为 24 日至 24
+                    日。</span>
+                </div>
+              </li>
+              <li class="def-item">
+                <div class="def-term">3.「本周」</div>
+                <div class="def-desc">
+                  定义：当周日 07:00:00 ~ 下个周日 06:59:59。<br>
+                  <span class="text-secondary small">例：若 25 日（周日）09:00，「本周」起始点为 25 日；若为 25 日 03:00，则属于旧的一周（如 18~24
+                    日）。</span>
+                </div>
+              </li>
+              <li class="def-item">
+                <div class="def-term">4.「上周」</div>
+                <div class="def-desc">定义：上周日 07:00:00 ~ 当周日 06:59:59。</div>
+              </li>
+              <li class="def-item">
+                <div class="def-term">5.「本月」</div>
+                <div class="def-desc">
+                  定义：当月 1 号 07:00:00 ~ 下个月 1 号 06:59:59。<br>
+                  <span class="text-secondary small">例：若 9 月 1 日 03:00，则「本月」仍计算为 8 月 1~31 日。</span>
+                </div>
+              </li>
+              <li class="def-item">
+                <div class="def-term">6.「上月」</div>
+                <div class="def-desc">定义：上个月 1 号 07:00:00 ~ 当月 1 号 06:59:59。</div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="notice warning">
+            <div class="notice-icon">📌</div>
+            <div class="notice-content">
+              由于结算点为 07:00:00，在每日 00:00 ~ 06:59 期间操作时，报表中的「今日」代表的是前一天的数据，请务必留意。
+            </div>
+          </div>
+        </div>
+
+        <!-- EN -->
+        <div data-lang="en" style="display:none">
+          <div class="section-header">
+            <div class="section-badge">10</div>
+            <h1 class="section-title">Time Definitions</h1>
+            <p class="section-subtitle">Definitions and logic of shortcut date ranges in the backend.</p>
+          </div>
+          <div class="notice info">
+            <div class="notice-icon">🕐</div>
+            <div class="notice-content"><strong>System Timezone:</strong> GMT+8. The settlement boundary is fixed at
+              <strong>07:00:00 AM</strong>.</div>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon blue">📅</div>Date Range Definitions
+            </div>
+            <ul class="def-list">
+              <li class="def-item">
+                <div class="def-term">1. "Today"</div>
+                <div class="def-desc">
+                  Today 07:00:00 ~ Tomorrow 06:59:59.<br>
+                  <span class="text-secondary small">Example: At 03:00 on the 25th, "Today" shows the 24th; at 09:00,
+                    "Today" shows the 25th.</span>
+                </div>
+              </li>
+              <li class="def-item">
+                <div class="def-term">2. "Yesterday"</div>
+                <div class="def-desc">
+                  Yesterday 07:00:00 ~ Today 06:59:59.<br>
+                  <span class="text-secondary small">Example: At 03:00 on the 25th, "Yesterday" shows the 23rd; at
+                    09:00, "Yesterday" shows the 24th.</span>
+                </div>
+              </li>
+              <li class="def-item">
+                <div class="def-term">3. "This Week"</div>
+                <div class="def-desc">Sunday 07:00:00 ~ Next Sunday 06:59:59.</div>
+              </li>
+              <li class="def-item">
+                <div class="def-term">4. "Last Week"</div>
+                <div class="def-desc">Last Sunday 07:00:00 ~ This Sunday 06:59:59.</div>
+              </li>
+              <li class="def-item">
+                <div class="def-term">5. "This Month"</div>
+                <div class="def-desc">1st of the Month 07:00:00 ~ 1st of Next Month 06:59:59.</div>
+              </li>
+              <li class="def-item">
+                <div class="def-term">6. "Last Month"</div>
+                <div class="def-desc">1st of Last Month 07:00:00 ~ 1st of This Month 06:59:59.</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- VN -->
+        <div data-lang="vn" style="display:none">
+          <div class="section-header">
+            <div class="section-badge">10</div>
+            <h1 class="section-title">Định nghĩa thời gian</h1>
+            <p class="section-subtitle">Định nghĩa và logic của các khoảng ngày xem nhanh trong hậu đài.</p>
+          </div>
+          <div class="notice info">
+            <div class="notice-icon">🕐</div>
+            <div class="notice-content"><strong>Múi giờ hệ thống:</strong> GMT+8. Ranh giới quyết toán cố định lúc
+              <strong>07:00:00 AM</strong>.</div>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon blue">📅</div>Định nghĩa các khoảng ngày
+            </div>
+            <ul class="def-list">
+              <li class="def-item">
+                <div class="def-term">1. "Hôm nay"</div>
+                <div class="def-desc">
+                  07:00:00 hôm nay ~ 06:59:59 ngày mai.<br>
+                  <span class="text-secondary small">Ví dụ: Lúc 03:00 ngày 25, "Hôm nay" hiển thị là ngày 24; lúc 09:00,
+                    "Hôm nay" hiển thị là ngày 25.</span>
+                </div>
+              </li>
+              <li class="def-item">
+                <div class="def-term">2. "Hôm qua"</div>
+                <div class="def-desc">07:00:00 hôm qua ~ 06:59:59 hôm nay.</div>
+              </li>
+              <li class="def-item">
+                <div class="def-term">3. "Tuần này"</div>
+                <div class="def-desc">07:00:00 Chủ Nhật này ~ 06:59:59 Chủ Nhật tới.</div>
+              </li>
+              <li class="def-item">
+                <div class="def-term">4. "Tuần trước"</div>
+                <div class="def-desc">07:00:00 Chủ Nhật trước ~ 06:59:59 Chủ Nhật này.</div>
+              </li>
+              <li class="def-item">
+                <div class="def-term">5. "Tháng này"</div>
+                <div class="def-desc">07:00:00 ngày 1 tháng này ~ 06:59:59 ngày 1 tháng tới.</div>
+              </li>
+              <li class="def-item">
+                <div class="def-term">6. "Tháng trước"</div>
+                <div class="def-desc">07:00:00 ngày 1 tháng trước ~ 06:59:59 ngày 1 tháng này.</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- PH -->
+        <div data-lang="ph" style="display:none">
+          <div class="section-header">
+            <div class="section-badge">10</div>
+            <h1 class="section-title">Kahulugan ng Oras</h1>
+            <p class="section-subtitle">Mga kahulugan at logic ng mga shortcut date range sa backend.</p>
+          </div>
+          <div class="notice info">
+            <div class="notice-icon">🕐</div>
+            <div class="notice-content"><strong>System Timezone:</strong> GMT+8. Ang settlement boundary ay fixed sa
+              <strong>07:00:00 AM</strong>.</div>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon blue">📅</div>Mga Kahulugan ng Petsa
+            </div>
+            <ul class="def-list">
+              <li class="def-item">
+                <div class="def-term">1. "Ngayon"</div>
+                <div class="def-desc">
+                  07:00:00 ngayon ~ 06:59:59 bukas.<br>
+                  <span class="text-secondary small">Halimbawa: Sa 03:00 ng ika-25, ang "Ngayon" ay ika-24; sa 09:00,
+                    ito ay ika-25.</span>
+                </div>
+              </li>
+              <li class="def-item">
+                <div class="def-term">2. "Kahapon"</div>
+                <div class="def-desc">07:00:00 kahapon ~ 06:59:59 ngayon.</div>
+              </li>
+              <li class="def-item">
+                <div class="def-term">3. "Ngayong Linggo"</div>
+                <div class="def-desc">07:00:00 ng Linggo na ito ~ 06:59:59 ng susunod na Linggo.</div>
+              </li>
+              <li class="def-item">
+                <div class="def-term">4. "Nakaraang Linggo"</div>
+                <div class="def-desc">07:00:00 ng nakaraang Linggo ~ 06:59:59 ng Linggong ito.</div>
+              </li>
+              <li class="def-item">
+                <div class="def-term">5. "Ngayong Buwan"</div>
+                <div class="def-desc">07:00:00 ng ika-1 ng buwan ~ 06:59:59 ng ika-1 ng susunod na buwan.</div>
+              </li>
+              <li class="def-item">
+                <div class="def-term">6. "Nakaraang Buwan"</div>
+                <div class="def-desc">07:00:00 ng ika-1 ng nakaraang buwan ~ 06:59:59 ng ika-1 ng buwang ito.</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="content-footer">
+          <div class="footer-nav"><a href="section9.html" class="btn btn-outline btn-prev">‹ <span>上一节</span></a></div>
+          <div></div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>占成比介绍 - 代理后台操作手册</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-logo">
+      <button class="mobile-toggle" id="mobileToggle">☰</button>
+      <div class="logo-icon">A</div>
+      <div>
+        <div class="logo-text">代理后台</div>
+        <div class="logo-sub">操作手册 · PC端</div>
+      </div>
+    </div>
+    <div class="lang-dropdown">
+      <button class="lang-dropdown-btn" id="langDropdownBtn">
+        <span class="lang-current" id="langCurrent">简体中文</span>
+        <span class="lang-arrow">▼</span>
+      </button>
+      <div class="lang-dropdown-menu" id="langDropdownMenu">
+        <button class="lang-dropdown-item active" data-lang="sc">简体中文</button>
+        <button class="lang-dropdown-item" data-lang="en">English</button>
+        <button class="lang-dropdown-item" data-lang="vn">Tiếng Việt</button>
+        <button class="lang-dropdown-item" data-lang="ph">Filipino</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- LAYOUT -->
+  <div class="layout">
+
+    <!-- SIDEBAR -->
+    <nav class="sidebar">
+      <div class="sidebar-section-title" data-lang="sc">目录</div>
+      <div class="sidebar-section-title" data-lang="en" style="display:none">Contents</div>
+      <div class="sidebar-section-title" data-lang="vn" style="display:none">Mục lục</div>
+      <div class="sidebar-section-title" data-lang="ph" style="display:none">Talaan</div>
+      <a href="index.html" class="nav-item"><span class="nav-num">🏠</span><span class="nav-label">首页</span></a>
+      <a href="section1.html" class="nav-item"><span class="nav-num">01</span><span class="nav-label">使用前须知</span></a>
+      <a href="section2.html" class="nav-item"><span class="nav-num">02</span><span class="nav-label">基本功能</span></a>
+      <a href="section3.html" class="nav-item"><span class="nav-num">03</span><span
+          class="nav-label">如何新增代理/会员</span></a>
+      <a href="section4.html" class="nav-item"><span class="nav-num">04</span><span
+          class="nav-label">如何为下级上/下分</span></a>
+      <a href="section5.html" class="nav-item"><span class="nav-num">05</span><span class="nav-label">如何查看收益</span></a>
+      <a href="section6.html" class="nav-item"><span class="nav-num">06</span><span class="nav-label">统计报表介绍</span></a>
+      <a href="section7.html" class="nav-item active"><span class="nav-num">07</span><span
+          class="nav-label">占成比介绍</span></a>
+      <a href="section8.html" class="nav-item"><span class="nav-num">08</span><span class="nav-label">有效投注比介绍</span></a>
+      <a href="section9.html" class="nav-item"><span class="nav-num">09</span><span class="nav-label">其他功能</span></a>
+      <a href="section10.html" class="nav-item"><span class="nav-num">10</span><span class="nav-label">时间定义</span></a>
+    </nav>
+
+    <!-- MAIN -->
+    <main class="main">
+
+      <!-- ══════════════════════════════════════════════════════
+     SECTION 07 — 占成比介绍
+══════════════════════════════════════════════════════ -->
+      <section class="section active" id="sec6">
+
+        <!-- SC -->
+        <div data-lang="sc">
+          <div class="section-header">
+            <div class="section-badge">07</div>
+            <h1 class="section-title">占成比介绍</h1>
+            <p class="section-subtitle">了解占成比的定义、计算方式及其对利润的影响</p>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon blue">❓</div>一、什么是「占成」？
+            </div>
+            <p class="para"><strong>占成 = 你要「一起承担输赢」的比例</strong></p>
+            <ul class="content-list">
+              <li><strong>下级或会员 赢钱</strong> → 你要照占成比例 一起出钱（赔付）</li>
+              <li><strong>下级或会员 输钱</strong> → 你照占成比例 分到钱（赚取）</li>
+            </ul>
+            <div class="notice info">
+              <div class="notice-icon">💡</div>
+              <div class="notice-content"><strong>核心概念：</strong>占成不是抽佣，而是与公司「一起扛输赢」。</div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon green">📊</div>二、占成 实际怎么影响你？
+            </div>
+            <div class="grid-2">
+              <div class="info-card">
+                <div class="info-label">例子 1：会员输钱（你会赚）</div>
+                <div class="para">会员输了：10,000</div>
+                <div class="para">你的占成：30%</div>
+                <div class="info-value">你赚：3,000</div>
+              </div>
+              <div class="info-card">
+                <div class="info-label">例子 2：会员赢钱（你要赔）</div>
+                <div class="para">会员赢了：10,000</div>
+                <div class="para">你的占成：30%</div>
+                <div class="info-value" style="color: var(--accent-danger)">你赔：3,000</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon red">📉</div>三、为什么「调高下级占成」，你反而赚更少？
+            </div>
+            <p class="para">因为下级的占成，是从你的占成里面<strong>「切出去的」</strong>。</p>
+            <div class="formula-box">
+              <div class="formula-text">你的实际占成 = 你的总占成 − 下级的占成</div>
+            </div>
+            <p class="para"><strong>实际情况：</strong>例如你的由上级分配的占成是 50%，你给下级 40%。</p>
+            <ul class="content-list">
+              <li>下级拿走 40%，<strong>你最后只剩 10%</strong>。</li>
+              <li>这并非 50% + 40%，而是 50% − 40%。</li>
+            </ul>
+            <div class="notice warning">
+              <div class="notice-icon">⚠️</div>
+              <div class="notice-content">下级占成设置越高，你自己留下的获利空间就越少。下级的占成比<strong>无法超过</strong>您的占成比。</div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon blue">💻</div>占成比画面说明
+            </div>
+            <div class="grid-2 align-start">
+              <div class="step-content">
+                <ol class="numbered-list">
+                  <li><strong>盈亏分成：</strong>占成比是指代理与公司之间的盈亏分成比例。利润或亏损都会以此比例计算。</li>
+                  <li><strong>设置入口：</strong>您可以在「代理组织管理」的「编辑账户」中为下级代理调整其占成比。</li>
+                  <li><strong>生效时间：</strong>若调整占成比，生效时间请以您公司设置的周期为准。</li>
+                </ol>
+              </div>
+              <img src="img/sec7.png" alt="编辑账户" class="content-img" style="margin-top:0">
+            </div>
+          </div>
+        </div>
+
+        <!-- EN -->
+        <div data-lang="en" style="display:none">
+          <div class="section-header">
+            <div class="section-badge">07</div>
+            <h1 class="section-title">Occupancy Ratio</h1>
+            <p class="section-subtitle">Understand what Occupancy is, how it works, and how it affects your profits.</p>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon blue">❓</div>1. What is "Occupancy"?
+            </div>
+            <p class="para"><strong>Occupancy = The percentage of "shared win/loss" you undertake.</strong></p>
+            <ul class="content-list">
+              <li><strong>Downline/Member Wins</strong> → You pay out according to your occupancy percentage.</li>
+              <li><strong>Downline/Member Loses</strong> → You receive money according to your occupancy percentage.
+              </li>
+            </ul>
+            <div class="notice info">
+              <div class="notice-icon">💡</div>
+              <div class="notice-content"><strong>Core Concept:</strong> Occupancy is not a commission; it is "sharing
+                the risk/reward" with the company.</div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon green">📊</div>2. How does Occupancy affect you?
+            </div>
+            <div class="grid-2">
+              <div class="info-card">
+                <div class="info-label">Case 1: Member Loses (You Earn)</div>
+                <div class="para">Member Lost: 10,000</div>
+                <div class="para">Your Ratio: 30%</div>
+                <div class="info-value">You Earn: 3,000</div>
+              </div>
+              <div class="info-card">
+                <div class="info-label">Case 2: Member Wins (You Pay)</div>
+                <div class="para">Member Won: 10,000</div>
+                <div class="para">Your Ratio: 30%</div>
+                <div class="info-value" style="color: var(--accent-danger)">You Pay: 3,000</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon red">📉</div>3. Why do you earn LESS when you increase your downline's ratio?
+            </div>
+            <p class="para">Because your downline's occupancy is <strong>"carved out"</strong> from your own occupancy.
+            </p>
+            <div class="formula-box">
+              <div class="formula-text">Your Actual Occupancy = Your Total Occupancy − Downline's Occupancy</div>
+            </div>
+            <p class="para"><strong>Scenario:</strong> If your parent agent gives you 50% occupancy, and you give your
+              downline 40%:</p>
+            <ul class="content-list">
+              <li>The downline takes 40%, <strong>leaving you with only 10%</strong>.</li>
+              <li>It is 50% − 40%, not 50% + 40%.</li>
+            </ul>
+            <div class="notice warning">
+              <div class="notice-icon">⚠️</div>
+              <div class="notice-content">The higher the downline's ratio, the less profit space you keep for yourself.
+                Downline ratios <strong>cannot exceed</strong> your own.</div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon blue">💻</div>Interface Guide
+            </div>
+            <div class="grid-2 align-start">
+              <div class="step-content">
+                <ol class="numbered-list">
+                  <li><strong>P/L Share:</strong> Ratio defines the win/loss sharing between agent and company.</li>
+                  <li><strong>Settings:</strong> Go to "Agent Management" > "Edit Account" to adjust downline occupancy.
+                  </li>
+                  <li><strong>Effective Time:</strong> Changes take effect based on your company's settings (refer to
+                    the system prompt).</li>
+                </ol>
+              </div>
+              <img src="img/sec7.png" alt="Edit Account" class="content-img" style="margin-top:0">
+            </div>
+          </div>
+        </div>
+
+        <!-- VN -->
+        <div data-lang="vn" style="display:none">
+          <div class="section-header">
+            <div class="section-badge">07</div>
+            <h1 class="section-title">Tỷ lệ chiếm thành (Góp gió)</h1>
+            <p class="section-subtitle">Tìm hiểu định nghĩa, cách tính và cách nó ảnh hưởng đến lợi nhuận của bạn.</p>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon blue">❓</div>1. "Chiếm thành" là gì?
+            </div>
+            <p class="para"><strong>Chiếm thành = Tỷ lệ bạn "cùng gánh vác thắng thua".</strong></p>
+            <ul class="content-list">
+              <li><strong>Cấp dưới/Thành viên thắng</strong> → Bạn phải chi tiền theo tỷ lệ chiếm thành (bồi thường).
+              </li>
+              <li><strong>Cấp dưới/Thành viên thua</strong> → Bạn nhận tiền theo tỷ lệ chiếm thành (lợi nhuận).</li>
+            </ul>
+            <div class="notice info">
+              <div class="notice-icon">💡</div>
+              <div class="notice-content"><strong>Khái niệm cốt lõi:</strong> Chiếm thành không phải hoa hồng, mà là
+                "cùng gánh thắng thua" với công ty.</div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon green">📊</div>2. Chiếm thành ảnh hưởng đến bạn như thế nào?
+            </div>
+            <div class="grid-2">
+              <div class="info-card">
+                <div class="info-label">Ví dụ 1: Thành viên thua (Bạn kiếm được)</div>
+                <div class="para">Thành viên thua: 10,000</div>
+                <div class="para">Chiếm thành: 30%</div>
+                <div class="info-value">Bạn nhận: 3,000</div>
+              </div>
+              <div class="info-card">
+                <div class="info-label">Ví dụ 2: Thành viên thắng (Bạn phải bù)</div>
+                <div class="para">Thành viên thắng: 10,000</div>
+                <div class="para">Chiếm thành: 30%</div>
+                <div class="info-value" style="color: var(--accent-danger)">Bạn bù: 3,000</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon red">📉</div>3. Tại sao "tăng chiếm thành cấp dưới", bạn lại kiếm được ÍT hơn?
+            </div>
+            <p class="para">Vì chiếm thành của cấp dưới được <strong>"cắt ra"</strong> từ chính phần chiếm thành của
+              bạn.</p>
+            <div class="formula-box">
+              <div class="formula-text">Chiếm thành thực tế = Tổng chiếm thành của bạn − Chiếm thành của cấp dưới</div>
+            </div>
+            <p class="para"><strong>Thực tế:</strong> Ví dụ phần của bạn được cấp trên giao là 50%, bạn cho cấp dưới
+              40%.</p>
+            <ul class="content-list">
+              <li>Cấp dưới lấy 40%, <strong>bạn chỉ còn lại 10%</strong>.</li>
+              <li>Đây không phải là 50% + 40%, mà là 50% − 40%.</li>
+            </ul>
+            <div class="notice warning">
+              <div class="notice-icon">⚠️</div>
+              <div class="notice-content">Cấp dưới đặt chiếm thành càng cao, phần lợi nhuận giữ lại của bạn càng ít. Cấp
+                dưới <strong>không bao giờ</strong> có thể đặt chiếm thành cao hơn bạn.</div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon blue">💻</div>Hướng dẫn giao diện
+            </div>
+            <div class="grid-2 align-start">
+              <div class="step-content">
+                <ol class="numbered-list">
+                  <li><strong>Phân chia thắng thua:</strong> Tỷ lệ chiếm thành quy định việc chia sẻ thắng thua giữa đại
+                    lý và công ty.</li>
+                  <li><strong>Cài đặt:</strong> Vào "Quản lý đại lý" > "Chỉnh sửa tài khoản" để điều chỉnh chiếm thành
+                    cho cấp dưới.</li>
+                  <li><strong>Thời gian hiệu lực:</strong> Theo chu kỳ cài đặt của công ty bạn (xem thông báo trên hệ
+                    thống).</li>
+                </ol>
+              </div>
+              <img src="img/sec7.png" alt="Chỉnh sửa tài khoản" class="content-img" style="margin-top:0">
+            </div>
+          </div>
+        </div>
+
+        <!-- PH -->
+        <div data-lang="ph" style="display:none">
+          <div class="section-header">
+            <div class="section-badge">07</div>
+            <h1 class="section-title">Occupancy Ratio</h1>
+            <p class="section-subtitle">Alamin kung ano ang Occupancy, paano ito gumagana, at paano nito naaapektuhan
+              ang iyong kita.</p>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon blue">❓</div>1. Ano ang "Occupancy"?
+            </div>
+            <p class="para"><strong>Occupancy = Ang porsyento ng "sabay na pagtanggap ng panalo o talo".</strong></p>
+            <ul class="content-list">
+              <li><strong>Downline/Miyembro Nanalo</strong> → Magbabayad ka ayon sa occupancy ratio (pambayad).</li>
+              <li><strong>Downline/Miyembro Natalo</strong> → Makakakuha ka ng pera ayon sa occupancy ratio (kita).</li>
+            </ul>
+            <div class="notice info">
+              <div class="notice-icon">💡</div>
+              <div class="notice-content"><strong>Pangunahing Konsepto:</strong> Ang occupancy ay hindi commission; ito
+                ay "pakikihati sa risk/reward" kasama ang kumpanya.</div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon green">📊</div>2. Paano ka naaapektuhan ng Occupancy?
+            </div>
+            <div class="grid-2">
+              <div class="info-card">
+                <div class="info-label">Case 1: Natalo ang Miyembro (Kita mo)</div>
+                <div class="para">Tinalo ng Miyembro: 10,000</div>
+                <div class="para">Occupancy mo: 30%</div>
+                <div class="info-value">Kita mo: 3,000</div>
+              </div>
+              <div class="info-card">
+                <div class="info-label">Case 2: Nanalo ang Miyembro (Abonado ka)</div>
+                <div class="para">Nanalo ang Miyembro: 10,000</div>
+                <div class="para">Occupancy mo: 30%</div>
+                <div class="info-value" style="color: var(--accent-danger)">Abono mo: 3,000</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon red">📉</div>3. Bakit mas MABABA ang kita mo kapag tinaasan ang occupancy ng
+              downline?
+            </div>
+            <p class="para">Dahil ang occupancy ng downline ay <strong>"binabawas"</strong> mula sa sarili mong
+              occupancy.</p>
+            <div class="formula-box">
+              <div class="formula-text">Actual Occupancy mo = Total Occupancy mo − Occupancy ng Downline</div>
+            </div>
+            <p class="para"><strong>Halimbawa:</strong> Kung ang occupancy mo ay 50%, at binigyan mo ang downline ng
+              40%:</p>
+            <ul class="content-list">
+              <li>Kukunin ng downline ang 40%, <strong>at 10% na lang ang matitira sa iyo</strong>.</li>
+              <li>Ito ay 50% − 40%, hindi 50% + 40%.</li>
+            </ul>
+            <div class="notice warning">
+              <div class="notice-icon">⚠️</div>
+              <div class="notice-content">Mas mataas ang occupancy ng downline, mas maliit ang kitang mapupunta sa iyo.
+                Ang occupancy ng downline ay <strong>hindi maaaring lumampas</strong> sa occupancy mo.</div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon blue">💻</div>Gabay sa Interface
+            </div>
+            <div class="grid-2 align-start">
+              <div class="step-content">
+                <ol class="numbered-list">
+                  <li><strong>Win/Loss Share:</strong> Ang ratio ang nagtatakda ng hatian sa pagitan ng agent at
+                    kumpanya.</li>
+                  <li><strong>Settings:</strong> Pumunta sa "Agent Management" > "Edit Account" para i-adjust ang
+                    occupancy ng downline.</li>
+                  <li><strong>Bisa ng Oras:</strong> Ang pagbabago ay magkakabisa base sa cycle ng inyong kumpanya.</li>
+                </ol>
+              </div>
+              <img src="img/sec7.png" alt="Edit Account" class="content-img" style="margin-top:0">
+            </div>
+          </div>
+        </div>
+
+        <div class="content-footer">
+          <div class="footer-nav"><a href="section6.html" class="btn btn-outline btn-prev">‹ <span>上一节</span></a></div>
+          <div class="footer-nav"><a href="section8.html" class="btn btn-primary btn-next"><span>下一节</span> ›</a></div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

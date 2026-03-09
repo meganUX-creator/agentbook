@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>有效投注比介绍 - 代理后台操作手册</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-logo">
+      <button class="mobile-toggle" id="mobileToggle">☰</button>
+      <div class="logo-icon">A</div>
+      <div>
+        <div class="logo-text">代理后台</div>
+        <div class="logo-sub">操作手册 · PC端</div>
+      </div>
+    </div>
+    <div class="lang-dropdown">
+      <button class="lang-dropdown-btn" id="langDropdownBtn">
+        <span class="lang-current" id="langCurrent">简体中文</span>
+        <span class="lang-arrow">▼</span>
+      </button>
+      <div class="lang-dropdown-menu" id="langDropdownMenu">
+        <button class="lang-dropdown-item active" data-lang="sc">简体中文</button>
+        <button class="lang-dropdown-item" data-lang="en">English</button>
+        <button class="lang-dropdown-item" data-lang="vn">Tiếng Việt</button>
+        <button class="lang-dropdown-item" data-lang="ph">Filipino</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- LAYOUT -->
+  <div class="layout">
+
+    <!-- SIDEBAR -->
+    <nav class="sidebar">
+      <div class="sidebar-section-title" data-lang="sc">目录</div>
+      <div class="sidebar-section-title" data-lang="en" style="display:none">Contents</div>
+      <div class="sidebar-section-title" data-lang="vn" style="display:none">Mục lục</div>
+      <div class="sidebar-section-title" data-lang="ph" style="display:none">Talaan</div>
+      <a href="index.html" class="nav-item"><span class="nav-num">🏠</span><span class="nav-label">首页</span></a>
+      <a href="section1.html" class="nav-item"><span class="nav-num">01</span><span class="nav-label">使用前须知</span></a>
+      <a href="section2.html" class="nav-item"><span class="nav-num">02</span><span class="nav-label">基本功能</span></a>
+      <a href="section3.html" class="nav-item"><span class="nav-num">03</span><span
+          class="nav-label">如何新增代理/会员</span></a>
+      <a href="section4.html" class="nav-item"><span class="nav-num">04</span><span
+          class="nav-label">如何为下级上/下分</span></a>
+      <a href="section5.html" class="nav-item"><span class="nav-num">05</span><span class="nav-label">如何查看收益</span></a>
+      <a href="section6.html" class="nav-item"><span class="nav-num">06</span><span class="nav-label">统计报表介绍</span></a>
+      <a href="section7.html" class="nav-item"><span class="nav-num">07</span><span class="nav-label">占成比介绍</span></a>
+      <a href="section8.html" class="nav-item active"><span class="nav-num">08</span><span
+          class="nav-label">有效投注比介绍</span></a>
+      <a href="section9.html" class="nav-item"><span class="nav-num">09</span><span class="nav-label">其他功能</span></a>
+      <a href="section10.html" class="nav-item"><span class="nav-num">10</span><span class="nav-label">时间定义</span></a>
+    </nav>
+
+    <!-- MAIN -->
+    <main class="main">
+
+      <!-- ══════════════════════════════════════════════════════
+     SECTION 08 — 有效投注比介绍
+══════════════════════════════════════════════════════ -->
+      <section class="section active" id="sec7">
+
+        <!-- SC -->
+        <div data-lang="sc">
+          <div class="section-header">
+            <div class="section-badge">08</div>
+            <h1 class="section-title">有效投注比介绍</h1>
+            <p class="section-subtitle">了解有效投注的定义、收益逻辑及其对代理的影响</p>
+          </div>
+
+          <div class="grid-2">
+            <div class="card">
+              <div class="card-title">
+                <div class="card-icon blue">❓</div>一、什么是「有效投注」？
+              </div>
+              <p class="para"><strong>有效投注 = 抽「流水佣金」用的投注金额</strong></p>
+              <p class="para">系统不看输赢，只看「有没有下注」。无论会员赢钱或输钱，只要是有效下注，都会计算在内。</p>
+            </div>
+
+            <div class="card">
+              <div class="card-title">
+                <div class="card-icon green">💰</div>二、有效投注你怎么赚钱？
+              </div>
+              <div class="formula-box">
+                <div class="formula-text">佣金 = 会员有效投注 × 你的有效投注比</div>
+              </div>
+              <p class="para"><strong>例子：</strong>会员有效投注 1,000,000，你的有效投注比 1%，你可拿到 10,000。</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon yellow">⚖️</div>三、为什么「看起来有」，但实际拿到比较少？
+            </div>
+            <p class="para">因为有效投注佣金中，需要再扣除你所承担的<strong>占成成本</strong>。</p>
+            <div class="notice info">
+              <div class="notice-icon">💡</div>
+              <div class="notice-content">
+                <strong>白话理解：</strong>有效投注是「抽水」，占成是「扛输赢」。<br>
+                最后你拿到的是：<strong>抽水 − 你要承担的输赢成本</strong>。因此，有效投注额并不直接等同于净利润。
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon red">📉</div>四、代理间的「分成」规则
+            </div>
+            <ul class="content-list">
+              <li><strong>逐级分成：</strong>下级的有效投注比，是从你的有效投注比中分出去。例如你 2%，下级 1%，你实际只留 1%。</li>
+              <li><strong>上限限制：</strong>下级的有效投注比<strong>无法超过</strong>您的比值。这是为了防止金额「凭空多出来」的系统逻辑。</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon blue">📅</div>五、生效时间说明
+            </div>
+            <p class="para">调整设置后不一定马上生效，请依公司设定的<strong>结算周期</strong>为准。系统会提示「新设定的生效时间」。</p>
+            <ul class="content-list">
+              <li>生效前的投注与输赢，仍会照旧设定计算。</li>
+              <li>报表可能会因生效点不同而拆成两段显示，此为正常现象。</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon grey">💻</div>画面功能说明
+            </div>
+            <div class="grid-2 align-start">
+              <div class="step-content">
+                <ol class="numbered-list">
+                  <li><strong>代理：</strong>获得的有效投注佣金需再扣除代理需承担的占成比例。</li>
+                  <li><strong>会员：</strong>可根据自己的有效投注比获得佣金。</li>
+                  <li><strong>设置：</strong>可在「代理组织管理」的「编辑账户」中为下级进行设置。</li>
+                </ol>
+              </div>
+              <img src="img/sec8.png" alt="有效投注比设置" class="content-img" style="margin-top:0">
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon green">🔍</div>会员如何查看自己的佣金？
+            </div>
+            <p class="para">会员可于游戏菜单中点击<strong>【会员报表】</strong>，查看近 7 天的有效投注佣金。</p>
+            <div class="notice info">
+              <div class="notice-icon">📂</div>
+              <div class="notice-content">若需查看更久以前的记录，代理可从後台【统计报表】查询并导出後传送给会员。</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- EN -->
+        <div data-lang="en" style="display:none">
+          <div class="section-header">
+            <div class="section-badge">08</div>
+            <h1 class="section-title">Valid Bet Ratio</h1>
+            <p class="section-subtitle">Understand the definition of Valid Bet, earning logic, and its impact on agents.
+            </p>
+          </div>
+
+          <div class="grid-2">
+            <div class="card">
+              <div class="card-title">
+                <div class="card-icon blue">❓</div>1. What is "Valid Bet"?
+              </div>
+              <p class="para"><strong>Valid Bet = Turnover amount used for "Rolling Commission".</strong></p>
+              <p class="para">The system ignores win/loss; it only cares if a bet was placed. As long as it is a valid
+                bet, it counts toward the turnover.</p>
+            </div>
+
+            <div class="card">
+              <div class="card-title">
+                <div class="card-icon green">💰</div>2. How do you earn?
+              </div>
+              <div class="formula-box">
+                <div class="formula-text">Commission = Downline Valid Bet × Your Ratio</div>
+              </div>
+              <p class="para"><strong>Example:</strong> Member's valid bet is 1,000,000, and your ratio is 1%, you earn
+                10,000.</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon yellow">⚖️</div>3. Why is the actual amount often lower than expected?
+            </div>
+            <p class="para">Because rolling commission must be offset by the <strong>occupancy costs</strong> you
+              undertake.</p>
+            <div class="notice info">
+              <div class="notice-icon">💡</div>
+              <div class="notice-content">
+                <strong>Key Concept:</strong> Valid Bet is "Profit Share from Turnover", while Occupancy is "Sharing
+                Risk/Reward".<br>
+                Your final payout is: <strong>Turnover Commission − Occupancy/Settlement Costs</strong>. Total valid
+                bets do not equal net profit.
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon red">📉</div>4. Distribution Rules
+            </div>
+            <ul class="content-list">
+              <li><strong>Tiered Sharing:</strong> A sub-agent's ratio is carved out from yours. If yours is 2% and you
+                give them 1%, you keep 1%.</li>
+              <li><strong>Limits:</strong> A sub-agent's ratio <strong>cannot exceed</strong> yours. This ensures logic
+                consistency in the payout pool.</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon blue">📅</div>5. Effective Time
+            </div>
+            <p class="para">Changes do not take effect immediately. They follow the company's <strong>Settlement
+                Cycle</strong>. The system will prompt the "Effective Time".</p>
+            <ul class="content-list">
+              <li>Bets and win/loss before the effective time follow the old settings.</li>
+              <li>Reports may split into two sections during transitions.</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon grey">💻</div>Interface Guide
+            </div>
+            <div class="grid-2 align-start">
+              <div class="step-content">
+                <ol class="numbered-list">
+                  <li><strong>Agent:</strong> Final commission is calculated after deducting the required occupancy
+                    ratio.</li>
+                  <li><strong>Member:</strong> Earns commission directly based on their own ratio.</li>
+                  <li><strong>Settings:</strong> Managed under "Agent Management" > "Edit Account".</li>
+                </ol>
+              </div>
+              <img src="img/sec8.png" alt="Valid Bet Ratio Settings" class="content-img" style="margin-top:0">
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon green">🔍</div>How do members check their commission?
+            </div>
+            <p class="para">Members can click <strong>[Member Report]</strong> in the game menu to view their commission
+              for the last 7 days.</p>
+            <div class="notice info">
+              <div class="notice-icon">📂</div>
+              <div class="notice-content">For older records, agents can query and export reports from the [Statistical
+                Reports] backend to share with members.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- VN -->
+        <div data-lang="vn" style="display:none">
+          <div class="section-header">
+            <div class="section-badge">08</div>
+            <h1 class="section-title">Tỷ lệ cược hợp lệ (Rolling)</h1>
+            <p class="section-subtitle">Tìm hiểu định nghĩa cược hợp lệ, logic thu nhập và tác động đến đại lý.</p>
+          </div>
+
+          <div class="grid-2">
+            <div class="card">
+              <div class="card-title">
+                <div class="card-icon blue">❓</div>1. "Cược hợp lệ" là gì?
+              </div>
+              <p class="para"><strong>Cược hợp lệ = Doanh thu dùng để tính hoa hồng.</strong></p>
+              <p class="para">Hệ thống không tính thắng thua, chỉ xem "có đặt cược hay không". Chỉ cần là cược hợp lệ,
+                số tiền đó sẽ được tính vào doanh thu.</p>
+            </div>
+
+            <div class="card">
+              <div class="card-title">
+                <div class="card-icon green">💰</div>2. Bạn kiếm bộn tiền như thế nào?
+              </div>
+              <div class="formula-box">
+                <div class="formula-text">Hoa hồng = Cược hợp lệ cấp dưới × Tỷ lệ của bạn</div>
+              </div>
+              <p class="para"><strong>Ví dụ:</strong> Cược hợp lệ của thành viên là 1.000.000, tỷ lệ của bạn là 1%, bạn
+                nhận được 10.000.</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon yellow">⚖️</div>3. Tại sao doanh thu có nhưng thực nhận lại ít hơn?
+            </div>
+            <p class="para">Vì hoa hồng cược hợp lệ cần phải trừ đi <strong>chi phí chiếm thành</strong> mà bạn đang
+              gánh vác.</p>
+            <div class="notice info">
+              <div class="notice-icon">💡</div>
+              <div class="notice-content">
+                <strong>Cách hiểu đơn giản:</strong> Cược hợp lệ là "hoa hồng doanh thu", chiếm thành là "chia sẻ thắng
+                thua".<br>
+                Số tiền cuối cùng bạn nhận: <strong>Hoa hồng doanh thu − Chi phí thắng thua</strong>. Tổng cược hợp lệ
+                không phải là lợi nhuận ròng.
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon red">📉</div>4. Quy tắc phân chia cấp bậc
+            </div>
+            <ul class="content-list">
+              <li><strong>Cắt hoa hồng:</strong> Tỷ lệ của cấp dưới được cắt ra từ tỷ lệ của bạn. Nếu bạn có 2%, cho cấp
+                dưới 1%, bạn còn lại 1%.</li>
+              <li><strong>Giới hạn:</strong> Cấp dưới <strong>không bao giờ</strong> có tỷ lệ cao hơn bạn.</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon blue">📅</div>5. Thời gian hiệu lực
+            </div>
+            <p class="para">Thay đổi không có hiệu lực ngay lập tức mà theo <strong>Chu kỳ kết toán</strong> của công
+              ty. Hệ thống sẽ báo "Thời gian hiệu lực mới".</p>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon grey">💻</div>Hướng dẫn giao diện
+            </div>
+            <div class="grid-2 align-start">
+              <div class="step-content">
+                <ol class="numbered-list">
+                  <li><strong>Đại lý:</strong> Hoa hồng thực nhận sau khi trừ chi phí chiếm thành.</li>
+                  <li><strong>Thành viên:</strong> Nhận hoa hồng trực tiếp dựa trên tỷ lệ cá nhân.</li>
+                  <li><strong>Cài đặt:</strong> Thực hiện tại "Quản lý tổ chức" > "Chỉnh sửa tài khoản".</li>
+                </ol>
+              </div>
+              <img src="img/sec8.png" alt="Cài đặt tỷ lệ cược" class="content-img" style="margin-top:0">
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon green">🔍</div>Thành viên xem hoa hồng ở đâu?
+            </div>
+            <p class="para">Thành viên vào menu trò chơi, chọn <strong>[Báo cáo thành viên]</strong> để xem hoa hồng 7
+              ngày qua.</p>
+            <div class="notice info">
+              <div class="notice-icon">📂</div>
+              <div class="notice-content">Nếu cần xem lâu hơn, đại lý xem tại [Báo cáo thống kê] rồi gửi cho thành viên.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PH -->
+        <div data-lang="ph" style="display:none">
+          <div class="section-header">
+            <div class="section-badge">08</div>
+            <h1 class="section-title">Valid Bet Ratio</h1>
+            <p class="section-subtitle">Alamin ang kahulugan ng Valid Bet, logic ng kita, at epekto nito sa mga agent.
+            </p>
+          </div>
+
+          <div class="grid-2">
+            <div class="card">
+              <div class="card-title">
+                <div class="card-icon blue">❓</div>1. Ano ang "Valid Bet"?
+              </div>
+              <p class="para"><strong>Valid Bet = Turnover amount para sa "Rolling Commission".</strong></p>
+              <p class="para">Hindi tinitingnan ang panalo/talo; ang mahalaga ay kung may tumaya. Basta valid ang taya,
+                kasama ito sa computation.</p>
+            </div>
+
+            <div class="card">
+              <div class="card-title">
+                <div class="card-icon green">💰</div>2. Paano ka kikita?
+              </div>
+              <div class="formula-box">
+                <div class="formula-text">Komisyon = Valid Bet ng Downline × Ratio mo</div>
+              </div>
+              <p class="para"><strong>Halimbawa:</strong> May 1,000,000 na valid bet ang miyembro, at 1% ang ratio mo,
+                makakakuha ka ng 10,000.</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon yellow">⚖️</div>3. Bakit mas mababa ang nakukuhan kaysa sa inaasahan?
+            </div>
+            <p class="para">Dahil ang rolling commission ay kailangang bawasan ng <strong>occupancy costs</strong> na
+              iyong inaako.</p>
+            <div class="notice info">
+              <div class="notice-icon">💡</div>
+              <div class="notice-content">
+                <strong>Konsepto:</strong> Ang Valid Bet ay "komisyon sa turnover", habang ang Occupancy ay
+                "pakikibahagi sa panalo/talo".<br>
+                Ang makukuha mo ay: <strong>Turnover Commission − Occupancy Costs</strong>. Hindi garantisadong net
+                profit ang valid bet.
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon red">📉</div>4. Panuntunan sa Distribusyon
+            </div>
+            <ul class="content-list">
+              <li><strong>Paghahati:</strong> Ang ratio ng downline ay binabawas mula sa iyo. Kung 2% ka at binigyan mo
+                sila ng 1%, 1% na lang ang sa iyo.</li>
+              <li><strong>Limitasyon:</strong> Hindi maaaring <strong>lumampas</strong> ang ratio ng downline sa ratio
+                mo.</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon blue">📅</div>5. Oras ng Bisa
+            </div>
+            <p class="para">Hindi agad magkakabisa; depende ito sa <strong>Settlement Cycle</strong> ng kumpanya. May
+              lalabas na prompt para sa "Effective Time".</p>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon grey">💻</div>Gabay sa Interface
+            </div>
+            <div class="grid-2 align-start">
+              <div class="step-content">
+                <ol class="numbered-list">
+                  <li><strong>Agent:</strong> Bawas ang occupancy costs sa makukuhang komisyon.</li>
+                  <li><strong>Miyembro:</strong> Kumikita base sa sariling ratio.</li>
+                  <li><strong>Settings:</strong> Sa "Agent Management" > "Edit Account".</li>
+                </ol>
+              </div>
+              <img src="img/sec8.png" alt="Valid Bet Settings" class="content-img" style="margin-top:0">
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon green">🔍</div>Paano titingnan ng miyembro ang kanilang komisyon?
+            </div>
+            <p class="para">Sa game menu, i-click ang <strong>[Member Report]</strong> para makita ang komisyon sa
+              nakalipas na 7 araw.</p>
+            <div class="notice info">
+              <div class="notice-icon">📂</div>
+              <div class="notice-content">Para sa mas lumang records, ang agent ay pwedeng kumuha sa [Statistical
+                Reports] at i-send sa miyembro.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-footer">
+          <div class="footer-nav"><a href="section7.html" class="btn btn-outline btn-prev">‹ <span>上一节</span></a></div>
+          <div class="footer-nav"><a href="section9.html" class="btn btn-primary btn-next"><span>下一节</span> ›</a></div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

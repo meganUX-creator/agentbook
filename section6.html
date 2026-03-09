@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>统计报表介绍 - 代理后台操作手册</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-logo">
+      <button class="mobile-toggle" id="mobileToggle">☰</button>
+      <div class="logo-icon">A</div>
+      <div>
+        <div class="logo-text">代理后台</div>
+        <div class="logo-sub">操作手册 · PC端</div>
+      </div>
+    </div>
+    <div class="lang-dropdown">
+      <button class="lang-dropdown-btn" id="langDropdownBtn">
+        <span class="lang-current" id="langCurrent">简体中文</span>
+        <span class="lang-arrow">▼</span>
+      </button>
+      <div class="lang-dropdown-menu" id="langDropdownMenu">
+        <button class="lang-dropdown-item active" data-lang="sc">简体中文</button>
+        <button class="lang-dropdown-item" data-lang="en">English</button>
+        <button class="lang-dropdown-item" data-lang="vn">Tiếng Việt</button>
+        <button class="lang-dropdown-item" data-lang="ph">Filipino</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- LAYOUT -->
+  <div class="layout">
+
+    <!-- SIDEBAR -->
+    <nav class="sidebar">
+      <div class="sidebar-section-title" data-lang="sc">目录</div>
+      <div class="sidebar-section-title" data-lang="en" style="display:none">Contents</div>
+      <div class="sidebar-section-title" data-lang="vn" style="display:none">Mục lục</div>
+      <div class="sidebar-section-title" data-lang="ph" style="display:none">Talaan</div>
+      <a href="index.html" class="nav-item"><span class="nav-num">🏠</span><span class="nav-label">首页</span></a>
+      <a href="section1.html" class="nav-item"><span class="nav-num">01</span><span class="nav-label">使用前须知</span></a>
+      <a href="section2.html" class="nav-item"><span class="nav-num">02</span><span class="nav-label">基本功能</span></a>
+      <a href="section3.html" class="nav-item"><span class="nav-num">03</span><span
+          class="nav-label">如何新增代理/会员</span></a>
+      <a href="section4.html" class="nav-item"><span class="nav-num">04</span><span
+          class="nav-label">如何为下级上/下分</span></a>
+      <a href="section5.html" class="nav-item"><span class="nav-num">05</span><span class="nav-label">如何查看收益</span></a>
+      <a href="section6.html" class="nav-item active"><span class="nav-num">06</span><span
+          class="nav-label">统计报表介绍</span></a>
+      <a href="section7.html" class="nav-item"><span class="nav-num">07</span><span class="nav-label">占成比介绍</span></a>
+      <a href="section8.html" class="nav-item"><span class="nav-num">08</span><span class="nav-label">有效投注比介绍</span></a>
+      <a href="section9.html" class="nav-item"><span class="nav-num">09</span><span class="nav-label">其他功能</span></a>
+      <a href="section10.html" class="nav-item"><span class="nav-num">10</span><span class="nav-label">时间定义</span></a>
+    </nav>
+
+    <!-- MAIN -->
+    <main class="main">
+
+      <!-- ══════════════════════════════════════════════════════
+     SECTION 06 — 统计报表介绍
+══════════════════════════════════════════════════════ -->
+      <section class="section active" id="sec5">
+
+        <!-- SC -->
+        <div data-lang="sc">
+          <div class="section-header">
+            <div class="section-badge">06</div>
+            <h1 class="section-title">统计报表介绍</h1>
+            <p class="section-subtitle">代理后台提供多种报表，帮助您全面了解下级的投注与收益情况</p>
+          </div>
+          <img src="img/members.png" alt="统计报表" class="content-img">
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon blue">📋</div>报表类型说明
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>报表名称</th>
+                    <th>内容说明</th>
+                    <th>周期</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>投注报表</td>
+                    <td>统计下级各游戏类型的投注总额、有效投注额</td>
+                    <td>日/月</td>
+                  </tr>
+                  <tr>
+                    <td>收益报表</td>
+                    <td>按占成比计算的代理收益，含各游戏分类明细</td>
+                    <td>日/月</td>
+                  </tr>
+                  <tr>
+                    <td>上下分报表</td>
+                    <td>所有上分/下分操作的时间、金额、操作人记录</td>
+                    <td>自定义</td>
+                  </tr>
+                  <tr>
+                    <td>会员活跃报表</td>
+                    <td>下级会员的登录次数、投注次数、活跃天数</td>
+                    <td>月</td>
+                  </tr>
+                  <tr>
+                    <td>游戏类型报表</td>
+                    <td>按游戏分类（真人、体育、彩票等）统计各维度数据</td>
+                    <td>日/月</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon blue">📊</div>方法 2：统计报表
+            </div>
+            <div class="table-wrap">
+              <table>
+                <tbody>
+                  <tr>
+                    <td>功能描述</td>
+                    <td>统计报表可以查看您以及您底下的所有代理、会员的数据，您可以透过快捷日期选项切换查看不同时间区间的数据；另也可以透过自定义日期查看。（自定义范围为：近 90 天内的 1~31 天）</td>
+                  </tr>
+                  <tr>
+                    <td>计算公式</td>
+                    <td>
+                      <ul class="numbered-list">
+                        <li><strong>占成盈亏</strong> = -1 ×（总输赢 - 打赏荷官）× 占成比</li>
+                        <li><strong>有效投注佣金</strong> = 有效投注 × 有效投注比</li>
+                        <li><strong>应得佣金</strong> = 有效投注佣金 ×（1 - 占成比）</li>
+                        <li><strong>交上级金额</strong> = -1 ×（（总输赢 - 打赏荷官）×（1 - 占成比） + 应得佣金）</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>注意事项</td>
+                    <td>
+                      <ol class="numbered-list">
+                        <li>本系统对于周的定义为周日~周六，若不符您组织所定义的周区间，请直接使用自定义日期。</li>
+                        <li>若查询期间内有调整新的有效投注比或占成比生效，则会产生两笔记录，分别统计旧设置与新设置期间的数据。</li>
+                        <li>所有统计所得的应交收金额或佣金，仅供您参考用，本系统不负责实际交收行为或功能。</li>
+                      </ol>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon blue">📋</div>相关数据项说明
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>栏目</th>
+                    <th>代理</th>
+                    <th>会员</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>总输赢</td>
+                    <td>自己的所有下级代理 + 会员该期间所输赢的总金额</td>
+                    <td>该会员该期间输赢的总金额</td>
+                  </tr>
+                  <tr>
+                    <td>投注数</td>
+                    <td>自己的所有下级代理 + 会员该期间的总投注数</td>
+                    <td>该会员该期间的总投注数</td>
+                  </tr>
+                  <tr>
+                    <td>投注金额</td>
+                    <td>自己的所有下级代理 + 会员该期间的总投注金额</td>
+                    <td>该会员该期间的总投注金额</td>
+                  </tr>
+                  <tr>
+                    <td>派彩金额(含本金)</td>
+                    <td>自己的所有下级代理 + 会员该期间的总派彩金额(含本金)</td>
+                    <td>该会员该期间的总派彩金额(含本金)</td>
+                  </tr>
+                  <tr>
+                    <td>派彩金额(扣除本金)</td>
+                    <td>自己的所有下级代理 + 会员该期间的总派彩金额(扣除本金)</td>
+                    <td>该会员该期间的总派彩金额(扣除本金)</td>
+                  </tr>
+                  <tr>
+                    <td>盈利投注金额</td>
+                    <td>自己的所有下级代理 + 会员该期间的总盈利投注金额</td>
+                    <td>该会员该期间的总盈利投注金额</td>
+                  </tr>
+                  <tr>
+                    <td>有效投注</td>
+                    <td>自己的所有下级代理 + 会员的总有效投注金额</td>
+                    <td>该会员该期间的总有效投注金额</td>
+                  </tr>
+                  <tr>
+                    <td>有效投注比</td>
+                    <td>该代理该期间的有效投注比</td>
+                    <td>该会员该期间的有效投注比</td>
+                  </tr>
+                  <tr>
+                    <td>有效投注佣金</td>
+                    <td>该代理该期间的有效投注佣金</td>
+                    <td>该会员该期间的有效投注佣金</td>
+                  </tr>
+                  <tr>
+                    <td>占成比</td>
+                    <td>该代理该期间的占成比</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>占成盈亏</td>
+                    <td>该代理该期间的占成盈亏</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>应得佣金</td>
+                    <td>该代理该期间的有效投注佣金扣除自己应占的亏损后的应得佣金</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>额度转入金额</td>
+                    <td>自己的所有下级代理 + 会员该期间的总转入金额</td>
+                    <td>该会员该期间的总转入金额</td>
+                  </tr>
+                  <tr>
+                    <td>额度转出金额</td>
+                    <td>自己的所有下级代理 + 会员该期间的总转出金额</td>
+                    <td>该会员该期间的总转出金额</td>
+                  </tr>
+                  <tr>
+                    <td>荷官打赏</td>
+                    <td>自己的所有下级代理 + 会员该期间的总荷官打赏金额</td>
+                    <td>该会员该期间的总荷官打赏金额</td>
+                  </tr>
+                  <tr>
+                    <td>交上级金额</td>
+                    <td>该代理该期间的应交给上级的金额</td>
+                    <td>-</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon green">📥</div>报表导出
+            </div>
+            <ul class="content-list">
+              <li>所有报表支持导出为 Excel（.xlsx）或 CSV 格式。</li>
+              <li>在报表页面右上角点击「导出」按钮，选择格式后下载。</li>
+              <li>单次导出数据量最大支持 30 天范围内的记录。</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- EN -->
+        <div data-lang="en" style="display:none">
+          <div class="section-header">
+            <div class="section-badge">06</div>
+            <h1 class="section-title">Statistical Reports</h1>
+            <p class="section-subtitle">The Agent Backend provides various reports to help you fully understand downline
+              betting and earnings.</p>
+          </div>
+          <img src="img/members.png" alt="Statistical Reports" class="content-img">
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon blue">📋</div>Report Types
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Report Name</th>
+                    <th>Description</th>
+                    <th>Period</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Betting Report</td>
+                    <td>Downline total bets and valid bet amounts per game type</td>
+                    <td>Daily/Monthly</td>
+                  </tr>
+                  <tr>
+                    <td>Earnings Report</td>
+                    <td>Agent earnings calculated by commission ratio, with game-type breakdown</td>
+                    <td>Daily/Monthly</td>
+                  </tr>
+                  <tr>
+                    <td>Transaction Report</td>
+                    <td>Time, amount, and operator records for all deposit/withdrawal operations</td>
+                    <td>Custom</td>
+                  </tr>
+                  <tr>
+                    <td>Member Activity Report</td>
+                    <td>Downline member login count, bet count, and active days</td>
+                    <td>Monthly</td>
+                  </tr>
+                  <tr>
+                    <td>Game Type Report</td>
+                    <td>Statistics by game category (Live, Sports, Lottery, etc.)</td>
+                    <td>Daily/Monthly</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon blue">📊</div>Method 2: Statistical Reports
+            </div>
+            <div class="table-wrap">
+              <table>
+                <tbody>
+                  <tr>
+                    <td>Description</td>
+                    <td>Statistical reports allow you to view data for yourself and all agents and members under you.
+                      Use shortcut date options to switch between time intervals or use custom dates (Custom range: 1–31
+                      days within the last 90 days).</td>
+                  </tr>
+                  <tr>
+                    <td>Formulas</td>
+                    <td>
+                      <ul class="numbered-list">
+                        <li><strong>Occupancy P/L</strong> = -1 × (Total Win/Loss - Dealer Tip) × Occupancy Ratio</li>
+                        <li><strong>Valid Bet Commission</strong> = Valid Bet × Valid Bet Ratio</li>
+                        <li><strong>Earned Commission</strong> = Valid Bet Commission × (1 - Occupancy Ratio)</li>
+                        <li><strong>Amount to Superior</strong> = -1 × ((Total Win/Loss - Dealer Tip) × (1 - Occupancy
+                          Ratio) + Earned Commission)</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Notice</td>
+                    <td>
+                      <ol class="numbered-list">
+                        <li>The system defines a week as Sunday–Saturday. If this does not match your organization's
+                          definition, please use custom dates.</li>
+                        <li>If a new ratio takes effect during the query period, two records will be generated for the
+                          old and new settings.</li>
+                        <li>All calculated amounts are for reference only; the system is not responsible for actual
+                          settlement actions.</li>
+                      </ol>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon blue">📋</div>Data Items Description
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Item</th>
+                    <th>Agent</th>
+                    <th>Member</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Total Win/Loss</td>
+                    <td>Total win/loss of all downlines and members</td>
+                    <td>Member's win/loss amount</td>
+                  </tr>
+                  <tr>
+                    <td>Bet Count</td>
+                    <td>Total bet count of all downlines and members</td>
+                    <td>Member's total bets</td>
+                  </tr>
+                  <tr>
+                    <td>Bet Amount</td>
+                    <td>Total bet amount of all downlines and members</td>
+                    <td>Member's total bet amount</td>
+                  </tr>
+                  <tr>
+                    <td>Payout (Incl. Principal)</td>
+                    <td>Total payout including principal of all downlines and members</td>
+                    <td>Member's total payout (incl. principal)</td>
+                  </tr>
+                  <tr>
+                    <td>Payout (Excl. Principal)</td>
+                    <td>Total payout excluding principal of all downlines and members</td>
+                    <td>Member's total payout (excl. principal)</td>
+                  </tr>
+                  <tr>
+                    <td>Profitable Bet Amount</td>
+                    <td>Total profitable bet amount of all downlines and members</td>
+                    <td>Member's total profitable bet amount</td>
+                  </tr>
+                  <tr>
+                    <td>Valid Bet</td>
+                    <td>Total valid bet amount of all downlines and members</td>
+                    <td>Member's total valid bet amount</td>
+                  </tr>
+                  <tr>
+                    <td>Valid Bet Ratio</td>
+                    <td>Agent's valid bet ratio for the period</td>
+                    <td>Member's valid bet ratio for the period</td>
+                  </tr>
+                  <tr>
+                    <td>Valid Bet Commission</td>
+                    <td>Agent's valid bet commission for the period</td>
+                    <td>Member's valid bet commission for the period</td>
+                  </tr>
+                  <tr>
+                    <td>Occupancy Ratio</td>
+                    <td>Agent's occupancy ratio for the period</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>Occupancy P/L</td>
+                    <td>Agent's occupancy P/L for the period</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>Earned Commission</td>
+                    <td>Agent's valid bet commission minus self-occupied loss</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>Amount Transferred In</td>
+                    <td>Total amount transferred in for all downlines and members</td>
+                    <td>Member's total transfer-in amount</td>
+                  </tr>
+                  <tr>
+                    <td>Amount Transferred Out</td>
+                    <td>Total amount transferred out for all downlines and members</td>
+                    <td>Member's total transfer-out amount</td>
+                  </tr>
+                  <tr>
+                    <td>Dealer Tip</td>
+                    <td>Total dealer tips from all downlines and members</td>
+                    <td>Member's total dealer tips</td>
+                  </tr>
+                  <tr>
+                    <td>Amount to Superior</td>
+                    <td>Amount the agent should pay to superior for the period</td>
+                    <td>-</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon green">📥</div>Report Export
+            </div>
+            <ul class="content-list">
+              <li>All reports support export to Excel (.xlsx) or CSV format.</li>
+              <li>Click the "Export" button in the upper right corner of the report page and select the format.</li>
+              <li>Single export supports up to 30 days of records.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- VN -->
+        <div data-lang="vn" style="display:none">
+          <div class="section-header">
+            <div class="section-badge">06</div>
+            <h1 class="section-title">Báo cáo thống kê</h1>
+            <p class="section-subtitle">Hệ thống đại lý cung cấp nhiều loại báo cáo giúp bạn hiểu toàn diện về cược và
+              thu nhập của cấp dưới.</p>
+          </div>
+          <img src="img/members.png" alt="Báo cáo thống kê" class="content-img">
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon blue">📋</div>Các loại báo cáo
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Tên báo cáo</th>
+                    <th>Mô tả</th>
+                    <th>Chu kỳ</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Báo cáo cược</td>
+                    <td>Tổng cược và số cược hợp lệ của cấp dưới theo loại trò chơi</td>
+                    <td>Ngày/Tháng</td>
+                  </tr>
+                  <tr>
+                    <td>Báo cáo thu nhập</td>
+                    <td>Thu nhập đại lý tính theo tỷ lệ hoa hồng, phân loại theo trò chơi</td>
+                    <td>Ngày/Tháng</td>
+                  </tr>
+                  <tr>
+                    <td>Báo cáo giao dịch</td>
+                    <td>Thời gian, số tiền, người thực hiện của tất cả thao tác nạp/rút</td>
+                    <td>Tùy chỉnh</td>
+                  </tr>
+                  <tr>
+                    <td>Báo cáo hoạt động thành viên</td>
+                    <td>Số lần đăng nhập, số lần cược, số ngày hoạt động của thành viên cấp dưới</td>
+                    <td>Tháng</td>
+                  </tr>
+                  <tr>
+                    <td>Báo cáo loại trò chơi</td>
+                    <td>Thống kê theo danh mục trò chơi (Trực tiếp, Thể thao, Xổ số, v.v.)</td>
+                    <td>Ngày/Tháng</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon blue">📊</div>Phương pháp 2: Báo cáo thống kê
+            </div>
+            <div class="table-wrap">
+              <table>
+                <tbody>
+                  <tr>
+                    <td>Mô tả</td>
+                    <td>Báo cáo thống kê cho phép bạn xem dữ liệu của chính mình và tất cả các đại lý, thành viên cấp
+                      dưới. Bạn có thể chuyển đổi giữa các khoảng thời gian khác nhau bằng các tùy chọn ngày nhanh hoặc
+                      xem theo ngày tùy chỉnh (Phạm vi tùy chỉnh: 1–31 ngày trong vòng 90 ngày gần nhất).</td>
+                  </tr>
+                  <tr>
+                    <td>Công thức</td>
+                    <td>
+                      <ul class="numbered-list">
+                        <li><strong>Lợi nhuận chiếm tỷ lệ</strong> = -1 × (Tổng thắng thua - Tiền tip Dealer) × Tỷ lệ
+                          chiếm thành</li>
+                        <li><strong>Hoa hồng cược hợp lệ</strong> = Cược hợp lệ × Tỷ lệ cược hợp lệ</li>
+                        <li><strong>Hoa hồng thực nhận</strong> = Hoa hồng cược hợp lệ × (1 - Tỷ lệ chiếm thành)</li>
+                        <li><strong>Số tiền nộp cấp trên</strong> = -1 × ((Tổng thắng thua - Tiền tip Dealer) × (1 - Tỷ
+                          lệ chiếm thành) + Hoa hồng thực nhận)</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Lưu ý</td>
+                    <td>
+                      <ol class="numbered-list">
+                        <li>Hệ thống định nghĩa tuần là từ Chủ Nhật đến Thứ Bảy. Nếu không phù hợp, vui lòng sử dụng
+                          ngày tùy chỉnh.</li>
+                        <li>Nếu có thay đổi về tỷ lệ mới trong thời gian truy vấn, hai bản ghi mới và cũ sẽ được tạo.
+                        </li>
+                        <li>Tất cả số tiền tính toán chỉ mang tính tham khảo, hệ thống không chịu trách nhiệm thanh toán
+                          thực tế.</li>
+                      </ol>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon blue">📋</div>Giải thích các mục dữ liệu
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Mục</th>
+                    <th>Đại lý</th>
+                    <th>Thành viên</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Tổng thắng thua</td>
+                    <td>Tổng số tiền thắng/thua của tất cả đại lý cấp dưới và thành viên</td>
+                    <td>Số tiền thắng/thua của thành viên</td>
+                  </tr>
+                  <tr>
+                    <td>Số lượng cược</td>
+                    <td>Tổng số lượng cược của tất cả đại lý cấp dưới và thành viên</td>
+                    <td>Số lượng cược của thành viên</td>
+                  </tr>
+                  <tr>
+                    <td>Số tiền cược</td>
+                    <td>Tổng số tiền cược của tất cả đại lý cấp dưới và thành viên</td>
+                    <td>Số tiền cược của thành viên</td>
+                  </tr>
+                  <tr>
+                    <td>Tiền thắng (Gồm gốc)</td>
+                    <td>Tổng số tiền thắng (gồm gốc) của tất cả đại lý cấp dưới và thành viên</td>
+                    <td>Tiền thắng (gồm gốc) của thành viên</td>
+                  </tr>
+                  <tr>
+                    <td>Tiền thắng (Trừ gốc)</td>
+                    <td>Tổng số tiền thắng (trừ gốc) của tất cả đại lý cấp dưới và thành viên</td>
+                    <td>Tiền thắng (trừ gốc) của thành viên</td>
+                  </tr>
+                  <tr>
+                    <td>Số tiền cược thắng</td>
+                    <td>Tổng số tiền cược thắng của tất cả đại lý cấp dưới và thành viên</td>
+                    <td>Số tiền cược thắng của thành viên</td>
+                  </tr>
+                  <tr>
+                    <td>Cược hợp lệ</td>
+                    <td>Tổng số tiền cược hợp lệ của tất cả đại lý cấp dưới và thành viên</td>
+                    <td>Số tiền cược hợp lệ của thành viên</td>
+                  </tr>
+                  <tr>
+                    <td>Tỷ lệ cược hợp lệ</td>
+                    <td>Tỷ lệ cược hợp lệ của đại lý trong giai đoạn</td>
+                    <td>Tỷ lệ cược hợp lệ của thành viên trong giai đoạn</td>
+                  </tr>
+                  <tr>
+                    <td>Hoa hồng cược hợp lệ</td>
+                    <td>Hoa hồng cược hợp lệ của đại lý trong giai đoạn</td>
+                    <td>Hoa hồng cược hợp lệ của thành viên trong giai đoạn</td>
+                  </tr>
+                  <tr>
+                    <td>Tỷ lệ chiếm thành</td>
+                    <td>Tỷ lệ chiếm thành của đại lý trong giai đoạn</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>Lợi nhuận chiếm tỷ lệ</td>
+                    <td>Lợi nhuận chiếm tỷ lệ của đại lý trong giai đoạn</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>Hoa hồng thực nhận</td>
+                    <td>Hoa hồng cược hợp lệ trừ đi phần lỗ chiếm tỷ lệ của bản thân</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>Số tiền chuyển vào</td>
+                    <td>Tổng số tiền chuyển vào của tất cả đại lý cấp dưới và thành viên</td>
+                    <td>Số tiền chuyển vào của thành viên</td>
+                  </tr>
+                  <tr>
+                    <td>Số tiền chuyển ra</td>
+                    <td>Tổng số tiền chuyển ra của tất cả đại lý cấp dưới và thành viên</td>
+                    <td>Số tiền chuyển ra của thành viên</td>
+                  </tr>
+                  <tr>
+                    <td>Tiền tip Dealer</td>
+                    <td>Tổng số tiền tip Dealer của tất cả đại lý cấp dưới và thành viên</td>
+                    <td>Số tiền tip Dealer của thành viên</td>
+                  </tr>
+                  <tr>
+                    <td>Số tiền nộp cấp trên</td>
+                    <td>Số tiền đại lý phải nộp cho cấp trên trong giai đoạn</td>
+                    <td>-</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon green">📥</div>Xuất báo cáo
+            </div>
+            <ul class="content-list">
+              <li>Tất cả báo cáo hỗ trợ xuất sang định dạng Excel (.xlsx) hoặc CSV.</li>
+              <li>Nhấp nút "Xuất" ở góc trên bên phải trang báo cáo và chọn định dạng.</li>
+              <li>Một lần xuất hỗ trợ tối đa 30 ngày dữ liệu.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- PH -->
+        <div data-lang="ph" style="display:none">
+          <div class="section-header">
+            <div class="section-badge">06</div>
+            <h1 class="section-title">Ulat ng Istatistika</h1>
+            <p class="section-subtitle">Nagbibigay ang Agent Backend ng iba't ibang ulat para matulungan kang maunawaan
+              ang taya at kita ng downline.</p>
+          </div>
+          <img src="img/members.png" alt="Statistical Reports" class="content-img">
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon blue">📋</div>Mga Uri ng Ulat
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Pangalan ng Ulat</th>
+                    <th>Paglalarawan</th>
+                    <th>Panahon</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Ulat ng Taya</td>
+                    <td>Kabuuang taya at valid bet amount ng downline per uri ng laro</td>
+                    <td>Araw/Buwan</td>
+                  </tr>
+                  <tr>
+                    <td>Ulat ng Kita</td>
+                    <td>Kita ng agent na kinakalkula ayon sa commission ratio, may breakdown per laro</td>
+                    <td>Araw/Buwan</td>
+                  </tr>
+                  <tr>
+                    <td>Ulat ng Transaksyon</td>
+                    <td>Oras, halaga, at operator na rekord para sa lahat ng operasyon ng deposit/withdrawal</td>
+                    <td>Custom</td>
+                  </tr>
+                  <tr>
+                    <td>Ulat ng Aktibidad ng Miyembro</td>
+                    <td>Bilang ng pag-login, bilang ng taya, at aktibong araw ng downline na miyembro</td>
+                    <td>Buwan</td>
+                  </tr>
+                  <tr>
+                    <td>Ulat ng Uri ng Laro</td>
+                    <td>Istatistika sa pamamagitan ng kategorya ng laro (Live, Sports, Lottery, atbp.)</td>
+                    <td>Araw/Buwan</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon blue">📊</div>Paraan 2: Statistical Reports
+            </div>
+            <div class="table-wrap">
+              <table>
+                <tbody>
+                  <tr>
+                    <td>Paglalarawan</td>
+                    <td>Ang mga ulat ng istatistika ay nagpapahintulot sa iyo na tingnan ang data para sa iyong sarili
+                      at sa lahat ng mga agent at miyembro sa ilalim mo. Gumamit ng mga shortcut na opsyon sa petsa para
+                      lumipat ng mga agwat ng oras o gumamit ng mga custom na petsa (Custom na saklaw: 1–31 araw sa loob
+                      ng huling 90 araw).</td>
+                  </tr>
+                  <tr>
+                    <td>Mga Formula</td>
+                    <td>
+                      <ul class="numbered-list">
+                        <li><strong>Occupancy P/L</strong> = -1 × (Kabuuang Win/Loss - Dealer Tip) × Occupancy Ratio
+                        </li>
+                        <li><strong>Valid Bet Commission</strong> = Valid Bet × Valid Bet Ratio</li>
+                        <li><strong>Earned Commission</strong> = Valid Bet Commission × (1 - Occupancy Ratio)</li>
+                        <li><strong>Halaga sa Superior</strong> = -1 × ((Kabuuang Win/Loss - Dealer Tip) × (1 -
+                          Occupancy Ratio) + Earned Commission)</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Paalala</td>
+                    <td>
+                      <ol class="numbered-list">
+                        <li>Ang system ay nagtatakda ng linggo bilang Linggo–Sabado. Kung hindi ito tugma, mangyaring
+                          gumamit ng mga custom na petsa.</li>
+                        <li>Kung may bagong ratio na magkakabisa, bubuo ang system ng magkahiwalay na records para sa
+                          luma at bagong setting.</li>
+                        <li>Ang lahat ng nakalkulang halaga ay para sa sanggunian lamang; ang system ay hindi
+                          responsable sa settlement.</li>
+                      </ol>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon blue">📋</div>Paglalarawan ng mga Data Item
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Field</th>
+                    <th>Agent</th>
+                    <th>Miyembro</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Kabuuang Win/Loss</td>
+                    <td>Kabuuang halaga ng win/loss ng lahat ng downline agent at miyembro</td>
+                    <td>Halaga ng win/loss ng miyembro</td>
+                  </tr>
+                  <tr>
+                    <td>Bilang ng Taya</td>
+                    <td>Kabuuang bilang ng taya ng lahat ng downline agent at miyembro</td>
+                    <td>Bilang ng taya ng miyembro</td>
+                  </tr>
+                  <tr>
+                    <td>Halaga ng Taya</td>
+                    <td>Kabuuang halaga ng taya ng lahat ng downline agent at miyembro</td>
+                    <td>Halaga ng taya ng miyembro</td>
+                  </tr>
+                  <tr>
+                    <td>Payout (Kasama ang Puhunan)</td>
+                    <td>Kabuuang payout kasama ang puhunan ng lahat ng downline agent at miyembro</td>
+                    <td>Payout (kasama ang puhunan) ng miyembro</td>
+                  </tr>
+                  <tr>
+                    <td>Payout (Bawas ang Puhunan)</td>
+                    <td>Kabuuang payout bawas ang puhunan ng lahat ng downline agent at miyembro</td>
+                    <td>Payout (bawas ang puhunan) ng miyembro</td>
+                  </tr>
+                  <tr>
+                    <td>Profitable Bet Amount</td>
+                    <td>Kabuuang profitable bet amount ng lahat ng downline agent at miyembro</td>
+                    <td>Profitable bet amount ng miyembro</td>
+                  </tr>
+                  <tr>
+                    <td>Valid Bet</td>
+                    <td>Kabuuang valid bet amount ng lahat ng downline agent at miyembro</td>
+                    <td>Valid bet amount ng miyembro</td>
+                  </tr>
+                  <tr>
+                    <td>Valid Bet Ratio</td>
+                    <td>Valid bet ratio ng agent para sa panahong iyon</td>
+                    <td>Valid bet ratio ng miyembro para sa panahong iyon</td>
+                  </tr>
+                  <tr>
+                    <td>Valid Bet Commission</td>
+                    <td>Valid bet commission ng agent para sa panahong iyon</td>
+                    <td>Valid bet commission ng miyembro para sa panahong iyon</td>
+                  </tr>
+                  <tr>
+                    <td>Occupancy Ratio</td>
+                    <td>Occupancy ratio ng agent para sa panahong iyon</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>Occupancy P/L</td>
+                    <td>Occupancy P/L ng agent para sa panahong iyon</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>Earned Commission</td>
+                    <td>Valid bet commission ng agent bawas ang sariling occupancy loss</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>Halaga ng Transfer-In</td>
+                    <td>Kabuuang halaga ng transfer-in ng lahat ng downline agent at miyembro</td>
+                    <td>Halaga ng transfer-in ng miyembro</td>
+                  </tr>
+                  <tr>
+                    <td>Halaga ng Transfer-Out</td>
+                    <td>Kabuuang halaga ng transfer-out ng lahat ng downline agent at miyembro</td>
+                    <td>Halaga ng transfer-out ng miyembro</td>
+                  </tr>
+                  <tr>
+                    <td>Dealer Tip</td>
+                    <td>Kabuuang dealer tip mula sa lahat ng downline agent at miyembro</td>
+                    <td>Dealer tip ng miyembro</td>
+                  </tr>
+                  <tr>
+                    <td>Halaga sa Superior</td>
+                    <td>Halaga na dapat bayaran ng agent sa superior para sa panahong iyon</td>
+                    <td>-</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-title">
+              <div class="card-icon green">📥</div>Pag-export ng Ulat
+            </div>
+            <ul class="content-list">
+              <li>Lahat ng ulat ay sumusuporta sa pag-export sa Excel (.xlsx) o CSV na format.</li>
+              <li>I-click ang "Export" button sa kanang sulok sa itaas ng pahina ng ulat at piliin ang format.</li>
+              <li>Ang isang pag-export ay sumusuporta ng hanggang 30 araw na mga rekord.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="content-footer">
+          <div class="footer-nav"><a href="section5.html" class="btn btn-outline btn-prev">‹ <span>上一节</span></a></div>
+          <div class="footer-nav"><a href="section7.html" class="btn btn-primary btn-next"><span>下一节</span> ›</a></div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
