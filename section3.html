@@ -87,67 +87,84 @@
           <div class="notice info">
             <div class="notice-icon">💡</div>
             <div class="notice-content">
-              <strong>层级扩展核心规则：</strong>
+              <strong>注意：</strong>
               <ol class="numbered-list">
-                <li><strong>基于选定对象新增</strong>：新增系统会根据您在组织架构树中<strong>选中的代理节点</strong>来决定新账户的归属。例如，选中 A 代理后点击新增，新账户将成为 A
-                  的直接下级。</li>
-                <li><strong>代别限制</strong>：若选中的代理账号已处于组织的最末级，则该节点仅能新增直属会员，无法继续拓展下级代理。</li>
+                <li>点击新增用户时，会根据您当前所查看的代理来为其新增用户。<br>
+                  以上图为例：在 <strong>leozdl1</strong> 这层点击新增用户，是为 leozdl1 新增其下级代理或会员；<br>
+                  若是在 <strong>leodl1</strong> 这层点击新增用户，则是为 leodl1 新增其下级代理或会员。</li>
+                <li>若您所查看的代理账号为您的代理组织的最后一层，则您只能为其新增直属会员。</li>
               </ol>
             </div>
           </div>
-          <div class="card">
-            <div class="card-title">
-              <div class="card-icon blue">👤</div>操作流程：新增代理
+          <div class="grid-2">
+            <div class="card">
+              <div class="card-title">
+                <div class="card-icon blue">👤</div>操作流程：新增代理
+              </div>
+              <ol class="steps-list">
+                <li class="step-item">
+                  <div class="step-num">1</div>
+                  <div class="step-content">
+                    <div class="step-title">填写核心身份信息</div>
+                    <div class="step-desc">输入账号（6–16 位字符）、初始密码及真实姓名。确保联系方式准确以便后续沟通。</div>
+                    <img src="img/add_agent_1.png" alt="Step 1" class="content-img">
+                  </div>
+                </li>
+                <li class="step-item">
+                  <div class="step-num">2</div>
+                  <div class="step-content">
+                    <div class="step-title">配置权益参数 (占成比)</div>
+                    <div class="step-desc">为下级分配合理的占成比例。请注意，下级的占比数值<strong>不得超过</strong>您自身的上限。</div>
+                    <img src="img/add_agent_2.png" alt="Step 2" class="content-img">
+                  </div>
+                </li>
+                <li class="step-item">
+                  <div class="step-num">3</div>
+                  <div class="step-content">
+                    <div class="step-title">确认并下发账号</div>
+                    <div class="step-desc">点击「确认创建」，系统将即時生成账户，您可以将凭据发放给合作伙伴。</div>
+                    <img src="img/add_agent_3.png" alt="Step 3" class="content-img">
+                  </div>
+                </li>
+              </ol>
             </div>
-            <ol class="steps-list">
-              <li class="step-item">
-                <div class="step-num">1</div>
-                <div class="step-content">
-                  <div class="step-title">填写核心身份信息</div>
-                  <div class="step-desc">输入账号（6–16 位字符）、初始密码及真实姓名。确保联系方式准确以便后续沟通。</div>
-                </div>
-              </li>
-              <li class="step-item">
-                <div class="step-num">2</div>
-                <div class="step-content">
-                  <div class="step-title">配置权益参数 (占成比)</div>
-                  <div class="step-desc">为下级分配合理的占成比例。请注意，下级的占比数值<strong>不得超过</strong>您自身的上限。</div>
-                </div>
-              </li>
-              <li class="step-item">
-                <div class="step-num">3</div>
-                <div class="step-content">
-                  <div class="step-title">确认并下发账号</div>
-                  <div class="step-desc">点击「确认创建」，系统将即时生成账户，您可以将凭据发放给合作伙伴。</div>
-                </div>
-              </li>
-            </ol>
-          </div>
-          <div class="card">
-            <div class="card-title">
-              <div class="card-icon green">👥</div>操作流程：新增会员
+            <div class="card">
+              <div class="card-title">
+                <div class="card-icon green">👥</div>操作流程：新增会员
+              </div>
+              <ol class="steps-list">
+                <li class="step-item">
+                  <div class="step-num">1</div>
+                  <div class="step-content">
+                    <div class="step-title">录入会员基础资料</div>
+                    <div class="step-desc">设定唯一的会员账号与密码。请提示会员账号一旦创建即作为唯一身份标识，不可更改。</div>
+                    <img src="img/add_member_1.png" alt="Member Step 1" class="content-img">
+                  </div>
+                </li>
+                <li class="step-item">
+                  <div class="step-num">2</div>
+                  <div class="step-content">
+                    <div class="step-title">配置所属及状态</div>
+                    <div class="step-desc">确认新账号的归属节点与初始状态，确保其能正确挂载于您的体系之下。</div>
+                    <img src="img/add_member_2.png" alt="Member Step 2" class="content-img">
+                  </div>
+                </li>
+                <li class="step-item">
+                  <div class="step-num">3</div>
+                  <div class="step-content">
+                    <div class="step-title">确认提交与激活</div>
+                    <div class="step-desc">点击确认后，账号将立即生效，会员可同步登录游戏前端进行娱乐。</div>
+                    <img src="img/add_member_3.png" alt="Member Step 3" class="content-img">
+                  </div>
+                </li>
+              </ol>
             </div>
-            <ol class="steps-list">
-              <li class="step-item">
-                <div class="step-num">1</div>
-                <div class="step-content">
-                  <div class="step-title">录入会员基础资料</div>
-                  <div class="step-desc">设定唯一的会员账号与密码。请提示会员账号一旦创建即作为唯一身份标识，不可更改。</div>
-                </div>
-              </li>
-              <li class="step-item">
-                <div class="step-num">2</div>
-                <div class="step-content">
-                  <div class="step-title">完成激活</div>
-                  <div class="step-desc">确认提交后，会员账户将立即激活，可同步登录游戏前端进行娱乐。</div>
-                </div>
-              </li>
-            </ol>
           </div>
           <div class="notice warning">
             <div class="notice-icon">⚠️</div>
             <div class="notice-content">
-              <strong>风控提示：</strong>处于安全考虑，所有账户在创建后均<strong>无法彻底删除</strong>。如不再合作，请使用「编辑」配合「状态切换」将账户设为「冻结」。</div>
+              <strong>风控提示：</strong>处于安全考虑，所有账户在创建后均<strong>无法彻底删除</strong>。如不再合作，请使用「编辑」配合「状态切换」将账户设为「冻结」。
+            </div>
           </div>
         </div>
 
@@ -173,68 +190,87 @@
           <div class="notice info">
             <div class="notice-icon">💡</div>
             <div class="notice-content">
-              <strong>Core Rules for Hierarchy:</strong>
+              <strong>Note:</strong>
               <ol class="numbered-list">
-                <li><strong>Dynamic Affiliation</strong>: New accounts are linked to the <strong>selected agent
-                    node</strong> in the list. For example, if Agent A is selected, any account added will become A's
-                  direct subordinate.</li>
-                <li><strong>Level Restriction</strong>: If the selected agent is already at the final level of your
-                  organization, you can only add direct members to that account.</li>
+                <li>When clicking "Add User", the user will be added under the specific agent you are currently
+                  viewing.<br>
+                  Taking the image above as an example: Clicking "Add User" at the <strong>leozdl1</strong> level adds a
+                  downline agent or member for leozdl1;<br>
+                  Clicking at the <strong>leodl1</strong> level adds a downline agent or member for leodl1.</li>
+                <li>If the agent account you are viewing is the final level of your organization, you can only add
+                  direct members for it.</li>
               </ol>
             </div>
           </div>
-          <div class="card">
-            <div class="card-title">
-              <div class="card-icon blue">👤</div>Workflow: Add an Agent
-            </div>
-            <ol class="steps-list">
-              <li class="step-item">
-                <div class="step-num">1</div>
-                <div class="step-content">
-                  <div class="step-title">Identify Information</div>
-                  <div class="step-desc">Enter username (6–16 chars), initial password, and real name.</div>
-                </div>
-              </li>
-              <li class="step-item">
-                <div class="step-num">2</div>
-                <div class="step-content">
-                  <div class="step-title">Configure Occupancy Ratio</div>
-                  <div class="step-desc">Assign a ratio for the downline. This <strong>cannot exceed</strong> your own
-                    occupancy limit.</div>
-                </div>
-              </li>
-              <li class="step-item">
-                <div class="step-num">3</div>
-                <div class="step-content">
-                  <div class="step-title">Confirm Creation</div>
-                  <div class="step-desc">Click "Confirm Create". The account will be activated immediately for your
-                    partner.</div>
-                </div>
-              </li>
-            </ol>
-          </div>
-          <div class="card">
-            <div class="card-title">
-              <div class="card-icon green">👥</div>Workflow: Add a Member
-            </div>
-            <ol class="steps-list">
-              <li class="step-item">
-                <div class="step-num">1</div>
-                <div class="step-content">
-                  <div class="step-title">Member Credentials</div>
-                  <div class="step-desc">Set a unique username and password. Remind members that usernames cannot be
-                    changed.</div>
-                </div>
-              </li>
-              <li class="step-item">
-                <div class="step-num">2</div>
-                <div class="step-content">
-                  <div class="step-title">Activation</div>
-                  <div class="step-desc">Upon clicking "Confirm", the member can log into the gaming platform instantly.
+          <div class="grid-2">
+            <div class="card">
+              <div class="card-title">
+                <div class="card-icon blue">👤</div>Workflow: Add an Agent
+              </div>
+              <ol class="steps-list">
+                <li class="step-item">
+                  <div class="step-num">1</div>
+                  <div class="step-content">
+                    <div class="step-title">Identify Information</div>
+                    <div class="step-desc">Enter username (6–16 chars), initial password, and real name.</div>
+                    <img src="img/add_agent_1.png" alt="Step 1" class="content-img">
                   </div>
-                </div>
-              </li>
-            </ol>
+                </li>
+                <li class="step-item">
+                  <div class="step-num">2</div>
+                  <div class="step-content">
+                    <div class="step-title">Configure Occupancy Ratio</div>
+                    <div class="step-desc">Assign a ratio for the downline. This <strong>cannot exceed</strong> your own
+                      occupancy limit.</div>
+                    <img src="img/add_agent_2.png" alt="Step 2" class="content-img">
+                  </div>
+                </li>
+                <li class="step-item">
+                  <div class="step-num">3</div>
+                  <div class="step-content">
+                    <div class="step-title">Confirm Creation</div>
+                    <div class="step-desc">Click "Confirm Create". The account will be activated immediately for your
+                      partner.</div>
+                    <img src="img/add_agent_3.png" alt="Step 3" class="content-img">
+                  </div>
+                </li>
+              </ol>
+            </div>
+            <div class="card">
+              <div class="card-title">
+                <div class="card-icon green">👥</div>Workflow: Add a Member
+              </div>
+              <ol class="steps-list">
+                <li class="step-item">
+                  <div class="step-num">1</div>
+                  <div class="step-content">
+                    <div class="step-title">Member Credentials</div>
+                    <div class="step-desc">Set a unique username and password. Remind members that usernames cannot be
+                      changed.</div>
+                    <img src="img/add_member_1.png" alt="Member Step 1" class="content-img">
+                  </div>
+                </li>
+                <li class="step-item">
+                  <div class="step-num">2</div>
+                  <div class="step-content">
+                    <div class="step-title">Account Configuration</div>
+                    <div class="step-desc">Verify the node affiliation and initial status of the new member account.
+                    </div>
+                    <img src="img/add_member_2.png" alt="Member Step 2" class="content-img">
+                  </div>
+                </li>
+                <li class="step-item">
+                  <div class="step-num">3</div>
+                  <div class="step-content">
+                    <div class="step-title">Confirm & Activate</div>
+                    <div class="step-desc">Upon clicking "Confirm", the member can log into the gaming platform
+                      instantly.
+                    </div>
+                    <img src="img/add_agent_3.png" alt="Member Step 3" class="content-img">
+                  </div>
+                </li>
+              </ol>
+            </div>
           </div>
           <div class="notice warning">
             <div class="notice-icon">⚠️</div>
@@ -266,67 +302,85 @@
           <div class="notice info">
             <div class="notice-icon">💡</div>
             <div class="notice-content">
-              <strong>Quy tắc cốt lõi về phân cấp:</strong>
+              <strong>Lưu ý:</strong>
               <ol class="numbered-list">
-                <li><strong>Thêm dựa trên đối tượng được chọn</strong>: Hệ thống sẽ dựa trên <strong>đại lý bạn đang
-                    chọn</strong> trong danh sách để quyết định cấp trên của tài khoản mới. Ví dụ: Nếu chọn đại lý A,
-                  tài khoản mới sẽ là cấp dưới trực tiếp của A.</li>
-                <li><strong>Giới hạn cấp bậc</strong>: Nếu đại lý được chọn đã ở cấp cuối cùng trong tổ chức của bạn,
-                  bạn chỉ có thể thêm thành viên trực tiếp, không thể phát triển thêm đại lý cấp dưới.</li>
+                <li>Khi nhấp vào "Thêm người dùng mới", người dùng sẽ được thêm dựa trên đại lý bạn đang xem.<br>
+                  Ví dụ như hình trên: Nhấp vào ở cấp <strong>leozdl1</strong> sẽ thêm đại lý hoặc thành viên cấp dưới
+                  cho leozdl1;<br>
+                  Nhấp vào ở cấp <strong>leodl1</strong> sẽ thêm đại lý hoặc thành viên cấp dưới cho leodl1.</li>
+                <li>Nếu tài khoản đại lý bạn đang xem là cấp cuối cùng trong tổ chức, bạn chỉ có thể thêm thành viên
+                  trực tiếp.</li>
               </ol>
             </div>
           </div>
-          <div class="card">
-            <div class="card-title">
-              <div class="card-icon blue">👤</div>Quy trình: Thêm đại lý
+          <div class="grid-2">
+            <div class="card">
+              <div class="card-title">
+                <div class="card-icon blue">👤</div>Quy trình: Thêm đại lý
+              </div>
+              <ol class="steps-list">
+                <li class="step-item">
+                  <div class="step-num">1</div>
+                  <div class="step-content">
+                    <div class="step-title">Điền thông tin định danh</div>
+                    <div class="step-desc">Nhập tên đăng nhập (6-16 ký tự), mật khẩu ban đầu và tên thật.</div>
+                    <img src="img/add_agent_1.png" alt="Step 1" class="content-img">
+                  </div>
+                </li>
+                <li class="step-item">
+                  <div class="step-num">2</div>
+                  <div class="step-content">
+                    <div class="step-title">Cấu hình tỷ lệ chiếm thành</div>
+                    <div class="step-desc">Phân bổ tỷ lệ chiếm thành hợp lý cho cấp dưới. Lưu ý, tỷ lệ này <strong>không
+                        được vượt quá</strong> giới hạn của chính bạn.</div>
+                    <img src="img/add_agent_2.png" alt="Step 2" class="content-img">
+                  </div>
+                </li>
+                <li class="step-item">
+                  <div class="step-num">3</div>
+                  <div class="step-content">
+                    <div class="step-title">Xác nhận tạo</div>
+                    <div class="step-desc">Nhấp "Xác nhận tạo", tài khoản sẽ được kích hoạt ngay lập tức để đối tác sử
+                      dụng.</div>
+                    <img src="img/add_agent_3.png" alt="Step 3" class="content-img">
+                  </div>
+                </li>
+              </ol>
             </div>
-            <ol class="steps-list">
-              <li class="step-item">
-                <div class="step-num">1</div>
-                <div class="step-content">
-                  <div class="step-title">Điền thông tin định danh</div>
-                  <div class="step-desc">Nhập tên đăng nhập (6-16 ký tự), mật khẩu ban đầu và tên thật.</div>
-                </div>
-              </li>
-              <li class="step-item">
-                <div class="step-num">2</div>
-                <div class="step-content">
-                  <div class="step-title">Cấu hình tỷ lệ chiếm thành</div>
-                  <div class="step-desc">Phân bổ tỷ lệ chiếm thành hợp lý cho cấp dưới. Lưu ý, tỷ lệ này <strong>không
-                      được vượt quá</strong> giới hạn của chính bạn.</div>
-                </div>
-              </li>
-              <li class="step-item">
-                <div class="step-num">3</div>
-                <div class="step-content">
-                  <div class="step-title">Xác nhận tạo</div>
-                  <div class="step-desc">Nhấp "Xác nhận tạo", tài khoản sẽ được kích hoạt ngay lập tức để đối tác sử
-                    dụng.</div>
-                </div>
-              </li>
-            </ol>
-          </div>
-          <div class="card">
-            <div class="card-title">
-              <div class="card-icon green">👥</div>Quy trình: Thêm thành viên
+            <div class="card">
+              <div class="card-title">
+                <div class="card-icon green">👥</div>Quy trình: Thêm thành viên
+              </div>
+              <ol class="steps-list">
+                <li class="step-item">
+                  <div class="step-num">1</div>
+                  <div class="step-content">
+                    <div class="step-title">Thông tin thành viên</div>
+                    <div class="step-desc">Thiết lập tên đăng nhập và mật khẩu duy nhất. Lưu ý thành viên rằng tên đăng
+                      nhập không thể thay đổi sau khi tạo.</div>
+                    <img src="img/add_member_1.png" alt="Member Step 1" class="content-img">
+                  </div>
+                </li>
+                <li class="step-item">
+                  <div class="step-num">2</div>
+                  <div class="step-content">
+                    <div class="step-title">Cấu hình cấp dưới</div>
+                    <div class="step-desc">Xác minh nút liên kết và trạng thái ban đầu của tài khoản thành viên mới.
+                    </div>
+                    <img src="img/add_member_2.png" alt="Member Step 2" class="content-img">
+                  </div>
+                </li>
+                <li class="step-item">
+                  <div class="step-num">3</div>
+                  <div class="step-content">
+                    <div class="step-title">Xác nhận & Kích hoạt</div>
+                    <div class="step-desc">Sau khi xác nhận, thành viên có thể đăng nhập ngay vào nền tảng trò chơi.
+                    </div>
+                    <img src="img/add_agent_3.png" alt="Member Step 3" class="content-img">
+                  </div>
+                </li>
+              </ol>
             </div>
-            <ol class="steps-list">
-              <li class="step-item">
-                <div class="step-num">1</div>
-                <div class="step-content">
-                  <div class="step-title">Thông tin thành viên</div>
-                  <div class="step-desc">Thiết lập tên đăng nhập và mật khẩu duy nhất. Lưu ý thành viên rằng tên đăng
-                    nhập không thể thay đổi sau khi tạo.</div>
-                </div>
-              </li>
-              <li class="step-item">
-                <div class="step-num">2</div>
-                <div class="step-content">
-                  <div class="step-title">Kích hoạt</div>
-                  <div class="step-desc">Sau khi xác nhận, thành viên có thể đăng nhập ngay vào nền tảng trò chơi.</div>
-                </div>
-              </li>
-            </ol>
           </div>
           <div class="notice warning">
             <div class="notice-icon">⚠️</div>
@@ -357,69 +411,89 @@
           <div class="notice info">
             <div class="notice-icon">💡</div>
             <div class="notice-content">
-              <strong>Pangunahing Panuntunan para sa Hierarchy:</strong>
+              <strong>Tandaan:</strong>
               <ol class="numbered-list">
-                <li><strong>Dynamic na Link</strong>: Ang mga bagong account ay naka-link sa <strong>napiling agent
-                    node</strong> sa listahan. Halimbawa, kung si Agent A ang napili, anumang idinagdag na account ay
-                  magiging direktang subordinate ni A.</li>
-                <li><strong>Limitasyon sa Antas</strong>: Kung ang napiling agent ay nasa huling antas na ng iyong
-                  organisasyon, maaari ka lamang magdagdag ng mga direktang miyembro sa account na iyon.</li>
+                <li>Kapag rini-click ang "Magdagdag ng User", idadagdag ang user batay sa agent na kasalukuyan mong
+                  tinitingnan.<br>
+                  Halimbawa sa larawan sa itaas: Ang pag-click sa antas ng <strong>leozdl1</strong> ay magdadagdag ng
+                  downline agent o miyembro para sa leozdl1;<br>
+                  Ang pag-click naman sa antas ng <strong>leodl1</strong> ay magdadagdag para sa leodl1.</li>
+                <li>Kung ang agent account na tinitingnan mo ay ang huling antas na ng iyong organisasyon, maaari ka
+                  lamang magdagdag ng mga direktang miyembro para dito.</li>
               </ol>
             </div>
           </div>
-          <div class="card">
-            <div class="card-title">
-              <div class="card-icon blue">👤</div>Workflow: Magdagdag ng Agent
-            </div>
-            <ol class="steps-list">
-              <li class="step-item">
-                <div class="step-num">1</div>
-                <div class="step-content">
-                  <div class="step-title">Impormasyon ng Identidad</div>
-                  <div class="step-desc">Ilagay ang username (6-16 karakter), initial password, at tunay na pangalan.
+          <div class="grid-2">
+            <div class="card">
+              <div class="card-title">
+                <div class="card-icon blue">👤</div>Workflow: Magdagdag ng Agent
+              </div>
+              <ol class="steps-list">
+                <li class="step-item">
+                  <div class="step-num">1</div>
+                  <div class="step-content">
+                    <div class="step-title">Impormasyon ng Identidad</div>
+                    <div class="step-desc">Ilagay ang username (6-16 karakter), initial password, at tunay na pangalan.
+                    </div>
+                    <img src="img/add_agent_1.png" alt="Step 1" class="content-img">
                   </div>
-                </div>
-              </li>
-              <li class="step-item">
-                <div class="step-num">2</div>
-                <div class="step-content">
-                  <div class="step-title">I-configure ang Occupancy Ratio</div>
-                  <div class="step-desc">Magtalaga ng ratio para sa downline. Ito ay <strong>hindi dapat
-                      lumampas</strong> sa iyong sariling limitasyon.</div>
-                </div>
-              </li>
-              <li class="step-item">
-                <div class="step-num">3</div>
-                <div class="step-content">
-                  <div class="step-title">Kumpirmahin ang Paglikha</div>
-                  <div class="step-desc">I-click ang "Confirm Create". Ang account ay agad na maa-activate para sa iyong
-                    partner.</div>
-                </div>
-              </li>
-            </ol>
-          </div>
-          <div class="card">
-            <div class="card-title">
-              <div class="card-icon green">👥</div>Workflow: Magdagdag ng Miyembro
+                </li>
+                <li class="step-item">
+                  <div class="step-num">2</div>
+                  <div class="step-content">
+                    <div class="step-title">I-configure ang Occupancy Ratio</div>
+                    <div class="step-desc">Magtalaga ng ratio para sa downline. Ito ay <strong>hindi dapat
+                        lumampas</strong> sa iyong sariling limitasyon.</div>
+                    <img src="img/add_agent_2.png" alt="Step 2" class="content-img">
+                  </div>
+                </li>
+                <li class="step-item">
+                  <div class="step-num">3</div>
+                  <div class="step-content">
+                    <div class="step-title">Kumpirmahin ang Paglikha</div>
+                    <div class="step-desc">I-click ang "Confirm Create". Ang account ay agad na maa-activate para sa
+                      iyong
+                      partner.</div>
+                    <img src="img/add_agent_3.png" alt="Step 3" class="content-img">
+                  </div>
+                </li>
+              </ol>
             </div>
-            <ol class="steps-list">
-              <li class="step-item">
-                <div class="step-num">1</div>
-                <div class="step-content">
-                  <div class="step-title">Credential ng Miyembro</div>
-                  <div class="step-desc">Magtakda ng natatanging username at password. Paalalahanan ang mga miyembro na
-                    ang username ay hindi maaaring baguhin.</div>
-                </div>
-              </li>
-              <li class="step-item">
-                <div class="step-num">2</div>
-                <div class="step-content">
-                  <div class="step-title">Activation</div>
-                  <div class="step-desc">Sa pag-click ng "Confirm", ang miyembro ay agad na makakapag-login sa gaming
-                    platform.</div>
-                </div>
-              </li>
-            </ol>
+            <div class="card">
+              <div class="card-title">
+                <div class="card-icon green">👥</div>Workflow: Magdagdag ng Miyembro
+              </div>
+              <ol class="steps-list">
+                <li class="step-item">
+                  <div class="step-num">1</div>
+                  <div class="step-content">
+                    <div class="step-title">Credential ng Miyembro</div>
+                    <div class="step-desc">Magtakda ng natatanging username at password. Paalalahanan ang mga miyembro
+                      na
+                      ang username ay hindi maaaring baguhin.</div>
+                    <img src="img/add_member_1.png" alt="Member Step 1" class="content-img">
+                  </div>
+                </li>
+                <li class="step-item">
+                  <div class="step-num">2</div>
+                  <div class="step-content">
+                    <div class="step-title">Configuration ng Account</div>
+                    <div class="step-desc">I-verify ang node affiliation at initial status ng bagong member account.
+                    </div>
+                    <img src="img/add_member_2.png" alt="Member Step 2" class="content-img">
+                  </div>
+                </li>
+                <li class="step-item">
+                  <div class="step-num">3</div>
+                  <div class="step-content">
+                    <div class="step-title">Kumpirmahin at I-activate</div>
+                    <div class="step-desc">Sa pag-click ng "Confirm", ang miyembro ay agad na makakapag-login sa gaming
+                      platform.</div>
+                    <img src="img/add_agent_3.png" alt="Member Step 3" class="content-img">
+                  </div>
+                </li>
+              </ol>
+            </div>
           </div>
           <div class="notice warning">
             <div class="notice-icon">⚠️</div>

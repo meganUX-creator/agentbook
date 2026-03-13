@@ -942,6 +942,11 @@ p.para {
   box-shadow: var(--shadow-hover);
 }
 
+.img-half {
+  width: 50% !important;
+  max-width: 500px !important;
+}
+
 /* ── LIGHTBOX (IMAGE ZOOM) ── */
 .lightbox {
   position: fixed;
